@@ -1,0 +1,13 @@
+FUENTES: 
+
+- MONTSERRAT
+- PT SANS
+
+--------------------
+
+COLORES:
+
+DORADO --> #C3950F
+GRIS --> #C8B7B7
+NEGRO --> #000000
+BLANCO --> #FFFFFF
