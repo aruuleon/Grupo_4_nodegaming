@@ -24,3 +24,9 @@ Los siguientes Sitios Web fueron elegidos por nuestro equipo, destacándose por 
 [MEXX](https://www.mexx.com.ar "MEXX") | [COMPRA GAMER](https://compragamer.com "COMPRA GAMER") | [ARMYTECH](https://www.armytech.com.ar "ARMYTECH") | [GAMING CITY](https://www.gamingcity.com.ar "GAMING CITY") | [FULLH4RD](https://www.fullh4rd.com.ar "FULLH4RD")
 
 ------------
+
+> PÁGINA DEL TABLERO
+
+[TRELLO NODEGAMING](https://trello.com/b/hix0Xz7h/node-gaming "TRELLO NODEGAMING")
+
+------------
