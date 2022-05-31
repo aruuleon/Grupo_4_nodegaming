@@ -1,0 +1,70 @@
+/*BODY*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*HEADER*/
+
+header{
+    background-color: black;
+}
+.top-header {
+    display: flex;
+}
+
+header div.logo,
+header div.burguer-menu{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+
+.burguer-menu i {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    margin: 25px;
+}
+
+.nav-bar i {
+    display: flex;
+
+}
+
+/*MAIN*/
+img {
+    max-width: 100%;
+}
+
+div .img-secundarias {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.img-secundarias img {
+    width: 125px;
+    margin: 5px;
+}
+
+.descripcion p span{
+    font-weight: bold;
+}
+/*FOOTER*/
+footer{
+    background-color: black;
+    color: white;
+}
