@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="Node Gaming.svg"
+   inkscape:export-filename="D:\MARANTA\Desktop\Node Gaming PNG.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="4.3473625"
+     inkscape:cx="306.85272"
+     inkscape:cy="569.42571"
+     inkscape:window-width="1440"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="270.50884"
+       y="555.73925"
+       width="447.16768"
+       height="211.62256"
+       id="rect3479" />
+    <rect
+       x="246.58629"
+       y="408.52356"
+       width="491.33239"
+       height="334.91571"
+       id="rect561" />
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:#000000;stroke-width:0.309557"
+       id="path10300"
+       cx="86.242111"
+       cy="151.5979"
+       rx="45.617081"
+       ry="15.205694" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-6.6448682,29.674329)"
+       id="text559"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect561);fill:#ff6600;fill-opacity:1;stroke:none;opacity:1"><tspan
+         x="246.58594"
+         y="445.01665"
+         id="tspan17399"><tspan
+           style="font-family:Cubic;-inkscape-font-specification:Cubic"
+           id="tspan17397">NODE</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.2034786,0,0,0.2034786,10.6868,34.71253)"
+       id="text3477"
+       style="font-style:normal;font-weight:normal;font-size:74.6667px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect3479);fill:#ffffff;fill-opacity:1;stroke:none"><tspan
+         x="270.50977"
+         y="623.85898"
+         id="tspan17403"><tspan
+           style="font-family:'Our Friend Electric';-inkscape-font-specification:'Our Friend Electric'"
+           id="tspan17401">GAMING</tspan></tspan></text>
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 79.831878,142.24179 -2.677867,1.58238 0.06086,3.04303 2.677869,1.46066 2.79959,-1.3998 -0.07563,-3.28647 z"
+       id="path9231"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 71.128806,142.18093 -2.677869,1.64324 0.06086,2.98217 2.677867,1.7041 2.738731,-1.64324 v -3.16475 z"
+       id="path9494"
+       sodipodi:nodetypes="ccccccc" />
+    <g
+       id="g16964">
+      <path
+         style="fill:#c8b7b7;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 69.999881,144.71557 1.161945,0.6778 1.140428,-0.69932 -1.065117,-0.6778 z"
+         id="path8658" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70.0214,146.06041 -0.02151,-1.34484 1.161944,0.6778 v 1.28029 z"
+         id="path8660" />
+      <path
+         style="fill:#ff6600;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 71.161833,146.67366 1.22649,-0.6778 -0.08607,-1.30181 -1.140421,0.69932 v 1.28029 0 l 1.215732,-0.6778"
+         id="path8662" />
+    </g>
+  </g>
+</svg>
