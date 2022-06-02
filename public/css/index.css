@@ -39,6 +39,11 @@
 }
 
 .nav-bar {
+    width: 100%;
+    display: none;
+}
+
+.search-bar {
     display: none;
 }
 
@@ -65,36 +70,69 @@
 
 .container-carrusel .container-list-carrusel {
     width: 400%;
-    display: flex;
     list-style: none;
+    display: flex;
 }
 
 .container-list-carrusel li img {
     width: 100%;
 }
 
-.container-publicidad {
+.publicidad {
     width: 100%;
     margin: 10px 0;
     display: flex;
     justify-content: center;
 }
 
-.container-publicidad img {
+.publicidad .container-publicidad {
     width: 90%;
 }
 
+.container-publicidad img {
+    width: 100%;
+}
+
+.main h3 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
 .container-destacados {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.destacados {
     width: 90%;
-    height: 100px;
-    margin: 10px auto;
-    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.destacados div {
+    width: 45%;
+    margin: 10px 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.destacados div p {
+    font-size: 10px;
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+.destacados div img{
+    width: 100%;
 }
 
 .container-partners {
     width: 200%;
     display: flex;
-    animation: slider2 20s infinite ease-in-out;
+    animation: slider2 15s infinite ease-in-out;
 }
 
 .container-partners div {
@@ -121,6 +159,11 @@
 
 .container-about h3 {
     font-size: 16px;
+    list-style: none;
+}
+
+.container-about a {
+    text-decoration: none;
 }
 
 .container-about p {
@@ -131,13 +174,16 @@
 
 .container-social-media {
     display: flex;
-    justify-content: space-around;
-    margin: 15px;
+    justify-content: space-evenly;
+    margin: 15px 0;
 }
 
 .container-social-media div a i {
     font-size: 20px;
+    padding: 10px;
     color: #C3950F;
+    border: 1px solid #C3950F;
+    border-radius: 50%;
 }
 
 @keyframes slider1 {
@@ -156,19 +202,109 @@
 
 @keyframes slider2 {
     0%{margin-left: 0%;}
-    10%{margin-left: -20%;}
+    20%{margin-left: -22%;}
+    40%{margin-left: -42%;}
+    60%{margin-left: -62%;}
+    80%{margin-left: -82%;}
+    100%{margin-left: -102%;}
+}
 
-    20%{margin-left: -40%;}
-    30%{margin-left: -60%;}
+/* ---- */
 
-    40%{margin-left: -80%;}
-    50%{margin-left: -100%;}
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .container-logo {
+        width: 25%;
+    }
+    .container-menu {
+        display: none;
+    }
+    .nav-bar {
+        display: flex;
+    }
+    .container-access {
+        width: 20%;
+        justify-content: flex-end;
+    }
+    .container-access .user {
+        margin: 0 50px;
+    }
+    .container-access .search i {
+        color: #000000;
+    }
+    .container-list {
+        width: 100%;
+        display: flex;
+        list-style: none;
+        text-align: center;
+    }
+    .container-list a{
+        text-decoration: none;
+        color: #C3950F;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 10px 0;
+        width: 25%;
+    }
+    .container-list a:hover {
+        background-color: #C3950F;
+        color: #000000;
+        transition-duration: 0.5s;
+    }
+    .search-bar {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    .search-bar form {
+        width: 100%;
+    }
+    .search-bar form input {
+        width: 100%;
+        padding: 0 5px;
+    }
+    .destacados {
+        flex-wrap: nowrap;
+    }
+    .destacados div {
+        text-align: center;
+    }
+    .destacados div:hover {
+        box-shadow: 0px 0px 20px rgb(100, 100, 100);
+        transition-duration: 0.5s;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer section {
+        width: 33%;
+        align-self: center;
+    }
+    .redes {
+        order: 1;
+    }
+    .container-social-media div:hover i {
+        color: #000000;
+        background-color: #C3950F;
+        transition-duration: 0.5s;
+    }
+}
 
-    60%{margin-left: -120%;}
-    70%{margin-left: -140%;}
-
-    80%{margin-left: -160%;}
-    90%{margin-left: -180%;}
-
-    100%{margin-left: -200%;}
+@media (min-width: 1200px) {
+    .container-partners {
+        animation: none;        
+        width: 100%;
+        justify-content: space-around;
+    }
+    .container-partners div {
+        width: 5%;
+        padding: 0;
+        margin: 0;
+    }
 }
