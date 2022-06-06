@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body {
+.container-main {
     font-family: 'Montserrat', sans-serif;
     font-family: 'PT Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -15,6 +15,7 @@ body {
 
 header{
     background-color: black;
+    margin-bottom: 10px;
 }
 .top-header {
     display: flex;
@@ -40,31 +41,143 @@ header div.logo{
     display: flex;
 
 }
+.search-bar {
+    display: none;
+}
 
 /*MAIN*/
-img {
-    max-width: 100%;
+/*carrucel*/
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+.itemCarrouselTarjeta img {
+    width: 100%;
+    height: 100%;
+    border: solid 2px #ccc;
 }
 
-div .img-secundarias {
-    display: flex;
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.carrousel{
+    width: 95vw;
+    margin: 10px;
+    margin: auto;
 }
-div.img-secundarias img {
-    width: 125px;
-    margin: 5px;
+
+.conteCarrousel{
+    width: 100%;
+    height: 35vh;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: #C3950F;
+}
+
+/*-------*/
+.stock {
+    background-color: #4caf50;
+    width: 60px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 2px;
+}
+.info-producto{
+    margin: 10px;
+}
+.nombre-porducto h2{
+    font-weight: normal;
+}
+
+.precio {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+.cuotas {
+    color: #C3950F;
+    font-weight: normal;
+    margin-bottom: 10px;
+    
+}
+
+.agregar{
+    width: 100%;
+    display: flex;
+}
+.agregar button {
+    width: 100%;
+    background-color: black;
+    color: #C3950F;
+    font-size: 25px;
+    margin: 10px 50px;
+}
+.agregar button:focus {
+    background-color: #C3950F;
+    color: #000000;
+    box-shadow: 0px 0px 10px #000000 inset;
 }
 
 .descripcion p span{
     font-weight: bold;
 }
+
+.descripcion h4 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+div.especs p,
+div.especs p span {
+    font-size: 14px;
+}
+
 /*FOOTER*/
-footer{
-    background-color: black;
-    color: white;
+
+@media (min-width: 769px) {
+    .itemCarrouselTarjeta{
+        width: 50%;
+    }
+    .agregar button{
+        width: 50%;
+    }
 }

@@ -1,104 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/813ca1071b.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Sans&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/productDetail.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>NODEGAMING | Producto</title>
 </head>
-<body>
-    <header>
-        <div class="top-header">
-            <div class="logo"> 
-                <a href="/"><img src="./images/LOGO.png" alt="logo"></a>
-            </div>
-            <div class="burguer-menu">
-                <a href="#"><i class="fa-solid fa-bars"></i></a>
-            </div>
+
+<body class="container-main">
+    <header class="header">
+        <picture class="container-logo">
+            <a href="index.html">
+                <img src="/img/Home/logo.png" alt="logo-nodegaming">
+            </a>
+        </picture>
+        <div class="container-menu">
+            <i class="fa-solid fa-bars"></i>
         </div>
-        <div class="bot-header">
-            <nav class="nav-bar">
-                <ul>
-                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    </li>
-                    <li><a href="/login"><i class="fa-solid fa-user"></i></a>
-                    </li>
-                    <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="search-bar">
+            <form action="">
+                <input type="search" name="" id="" placeholder="Buscar Productos..">
+            </form>
         </div>
-    </header>
-    <main>
-        <section>
-            <div class="img-principal">
-                <img src="./images/video-geforce-rtx-2060-6gb-msi-ventus-gp-oc-0.jpg" alt="VIDEO GEFORCE RTX 2060 con caja detras">
+        <section class="container-access">
+            <div class="user">
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                </a>
             </div>
-            <div class="img-secundarias">
-                <img src="./images/video-geforce-rtx-2060-6gb-msi-ventus-gp-oc-1.jpg" alt="VIDEO GEFORCE RTX 2060 parte trasera">
-                <img src="./images/video-geforce-rtx-2060-6gb-msi-ventus-gp-oc-2.jpg" alt="VIDEO GEFORCE RTX 2060 conectores">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <div class="nombre-porducto">
-                <h1>VIDEO GEFORCE RTX 2060 6GB MSI VENTUS GP OC</h1>
-            </div>
-            <div class="stock-producto">
-                <h2 class="precio">$99.999</h2>
-                <h4 class="cuotas">¡12 cuotas sin interés!</h4>
-                <p>cantidad: - 1 +</p>
-                <h5>En stock</h5>
-                <button type="submit">Agregar</button>
-            </div>
-            <div class="descripcion">
-                <h4>Descripción:</h4>
-                <div>
-                    <p><span>Núcleos:</span>1920 Unidades</p>
-                    <p><span>Memoria:</span>6GB GDDR6</p>
-                    Motor de gráficos NVIDIA® GeForce RTX™ 2060</p>
-                    Norma Bus PCI Express x16 3.0</p>
-                    Interfaz de Memoria 192 bits</p>
-                    Velocidad clock núcleo (MHz) Boost: 1710 MHz
-                    Velocidad clock memoria (MHz) 14 Gbps
-                    Máximo de pantallas 4
-                    Tecnología G-SYNC™ Sí
-                    Adaptive Vertical Sync Sí
-                    Tecnología Multi-GPU NVIDIA® NVLINK™ (SLI-Ready), 2 vías
-                    Soporte HDCP 2.2
-                    Consumo (W) 160 W
-                    Salida DisplayPort x 3 (v1.4) / HDMI 2.0b x 1
-                    Alimentación recomendada (W) 500W
-                    Virtual Reality Ready Y
-                    Resolución máxima digital 7680x4320
-                    Conectores de alimentación 8 pines x 1
-                    Soporte DirectX Versión 12 API
-                    Soporte OpenGL Versión 4.5
-                    Dimensiones (mm) 226 x 128 x 41 mm
-                    Peso 764 g / 1193 g
-                </div>
-            </div>
-            <div class="partners">
-                <img src="#" alt="partners">
+            <div class="cart">
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
             </div>
         </section>
+        <nav class="nav-bar">
+            <ul class="container-list">
+                <a href="#">
+                    <li>productos</li>
+                </a>
+                <a href="#">
+                    <li>pc armadas</li>
+                </a>
+                <a href="#">
+                    <li>partners</li>
+                </a>
+                <a href="#">
+                    <li>contacto</li>
+                </a>
+                <a href="#">
+                    <li>ayuda</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section >
+            <div class="carrousel">
+                <div class="conteCarrousel">
+                    <div class="itemCarrousel" id="itemCarrousel-1">
+                        <div class="itemCarrouselTarjeta">
+                            <img src="./img/Producto/video-geforce-rtx-2060-6gb-msi-ventus-gp-oc-0.jpg" alt="VIDEO GEFORCE RTX 2060 con caja detras">
+                        </div>
+                        <div class="itemCarrouselArrows">
+                            <a href="#itemCarrousel-3">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                            <a href="#itemCarrousel-2">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="itemCarrousel" id="itemCarrousel-2">
+                        <div class="itemCarrouselTarjeta">
+                            <img src="./img/Producto/video-geforce-rtx-2060-6gb-msi-ventus-gp-oc-1.jpg" alt="VIDEO GEFORCE RTX 2060 parte trasera">
+                        </div>
+                        <div class="itemCarrouselArrows">
+                            <a href="#itemCarrousel-1">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                            <a href="#itemCarrousel-3">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="itemCarrousel" id="itemCarrousel-3">
+                        <div class="itemCarrouselTarjeta">
+                            <img src="./img/Producto/video-geforce-rtx-2060-6gb-msi-ventus-gp-oc-2.jpg" alt="VIDEO GEFORCE RTX 2060 conectores">
+                        </div>
+                        <div class="itemCarrouselArrows">
+                            <a href="#itemCarrousel-2">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                            <a href="#itemCarrousel-1">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteCarrouselController">
+                    <a href="#itemCarrousel-1">•</a>
+                    <a href="#itemCarrousel-2">•</a>
+                    <a href="#itemCarrousel-3">•</a>
+                </div>
+            </div>
+
+        <div class="info-producto">
+            <p class="stock">En stock</p>
+                <div class="nombre-porducto">
+                    <h2>VIDEO GEFORCE RTX 2060 6GB MSI VENTUS GP OC</h2>
+                </div>
+                <div class="stock-producto">
+                    <p class="precio">$99.999</p>
+                    <h4 class="cuotas">¡12 cuotas sin interés!</h4>
+                    <div class="agregar">
+                        <button type="submit">Agregar al carrito</button>
+                    </div>
+                </div>
+            <div class="descripcion">
+                <h4>Descripción:</h4>
+                <div class="especs">
+                    <p><span>Núcleos:</span> 1920 Unidades</p>
+                    <p><span>Memoria:</span> 6GB GDDR6</p>
+                    <p><span>Motor de gráficos:</span> NVIDIA® GeForce RTX™ 2060</p>
+                    <p><span>Norma Bus PCI Express:</span> x16 3.0</p>
+                    <p><span>Interfaz de Memoria:</span> 192 bits</p>
+                    <p><span>Velocidad clock núcleo (MHz) Boost:</span> 1710 MHz</p>
+                    <p><span>Velocidad clock memoria (MHz)</span> 14 Gbps</p>
+                    <p><span>Máximo de pantallas:</span> 4</p>
+                    <p><span>Tecnología G-SYNC™:</span> Sí</p>
+                    <p><span>Adaptive Vertical Sync:</span> Sí</p>
+                    <p><span>Soporte HDCP:</span> 2.2</p>
+                    <p><span>Consumo (W):</span> 160 W</p>
+                    <p><span>Salida:</span> DisplayPort x 3 (v1.4) / HDMI 2.0b x 1</p>
+                    <p><span>Alimentación recomendada (W):</span> 500W</p>
+                    <p><span>Virtual Reality:</span> Ready Y</p>
+                    <p><span>Resolución máxima digital:</span> 7680x4320</p>
+                    <p><span>Conectores de alimentación:</span> 8 pines x 1</p>
+                    <p><span>Soporte DirectX:</span> Versión 12 API</p>
+                    <p><span>Soporte OpenGL:</span> Versión 4.5</p>
+                    <p><span>Dimensiones (mm):</span> 226 x 128 x 41 mm</p>
+                    <p><span>Peso:</span> 764 g / 1193 g</p>
+                </div>
+            </div>
+        </div>
+        </section>
     </main>
-    <footer>
-        <div class="info node">
-            <h3>ACERCA DE NODEGAMING</h3>
-        </div>
-        <div class="links">
-            <a href="#">¿Quienes somos?</a>
-            <a href="#">Contacto</a>
-            <a href="#">Ubicacion</a>
-        </div>
-        <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube-square"></i></a>
-        </div>
+
+    <footer class="footer">
+        <section class="container-about">
+            <h3>acerca de nodegaming</h3>
+            <a href="#">
+                <p>¿quienes somos?</p>
+            </a>
+            <a href="#">
+                <p>ubicacion</p>
+            </a>
+            <a href="#">
+                <p>contacto</p>
+            </a>
+        </section>
+        <section class="redes">
+            <div>
+                <div class="container-social-media">
+                    <div>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="derechos">
+        <p>Copyright &copy; NODEGAMING</p>
+        </section>
     </footer>
+
 </body>
+
 </html>
