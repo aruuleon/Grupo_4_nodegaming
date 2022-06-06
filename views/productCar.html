@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/productCar.css">
+    <link rel="stylesheet" href="/css/generalStyles.css">    
     <script src="https://kit.fontawesome.com/2da8e91210.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="images-CarritoCompras/FAVICON(PNG).png">
@@ -13,118 +14,151 @@
 </head>
 
 <body>
-    <header>
-        <div class="images-CarritoCompras/logo-div">
-            <img src="images-CarritoCompras/logo.png" >
+    <header class="header">
+        <picture class="container-logo1">
+            <a href="/">
+                <img src="/img/Home/logo.png" alt="logo-nodegaming">
+            </a>
+        </picture>
+        <div class="container-menu">
+            <i class="fa-solid fa-bars"></i>
         </div>
-        <div class="burgermenu">
-            <i class="fas fa-bars" id="burger-menu"></i>
+        <div class="search-bar">
+            <form action="">
+                <div>
+                    <input type="search" placeholder="Buscar Productos..">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
         </div>
-        <nav class="nav-bar">
-            <ul> 
-                <li><a href="">PRODUCTO</a></li>
-                <li><a href="">PC ARMADAS</a></li>
-                <li><a href="">PARTNERS</a></li>
-                <li><a href="">CONTACTO</a></li>
-                <li><a href="">AYUDA</a></li>
-            </ul>
-            
-        </nav>
-        <div class="container-access">
-            <div>
-                <i class="fa-solid fa-user"></i>
+        <section class="container-access">
+            <div class="user">
+                <a href="/login">
+                    <i class="fa-solid fa-user"></i>
+                </a>
             </div>
-            <div>
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-
-            <div>
+            <div class="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-        </div>
+            <div class="cart">
+                <a href="/productCar">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+        </section>
+        <nav class="nav-bar">
+            <ul class="container-list">
+                <a href="#">
+                    <li>productos</li>
+                </a>
+                <a href="#">
+                    <li>pc armadas</li>
+                </a>
+                <a href="#">
+                    <li>partners</li>
+                </a>
+                <a href="#">
+                    <li>contacto</li>
+                </a>
+                <a href="#">
+                    <li>ayuda</li>
+                </a>
+            </ul>
+        </nav>
     </header>
-
 
     <main>
 
         <div class="articulos">
-
-           
-
-                <div class="descripcion-producto">
-                    <img src="placa.jpg" class="images-CarritoCompras/img-producto">
+            <div class="descripcion-producto">
+             
+                    <img src="CarritoCompras/placa.jpg" class="img-producto">
+                    
                     <p class="info-producto">Placa Madre</p>
-                    <button class="precio-producto" type="submit">$XXXXX</button>
+                    <p class="info-cantidad">+  CANTIDAD  -</p>
+                    <p class="precio-producto" type="submit">$XXXXX</p>
+                    <i class="fa-solid fa-trash-can" id="trash-icon"></i>
                 </div>
           
         </div>
         <div class="articulos">
-
-            <div class="cajarticulo">
-
-                <div class="descripcion-producto">
-                    <img src="ram.png" class="images-CarritoCompras/img-producto">
-                    <p class="info-producto">RAM 32GB</p>
-                    <button class="precio-producto" type="submit">$XXXXX</button>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="articulos">
-
-            <div class="cajarticulo">
-
-                <div class="descripcion-producto">
-                    <img src="video.jpg" class="images-CarritoCompras/img-producto">
-                    <p class="info-producto">Placa De Video</p>
-                    <button class="precio-producto" type="submit">$XXXXX</button>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="articulos">
-
-            <div class="cajarticulo">
-               
-
-                <div class="descripcion-producto">
-                    <img src="ryzen.jpeg" class="images-CarritoCompras/img-producto">
-                    <p class="info-producto">Procesador Ryzen 9</p>
-                    <button class="precio-producto" type="submit">$XXXXX</button>
+            <div class="descripcion-producto">
+                    <img src="CarritoCompras/ram.png" class="img-producto">
                     
-
+                    <p class="info-producto">RAM 32GB</p>
+                    <p class="info-cantidad">+  CANTIDAD  -</p>
+                    <p class="precio-producto" type="submit">$XXXXX</p>
+                    <i class="fa-solid fa-trash-can" id="trash-icon"></i>
                 </div>
             </div>
-        </div>
-        <p class="total">TOTAL $XXXXX</p>
 
-        <button  type="submit">COMPRAR</button>
+        <div class="articulos">
+            <div class="descripcion-producto">
+                    <img src="CarritoCompras/video.jpg" class="img-producto">
+                    
+                    <p class="info-producto">Placa De Video</p>
+                    <p class="info-cantidad">+  CANTIDAD  -</p>
+                    <p class="precio-producto" type="submit">$XXXXX</p>
+                    <i class="fa-solid fa-trash-can" id="trash-icon"></i>
+                </div>
+
+        </div>
+        
+        <div class="articulos">
+                <div class="descripcion-producto">
+                    <img src="CarritoCompras/ryzen.jpeg" class="img-producto">
+                    
+                    <p class="info-producto">Procesador Ryzen 9</p>
+                    <p class="info-cantidad">+  CANTIDAD  -</p>
+                    <p class="precio-producto" type="submit">$XXXXX</p>
+                    <i class="fa-solid fa-trash-can" id="trash-icon"></i>
+                </div>
+    </div>
+</div>
+
+<div class="resumen-compra"> 
+    <p class="total">TOTAL $XXXXX</p>
+    <button  type="submit" >COMPRAR</button>
+    
+    </div>
+
+        
 
 
 
     </main>
 
-    <footer>
-        <img src="images-CarritoCompras/amdlogo.jpg" class="banner">
-        <div class="informacion">
-            <p class="titular-footer">ACERCA DE NODEGAMING</p>
-
-            <section class="titularesfooter">¿Quienes somos?</section>
-
-
-            <section class="titularesfooter">Ubicación</section>
-
-
-            <section class="titularesfooter">Contacto</section>
-<div class="iconos-redes"> 
-            <i class="fa-brands fa-facebook" id="icono-footer"></i>
-            <i class="fa-brands fa-instagram" id="icono-footer"></i>
-            <i class="fa-brands fa-twitter" id="icono-footer"></i>
-        </div>
-
-            <section class="copyright">Copyright © 2022 Node Gaming S.R.L.</section>
-
-        </div>
+    <footer class="footer">
+        <section class="container-about">
+            <h3>acerca de nodegaming</h3>
+            <a href="#">
+                <p>¿quienes somos?</p>
+            </a>
+            <a href="#">
+                <p>ubicacion</p>
+            </a>
+            <a href="#">
+                <p>contacto</p>
+            </a>
+        </section>
+        <section class="redes">
+            <div>
+                <div class="container-social-media">
+                    <div>
+                        <a href="https://www.instagram.com/nodegaming_ok/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100081899085734" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/NODEGAMING_OK" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="derechos">
+        <p>Copyright &copy; NODEGAMING</p>
+        </section>
     </footer>
 
 </body>
