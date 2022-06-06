@@ -1,91 +1,84 @@
-
-
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6e45c03872.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/login.css">
-    <script src="https://kit.fontawesome.com/2da8e91210.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="images-Login/FAVICON(PNG).png">
-    <title>Node Gaming | LOGIN</title>
+    <link rel="stylesheet" href="/css/generalStyles.css">
+    <title>NODEGAMING | Iniciar Sesión</title>
 </head>
-
-<body>
-    <header>
-        <div class="images-Login/logo-div">
-            <img src="images-Login/logo.png">
-        </div>
-        <div>
-            <i class="fas fa-bars"></i>
-        </div>
-        <nav class="nav-bar">
-            <ul class="barra">
-                <li><a href="">PRODUCTO</a></li>
-                <li><a href="">PC ARMADAS</a></li>
-                <li><a href="">PARTNERS</a></li>
-                <li><a href="">CONTACTO</a></li>
-                <li><a href="">AYUDA</a></li>
-            </ul>
-        </nav>
-        <div class="container-access">
-            <div>
-                <i class="fa-solid fa-user"></i>
-            </div>
-            <div>
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-
-            <div>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </div>
+<body class="container-main">
+    <header class="header">
+        <picture class="container-logo2">
+            <a href="/">
+                <img src="/img/Home/logo.png" alt="logo-nodegaming">
+            </a>
+        </picture>
     </header>
-
-<main>
-
-    <p class="inicio">INICIAR SESION</p>
-   
-    <input placeholder="EMAIL" name="email" type="email"></input>
-     
-        
-        <input placeholder="CONTRASEÑA" name="password" type="password"></input>
-    
-      <button  type="submit">INGRESAR</button>
-      <a href="#">¿Olvidaste tu usuario o contraseña?</a>
-      <a href="#">¿No tenes cuenta?</a>
-    
-<button id="registro" type="">REGISTRARSE</button>
-
-
-</main>
-
-    <footer>
-        
-        <div class="informacion">
-            <p class="titular-footer">ACERCA DE NODEGAMING</p>
-
-            <section class="titularesfooter">¿Quienes somos?</section>
-
-
-            <section class="titularesfooter">Ubicación</section>
-
-
-            <section class="titularesfooter">Contacto</section>
-<div class="iconos-redes"> 
-            <i class="fa-brands fa-facebook" id="icono-footer"></i>
-            <i class="fa-brands fa-instagram" id="icono-footer"></i>
-            <i class="fa-brands fa-twitter" id="icono-footer"></i>
-        </div>
-
-            <section class="copyright">Copyright © 2022 Node Gaming S.R.L.</section>
-
-        </div>
+    <main class="main">
+        <section class="form">
+            <form action="">
+                <h3>iniciar sesion</h3>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="ingresar">
+                    <button type="submit">ingresar</button>
+                </div>
+                <div class="recuperar">
+                    <a href="#">¿Olvidaste tu Email o Contraseña?</a>
+                </div>
+                <div class="crear">
+                    <div>
+                        <p>¿No te registraste?</p>
+                    </div>
+                    <div>
+                        <button type="button"><a href="/register">crear cuenta</a></button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="container-about">
+            <h3>acerca de nodegaming</h3>
+            <a href="#">
+                <p>¿quienes somos?</p>
+            </a>
+            <a href="#">
+                <p>ubicacion</p>
+            </a>
+            <a href="#">
+                <p>contacto</p>
+            </a>
+        </section>
+        <section class="redes">
+            <div>
+                <div class="container-social-media">
+                    <div>
+                        <a href="https://www.instagram.com/nodegaming_ok/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100081899085734" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/NODEGAMING_OK" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="derechos">
+        <p>Copyright &copy; NODEGAMING</p>
+        </section>
     </footer>
-
 </body>
-
 </html>
