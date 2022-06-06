@@ -38,7 +38,7 @@
 .form form h3 {
     text-align: center;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin-top: 30px;
 }
 
 .form form div {
@@ -55,7 +55,7 @@
 .form form div input, button {
     width: 100%;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .form form div button {
@@ -65,6 +65,11 @@
     background-color: #000000;
     color: #C3950F;
     border-radius: 10px;
+}
+
+.form form div button a {
+    text-decoration: none;
+    color: #C3950F;
 }
 
 .registrarte {
@@ -81,14 +86,25 @@
     align-items: center;
 }
 
+.login div button a {
+    display: inline-block;
+    width: 100%;
+}
+
 .form form div input:focus {
     background-color: #C3950F;
 }
 
-.form form div button:focus {
+.form form div button:hover {
+    cursor: pointer;
     background-color: #C3950F;
     color: #000000;
-    box-shadow: 0px 0px 10px #000000 inset;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.form form div button:hover a {
+    color: #000000;
 }
 
 .footer {
@@ -134,3 +150,34 @@
 
 /* ---- */
 
+@media (min-width:769px) {
+    .container-logo a img {
+        width: 15%;
+    }
+    .form {
+        display: flex;
+        justify-content: center;
+    }
+    .form form {
+        width: 50%;
+    }
+    .form form div {
+        width: 100%;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer section {
+        width: 33%;
+        align-self: center;
+    }
+    .redes {
+        order: 1;
+    }
+    .container-social-media div:hover i {
+        color: #000000;
+        background-color: #C3950F;
+        transition-duration: 0.5s;
+    }
+}

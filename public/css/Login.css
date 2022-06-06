@@ -1,184 +1,200 @@
 * {
-    margin:0;
-    padding: 0;
     box-sizing: border-box;
-   
-  
+    margin: 0;
+    padding: 0;
 }
 
-/*BODY*/
+.container-main {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
 
-body {
-    width: 100vw;
+.header {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    font-family:  'Roboto', sans-serif;
-    
+    background-color: #000000;
 }
-p{
-    background-color: black;
+
+.container-logo {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+
+.container-logo a img {
+    width: 50%;
+}
+
+.main {
+    width: 100%;
+}
+
+.form {
+    width: 90%;
+    margin: auto;
+}
+
+.form form {
+    margin-bottom: 124px;
+}
+
+.form form h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.form form div {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.form form div input {
+    padding-left: 10px;
+    border: 1px solid #000000;
+    background-color: #ccc;
+}
+
+.form form div input, button {
+    width: 100%;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.form form div button {
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #C3950F;
+    border-radius: 10px;
+}
+
+.form form div button a {
+    text-decoration: none;
+    color: #C3950F;
+}
+
+.ingresar {
+    width: 100%;
+}
+
+.ingresar button {
+    width: 50%;
+}
+
+.recuperar {
+    text-align: center;
+}
+
+.recuperar a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.crear {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.crear div button a {
+    display: inline-block;
+    width: 100%;
+}
+
+.recuperar a:hover  {
+    color: #C3950F;
+}
+
+.form form div input:focus {
+    background-color: #C3950F;
+}
+
+.form form div button:hover {
+    cursor: pointer;
+    background-color: #C3950F;
+    color: #000000;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.form form div button:hover a {
+    color: #000000;
+}
+
+.footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #000000;
+    color: #C3950F;
+}
+
+.container-about {
+    text-transform: uppercase;
+}
+
+.container-about h3 {
+    font-size: 16px;
+    list-style: none;
+}
+
+.container-about a {
+    text-decoration: none;
+}
+
+.container-about p {
+    margin: 10px;
     font-size: 12px;
+    color: #ffff;
 }
 
-
-/*HEADER*/
-header{
-    width: 100%;
-    background-color: black;
-    
-}
-.logo-div{
-    
-margin-top: 15px;
-    align-items: center;
-    justify-content: center;
-    
-    
-    flex-direction: row;
+.container-social-media {
     display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0;
 }
 
-
-.nav-bar{
-    display: none;
-
-
-}
-.container-access{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-bottom: 20px;
-    
-}
-.container-access div i{
-    color: white;
-
-}
-  
-
-/*MAIN*/
-
-.inicio{
-    background-color: white;
+.container-social-media div a i {
     font-size: 20px;
-    font-weight: bold;
+    padding: 10px;
+    color: #C3950F;
+    border: 1px solid #C3950F;
+    border-radius: 50%;
 }
 
-main{
-    align-items: center;
-    justify-content: center;
-    
-    
-    width: 100%;
-    flex-direction: column;
-    display: flex;
-}
+/* ---- */
 
-input{
-    background-color: rgb(225, 221, 221);
-    color: black;
-    
-}
-button{
-    color: goldenrod;
-    background-color: black;
-    padding: 5px;
-}
-a{
-    font-weight: bold;
-}
-#registro{
-    margin-bottom: 60px;
-}
-
-
-
- /*FOOTER*/
-
-footer{
-    width: 100%;
-}
-
-.iconos-redes{
-    
-
-    align-items: center;
-    justify-content: center;
-    
-    
-    
-    display: flex;
-
-
-}
-.informacion{
-    background-color: black;
-    text-align: center;
-  font-size: 20px;
-}
-.titular-footer{
-    text-align: center;
-    color: goldenrod;
-    font-weight: bold;
-    font-size: 40px;
-  
-   
-
-}
-.titularesfooter{
-    text-align: center;
-    background-color: black;
-    color: white;
-    margin-bottom: 20px;
-    
- 
-}
-
-.copyright{
-    text-align: center;
-    margin-top: 15px;
-    color: goldenrod;
-}
-#icono-footer{
-  
-    color: goldenrod;
-    background-color: black;
-    margin-top: 15px;
-    padding: 20px;
-    font-size: 2em;
-   
-   
-}
-
-
-
-
-
-
-@media (min-width: 769px){
-    main section article .description{
-        display: block;
+@media (min-width:769px) {
+    .container-logo a img {
+        width: 15%;
     }
-
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .form {
+        display: flex;
+        justify-content: center;
     }
-    .barra{
-        display: none;
+    .form form {
+        width: 50%;
+    }
+    .form form div {
+        width: 100%;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer section {
+        width: 33%;
+        align-self: center;
+    }
+    .redes {
+        order: 1;
+    }
+    .container-social-media div:hover i {
+        color: #000000;
+        background-color: #C3950F;
+        transition-duration: 0.5s;
     }
 }
-
-/*@media (min-width: 1200px){
-   .barra{
-       display: flex;
-       flex-direction: row;
-      
-      
-   }
-
-   #burgermenu{
-       display: none;
-   }
- 
-   }*/
