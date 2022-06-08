@@ -218,11 +218,12 @@
         text-decoration: none;
         color: #C3950F;
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: lighter;
         margin: 10px 0;
         width: 25%;
     }
     .container-list a:hover {
+        font-weight: bold;
         background-color: #C3950F;
         color: #000000;
         transition-duration: 0.5s;

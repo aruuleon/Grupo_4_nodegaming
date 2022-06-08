@@ -1,185 +1,132 @@
+/* ESTILOS PRODUCT CAR */
 
-/*MAIN*/
-main {   
+.container-products {
+    width: 95%;
+    margin: auto;
+}
+.container-products .product, .container-total {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.product .image {
+    width: 40%;
+    margin: auto;
+}
+.product .image img {
+    margin: 10px 0;
+    width: 100%;
+}
+.name {
+    width: 100%;
+}
+.subtotal {
+    width: 100%;
+}
+.subtotal .cantidad {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    
-    
-    }
-    .nav-bar{
-        
-        color: white;
-        flex-direction: row;
-        margin-bottom: 15px;
-        font-size: 20px;
-    }
-    .barra{
-        display: flex;
-        flex-direction: row;
-        color: white;
-        justify-content: space-between;
-        text-decoration: none;
-        padding: 15px;
-        list-style:none;
-    }
-    .link-barra{
-        text-decoration: none;
-        color: white;
-    
-    }
-    
-    
-    .articulos{
-        width: 100%;
-        margin: 10px;  
-      
-        background-color: #ebebeb;
-       padding: 15px;
-     border: 1px solid black;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-    
-    }
-    
-    .descripcion-producto {
-        margin: 0 100px;
-        border: solid 1px #ebebeb;
-        width: 100%;
-        background-color: white;
-       color: white;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: space-between;
-       
-       
-    }
-    .precios {
-        font-size: 18px;
-    
-    }
-    .descuentos {
-        font-size: 16px;
-           
-    }
-    .descripciones {
-        font-size: 16px;
-    }
-    
-    .img-producto {
-        padding: 10px;
-        height: 100px;
-      }
-      #trash-icon{
-          display: flex;
-          flex-direction: column;
-         justify-content: flex-end;
-        color: black;
-        font-size: 1.7em;
-        padding: 15px;
-      }
-    .info-producto{
-        font-size: 15px;
-        font-weight: bold;
-        background-color: white;
-        color: black;
-        padding: 10px;
-       
-        
-    }
-    .info-cantidad{
-        font-size: 15px;
-        font-weight: bold;
-        background-color: white;
-        color: black;
-        padding: 10px;
-        border: solid 1px black;
-    
-    }
-    .precio-producto{
-        background-color: white;
-        font-size: 25px;
-        color: black;
-        border: black;
-        display: flex;
-        flex-direction: row;
-        
-        padding: 10px;
-    
-        
-    
-    }
-      button{
-          background-color: goldenrod;
-          font-size: 25px;
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end;
-         font-weight: bold;
-          margin-bottom: 15px;
-          padding: 5px;
-       
-      }
-      .total{
-          font-size: 25px;
-          font-weight: bold;
-          background-color: white;
-          color: black;
-          display: flex;
-      }
-      .resumen-compra{
-          display: flex;
-        margin-top: 20px;
-          flex-direction: row;
-          justify-content: space-between;
-          text-align: center;
-         
-      }
-    
-      
-    
-    @media (min-width: 361px){
-        main section article .description{
-            display: block;
-        }
-    
-        main section article{
-            box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        }
-       
-    }
-    
-    @media (min-width: 769px){
-       
-    
-       .articulos{
-       
-       display: flex;
-       flex-direction: row;
-       justify-content: space-between;
-     
-    
-    }
-    
-    .descripcion-producto {
-       
-       display: flex;
-       flex-direction: row;
-       align-items: row;
-       justify-content: space-between;
-       
-       
-       
-    }
-     
-       
-    }
-    
-    
-    
-    
-    
+    justify-content: center;
+    align-items: center;
+}
+.subtotal .cantidad button {
+    width: 10%;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+    border: 1px solid #000000;
+}
+.subtotal .cantidad button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
+    transition-duration: 0.25s;
+}
+.precio {
+    width: 100%;
+}
+.precio p, .container-total .total, .container-total .cifra-total {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+.delete i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.delete i:hover {
+    cursor: pointer;
+    color: #c50f0f;
+    transition-duration: 0.5s;
+}
+.container-total {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background-color: rgb(195, 149, 15, 0.7);
+}
+.container-total .total, .cifra-total, .container-comprar {
+    width: 30%;
+}
+.container-comprar button {
+    width: 70%;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #C3950F;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+.container-comprar button:hover {
+    cursor: pointer;
+    background-color: #C3950F;
+    color: #000000;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #000000;
+}
 
-    
+/* MEDIA QUERIES */
+@media (min-width: 769px) {
+    .product {
+        display: flex;
+        align-items: center;
+    }
+    .product .image img {
+        width: 50%;
+    }
+    .delete i {
+        position: static;
+    }
+    .name p {
+        text-align: left;
+    }
+    .subtotal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .subtotal .cantidad {
+        width: 40%;
+    }
+    .subtotal .cantidad button {
+        width: 100%;
+    }
+    .subtotal .precio {
+        width: 50%;
+    }
+    .subtotal .precio p {
+        font-size: 1em;
+    }
+    .container-comprar button {
+        width: 50%;
+    }
+}
+@media (min-width: 1200px) {
+    .subtotal .cantidad button {
+        width: 20%;
+    }
+}
