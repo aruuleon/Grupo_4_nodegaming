@@ -1,26 +1,37 @@
-1. Comenzar a hacer:
-Reuniones semanales fijas para codear.
-Martes y jueves 18-20.
-Viernes charla retrospectiva 18.
-Adelantar la clase.
-Debatir sobre el proyecto en grupo y no al privado.
+------------
 
-2. Hacer más:
-Codear.
-Codear mas.
-Comunicar mas.
-Usar el tablero.
+# RETROSPECTIVA
 
-3. Continuar haciendo:
-Reuniones.
-Charlas semanales del estatus del proyect.
-Ayudarse mutuamente.
+> COMENZAR A HACER
+    Reuniones semanales fijas para codear.
+    Martes y jueves 18 a 20hs.
+    Viernes charla retrospectiva 18hs.
+    Adelantarse a la clase.
+    Debatir sobre el proyecto en grupo y no en privado.
 
-4. Hacer menos:
+------------
 
+> HACER MAS
+    Codear.
+    Comunicar más.
+    Mantener el orden en el código.
+    Usar el tablero.
 
+------------
 
-5. Dejar de hacer:
-actuar sin consultar a los compañeros previamente.
+> CONTINUAR HACIENDO
+    Reuniones.
+    Charlas semanales sobre el estatus del proyecto.
+    Ayudarse mutuamente.
 
+------------
 
+> HACER MENOS
+    Sacar siempre propias conclusiones.
+
+------------
+
+> DEJAR DE HACER
+    Actuar sin consultar a los compañeros previamente.
+
+------------

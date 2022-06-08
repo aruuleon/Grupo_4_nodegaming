@@ -1,219 +1,124 @@
-.container-main {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'PT Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
-}
+/* ESTILOS PRODUCT DETAIL */
 
-/*MAIN*/
-/*carrucel*/
-
-.carrousel{
-    width: 95vw;
-    margin: 10px;
+.container-general {
+    width: 95%;
     margin: auto;
 }
-
-.conteCarrousel{
+.container-images {
     width: 100%;
-    height: 35vh;
+    margin: 10px 0;
+    text-align: center;
+}
+.container-images .imagenes-principales {
+    height: 160px;
     overflow: hidden;
-    margin-top: 20px;
+    text-align: center;
 }
-
-.itemCarrousel{
-    position: relative;
+.container-images .imagenes-principales div {
+    height: inherit;
+}
+.container-images .imagenes-principales div img {
+    width: 50%;
+}
+.container-images .imagen-principal {
+    text-align: center;
+}
+.imagenes-secundarias {
     width: 100%;
-    height: 100%;
-}
-
-.itemCarrouselTarjeta{
-    width: 100%;
-    height: 100%;
-}
-
-.itemCarrouselTarjeta img {
-    width: 100%;
-    height: 100%;
-    border: solid 2px #ccc;
-}
-
-.itemCarrouselArrows{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%; 
+    margin: 10px 0;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px; 
 }
-
-.itemCarrouselArrows > i:hover {
+.imagenes-secundarias div img {
+    width: 40%;
+    opacity: 0.5;
+}
+.container-info {
+    width: 100%;
+    margin: 10px 0;
+}
+.container-info .stock {
+    width: 15%;
+    margin: 5px 0;
+    padding: 1px;
+    font-size: 0.5em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 4px;
+}
+.container-info p {
+    margin: 10px 0;
+}
+.container-info .precio {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.3em;
+}
+.container-info .agregar {
+    margin: auto;
+    width: 30%;
+}
+.container-info .agregar button {
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #C3950F;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+.container-info .agregar button:hover {
     cursor: pointer;
-}
-
-.conteCarrouselController{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.conteCarrouselController > a{
-    text-decoration: none;
-    font-size: 2em;
-    color: grey;
-}
-
-.itemCarrouselArrows > a > i{
-    color: #C3950F;
-}
-
-/*-------*/
-
-.info-producto{
-    margin: 10px;
-    border-top: solid 1px #ccc;
-}
-
-.stock {
-    background-color: #4caf50;
-    width: 60px;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    margin: 2px;
-}
-
-.nombre-porducto h2{
-    font-weight: normal;
-}
-
-.stock-producto {
-    border-bottom: solid 1px #ccc;
-}
-
-.precio {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 10px;
-    text-align: center;
-}
-.cuotas {
-    color: #C3950F;
-    font-weight: normal;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.agregar{
-    width: 100%;
-    display: flex;
-}
-.agregar button {
-    width: 100%;
-    background-color: black;
-    color: #C3950F;
-    font-size: 18px;
-    margin: 10px 50px;
-    border-radius: 3px;
-}
-.agregar button:focus {
     background-color: #C3950F;
     color: #000000;
-    box-shadow: 0px 0px 10px #000000 inset;
-}
-.descripcion{
-    margin: 10px;
-}
-.descripcion p span{
     font-weight: bold;
+    box-shadow: 0px 0px 10px #000000;
+}
+.container-caracteristicas {
+    width: 100%;
+    margin: 25px 0;
+}
+.container-caracteristicas h3 {
+    margin-bottom: 10px;
+    padding: 10px 0;
+    font-size: 1em;
+    text-align: center;
+    border-bottom: 1px solid #C3950F;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.separador {
+    width: 100%;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+}
+.separador .sector1 p {
+    color: #C3950F;
+}
+.separador .sector2 {
+    text-align: right;
 }
 
-.descripcion h4 {
-    font-size: 16px;
-    margin: 10px 0;
-    color: #434141;
-}
-
-div.especs p,
-div.especs p span {
-    font-size: 14px;
-}
-
-
+/* MEDIA QUERIES */
 @media (min-width: 769px) {
-    section {
-        margin: 30px 30px;
-    }
-    .responsive{
-        display: flex;
-        
-        align-items: center;
-    }
-    .carrousel{
-        width: 40%;
-    }
-    
-    .itemCarrouselTarjeta img {
-        border: none;
-    }
-
-    .itemCarrouselArrows{
-        padding: 0px;
-    }
-
-    .info-producto{
-        width: 40%;
-        margin: auto;
-        margin-top: 20px;
-        border-top: none;
-    }
-    .stock{
-        margin-bottom: 20px;
-    }
-    .nombre-porducto{
-        margin: 0;
-        margin-bottom: 20px;
-    }
-    .stock-producto{
-        border-bottom: none;
-    }
-    .cuotas,
-    .precio{
-        text-align: left;
-    }
-    .agregar button{
-        width: 100%;
-        height: 35%;
-        margin: auto;
-        margin-top: 20px;
-        font-size: 15px;
-        padding: 10px;
-        text-align:center;
-    }
-
-    div.descripcion{
-        margin-left: 40px;
-
-    }
-    
-    .descripcion h4 {
-        color: #434141;
-        font-size: 18px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    .especs div p {
-        color: #434141;
-        font-size: 14px;
-    }
-    .especs {
+    .contenido {
         display: flex;
     }
-    .especs-r{
-        margin-left: 15px;
+    .container-separador {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .separador {
+        width: 49%;
+    }
+}
+@media (min-width:1200px) {
+    .container-images .imagenes-principales {
+        height: 300px;
+    }
+    .container-info .stock {
+        width: 10%;
+        font-size: 0.5em;
     }
 }

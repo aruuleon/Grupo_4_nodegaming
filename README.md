@@ -18,15 +18,24 @@
 
 ------------
 
-> PÁGINAS REFERENTES
+> PAGINAS REFERENTES
 
 Los siguientes Sitios Web fueron elegidos por nuestro equipo, destacándose por presentar un diseño atractivo visualmente y su fácil accesibilidad e interacción para con el usuario.
 [MEXX](https://www.mexx.com.ar "MEXX") | [COMPRA GAMER](https://compragamer.com "COMPRA GAMER") | [ARMYTECH](https://www.armytech.com.ar "ARMYTECH") | [GAMING CITY](https://www.gamingcity.com.ar "GAMING CITY") | [FULLH4RD](https://www.fullh4rd.com.ar "FULLH4RD")
 
 ------------
 
-> PÁGINA DEL TABLERO
+> PAGINA TABLERO TRELLO
 
 [TRELLO NODEGAMING](https://trello.com/b/hix0Xz7h/node-gaming "TRELLO NODEGAMING")
+
+------------
+
+> RESPONSIVE
+
+Resoluciones con las que trabajamos en el proyecto:
+    360px
+    769px
+    1200px
 
 ------------
