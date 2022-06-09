@@ -52,7 +52,6 @@
 }
 .container-info .precio {
     text-align: center;
-    font-weight: lighter;
     font-size: 1.3em;
 }
 .container-info .agregar {
@@ -62,13 +61,13 @@
 .container-info .agregar button {
     text-transform: uppercase;
     background-color: #000000;
-    color: #C3950F;
+    color: rgb(195, 149, 15, 0.7);
     border: 1px solid #000000;
     border-radius: 10px;
 }
 .container-info .agregar button:hover {
     cursor: pointer;
-    background-color: #C3950F;
+    background-color: rgb(195, 149, 15, 0.7);
     color: #000000;
     font-weight: bold;
     box-shadow: 0px 0px 10px #000000;
@@ -82,9 +81,8 @@
     padding: 10px 0;
     font-size: 1em;
     text-align: center;
-    border-bottom: 1px solid #C3950F;
+    border-bottom: 1px solid rgb(195, 149, 15, 0.7);
     text-transform: uppercase;
-    font-weight: lighter;
 }
 .separador {
     width: 100%;
@@ -93,7 +91,7 @@
     justify-content: space-between;
 }
 .separador .sector1 p {
-    color: #C3950F;
+    color: rgb(195, 149, 15, 0.7);
 }
 .separador .sector2 {
     text-align: right;

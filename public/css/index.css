@@ -31,7 +31,7 @@
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 5px;
-    color: #C3950F;
+    color: rgb(195, 149, 15, 0.7);
 }
 .container-destacados {
     width: 100%;
@@ -103,11 +103,11 @@
         text-align: center;
     }
     .destacados div:hover {
-        box-shadow: 0px 0px 20px #C3950F;
+        box-shadow: 0px 0px 20px rgb(195, 149, 15, 0.7);
         transition-duration: 0.5s;
     }
     .destacados div:hover p {
-        color: #C3950F;
+        color: rgb(195, 149, 15, 0.7);
         transition-duration: 0.5s;
     }
 }
