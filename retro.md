@@ -4,10 +4,7 @@
 
 > COMENZAR A HACER
     Reuniones semanales fijas para codear.
-    Martes y jueves 18 a 20hs.
-    Viernes charla retrospectiva 18hs.
-    Adelantarse a la clase.
-    Debatir sobre el proyecto en grupo y no en privado.
+    Martes y jueves 16/17 a 18/19hs.
 
 ------------
 
@@ -16,6 +13,8 @@
     Comunicar más.
     Mantener el orden en el código.
     Usar el tablero.
+    Debatir sobre el proyecto en grupo y no en privado.
+    Adelantarse a la clase.
 
 ------------
 
