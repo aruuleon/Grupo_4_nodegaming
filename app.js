@@ -1,33 +1,13 @@
 const express = require('express');
 const path = require('path');
+const mainRouter = require('./src/routes/mainRouter');
 const app = express();
 
-app.use(express.static('public'))
+app.use(express.static('public'));
+app.use('/', mainRouter);
+
+app.set('view engine', 'ejs');
 
 app.listen(3000, () => {
     console.log('server on');
 });
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/index.html'))
-})
-
-app.get('/productCar', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/productCar.html'))
-})
-
-app.get('/productDetail', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/productDetail.html'))
-})
-
-app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/login.html'))
-})
-
-app.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/register.html'))
-})
-
-app.get('/productCreation', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/productCreation.html'))
-})
