@@ -4,7 +4,7 @@
 
 ------------
 
-> QUE HICIMOS AYER.
+> QUE HICIMOS AYER
     Junto con el grupo, coordinamos un encuentro como cada semana, en donde se terminó de hacer la lógica en algunos archivos que nos permitió modularizar un poco más nuestras líneas de código.
 
 ------------
@@ -14,7 +14,7 @@
 
 ------------
 
-> QUE VA A HACER HOY.
+> QUE VA A HACER HOY
     La idea es hacer un breve repaso por el documento del 'Sprint' para corroborar que esté todo y no se nos olvide nada. Además, alguna que otra corrección a nivel general en cosas que se pueden mejorar a nivel estética o semántica del código.
 
 ------------

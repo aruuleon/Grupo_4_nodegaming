@@ -6,7 +6,7 @@
 
 > COMENZAR A HACER
     Reuniones semanales fijas para codear.
-    Martes y jueves 16/17 a 18/19hs.
+    Martes y jueves 16hs a 18hs.
 
 ------------
 
