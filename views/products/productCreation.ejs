@@ -6,13 +6,13 @@
     <main class="main">
         <section class="form">
             <form action="">
-                <h3>Agregar producto</h3>
+                <h3>crear producto</h3>
                 <div>
-                    <label for="nombreProducto">Nombre Producto</label>
-                    <input type="text" name="nombreProducto" id="nombreProducto" required>
+                    <label for="nombreProducto">Nombre</label>
+                    <input class="input-edition" type="text" name="nombreProducto" id="nombreProducto" required>
                 </div>
                 <div>
-                    <label for="categoriaProducto">Categoria</label>
+                    <label for="categoriaProducto">Categoría</label>
                     <select name="" id="categoriaProducto">
                         <option value="procesador">Procesador</option>
                         <option value="motherboard">Motherboard</option>
@@ -23,31 +23,31 @@
                     </select>
                 </div>
                 <div>
-                    <label for="caracteristicasGeneral">Caracteristicas Generales</label>
-                    <input type="text" name="caracteristicasGeneral" id="caracteristicasGeneral" required>
+                    <label for="caracteristicasGeneral">Características Generales</label>
+                    <input class="input-edition" type="text" name="caracteristicasGeneral" id="caracteristicasGeneral" required>
                 </div>
                 <div>
-                    <label for="imagenProducto">Imagen Producto</label>
-                    <input type="file" name="imagenProducto" id="imagenProducto" accet=".jpg, .png" required>
-                </div>
-                <div>
-                    <label for="idProducto">ID Producto</label>
-                    <input type="number" name="idProducto" id="idProducto" required>
+                    <label for="idProducto">Identificador</label>
+                    <input class="input-edition" type="number" name="idProducto" id="idProducto" required>
                 </div>
                 <div>
                     <label for="precio">Precio</label>
-                    <input type="number" name="precio" id="precio" required>
+                    <input class="input-edition" type="number" name="precio" id="precio" required>
                 </div>
                 <div>
-                    <label for="cantidadStock">Cantidad de Stock</label>
-                    <input type="number" name="cantidadStock" id="cantidadStock" required>
+                    <label for="cantidadStock">Stock</label>
+                    <input class="input-edition" type="number" name="cantidadStock" id="cantidadStock" required>
                 </div>
-                <div class="login">
+                <div>
+                    <label for="imagenProducto">Imagen</label>
+                    <input type="file" name="imagenProducto" id="imagenProducto" accet=".jpg, .png" required>
+                </div>
+                <div class="login creation">
                     <div>
-                        <button type="button"><a href="/login">borrar datos</a></button>
+                        <button type="reset">borrar datos</button>
                     </div>
                     <div>
-                        <button type="button"><a href="/login">agregar</a></button>
+                        <button type="submit">agregar</a></button>
                     </div>
                 </div>
             </form>

@@ -112,7 +112,7 @@
     margin: 10px 0;
     width: 100%;
 }
-.form form div input {
+.form form div .input-edition {
     padding-left: 10px;
     border: 1px solid #000000;
     background-color: #ccc;
@@ -149,7 +149,7 @@
     display: inline-block;
     width: 100%;
 }
-.form form div input:focus {
+.form form div .input-edition:focus {
     background-color: rgb(195, 149, 15, 0.7);
 }
 .form form div button:hover {
