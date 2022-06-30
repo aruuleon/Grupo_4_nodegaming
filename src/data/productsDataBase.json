@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Placa de Video MSI GeForce RTX 2060 6GB GDDR6 VENTUS GP OC",
+        "brand": "Nvidia",
+        "category": "video",
+        "description": "",
+        "price": "99.000",
+        "discount": "0",
+        "stock": "100",
+        "id": "1",
+        "image": [
+            "placa1.jpg",
+            "placa2.jpg",
+            "placa3.jpg"
+        ]
+    },
+    {
+        "name": "Monitor",
+        "brand": "asda",
+        "category": "motherboard",
+        "description": "asdsadsadsadsadasd",
+        "price": "12",
+        "discount": "1",
+        "stock": "10",
+        "id": 2
+    }
+]

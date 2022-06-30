@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('../partials/head.ejs') %>
+<%- include('../partials/head.ejs', {name, title}) %>
 <body class="container-main">
     <%- include('../partials/headerMain.ejs') %>
     <main class="main">
@@ -9,29 +9,29 @@
                 <section class="container-images">
                     <div class="imagenes-principales">
                         <div id="imagen1">
-                            <img src="/img/productDetail/placa1.jpg" alt="">
+                            <img src="/img/products/<%= productoEncontrado.image.principal %>" alt="">
                         </div>
                         <div id="imagen2">
-                            <img src="/img/productDetail/placa2.jpg" alt="">
+                            <img src="/img/products/<%= productoEncontrado.image.secundaria %>" alt="">
                         </div>
                         <div id="imagen3">
-                            <img src="/img/productDetail/placa3.jpg" alt="">
+                            <img src="/img/products/<%= productoEncontrado.image.terciaria %>" alt="">
                         </div>
                     </div>
                     <div class="imagenes-secundarias">
                         <div>
                             <a href="#imagen1">
-                                <img src="/img/productDetail/placa1.jpg" alt="">
+                                <img src="/img/products/<%= productoEncontrado.image.principal %>" alt="">
                             </a>
                         </div>
                         <div>
                             <a href="#imagen2">
-                                <img src="/img/productDetail/placa2.jpg" alt="">
+                                <img src="/img/products/<%= productoEncontrado.image.secundaria %>" alt="">
                             </a>
                         </div>
                         <div>
                             <a href="#imagen3">
-                                <img src="/img/productDetail/placa3.jpg" alt="">
+                                <img src="/img/products/<%= productoEncontrado.image.terciaria %>" alt="">
                             </a>
                         </div>
                     </div>
@@ -40,8 +40,8 @@
                     <div class="stock">
                         <p>en stock</p>
                     </div>
-                    <p class="name">Placa de Video MSI GeForce RTX 2060 6GB GDDR6 VENTUS GP OC</p>
-                    <p class="precio">$ 99.000</p>
+                    <p class="name"><%= productoEncontrado.name %></p>
+                    <p class="precio">$ <%= productoEncontrado.price %></p>
                     <div class="agregar">
                         <button type="button">agregar</button>
                     </div>
@@ -49,7 +49,10 @@
             </div>
             <section class="container-caracteristicas">
                 <h3>caracteristicas generales</h3>
-                <div class="container-separador">
+                <div>
+                    <p><%= productoEncontrado.description %></p>
+                </div>
+                <!-- <div class="container-separador">
                     <div class="separador">
                         <div class="sector1">
                             <p>Tipo</p>
@@ -106,7 +109,7 @@
                             <p>1920</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
         </div>
     </main>

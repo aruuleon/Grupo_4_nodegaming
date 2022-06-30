@@ -1,0 +1,12 @@
+[
+    {
+        "firstname": "Homero",
+        "lastname": "Simpson",
+        "email": "homero.simpson@gmail.com",
+        "tel": "1234567890",
+        "password": "callefalsa123",
+        "category": "user",
+        "id": 1,
+        "avatar": "user_1.jpg"
+    }
+]

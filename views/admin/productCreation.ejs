@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs', {name, title}) %>
+<body class="container-main">
+    <%- include('../partials/headerMain.ejs') %>
+    <main class="main">
+        <section class="form">
+            <form action="/products/create" method="POST" enctype="multipart/form-data">
+                <h3>crear producto</h3>
+                <div>
+                    <label for="name">Nombre</label>
+                    <input class="input-edition" type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="brand">Marca</label>
+                    <input class="input-edition" type="text" name="brand" id="brand" required>
+                </div>
+                <div>
+                    <label for="category">Categoría</label>
+                    <select name="category" id="category">
+                        <option value="procesador">Procesador</option>
+                        <option value="motherboard">Motherboard</option>
+                        <option value="memoria">Memoria ram</option>
+                        <option value="periferico">Periferico</option>
+                        <option value="monitor">Monitor</option>
+                        <option value="gabinete">Gabinete</option>
+                        <option value="video">Placa de video</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="description">Características Generales</label>
+                    <input class="input-edition" type="text" name="description" id="description" required>
+                </div>
+                <div>
+                    <label for="price">Precio</label>
+                    <input class="input-edition" type="number" name="price" id="price" required>
+                </div>
+                <div>
+                    <label for="discount">Descuento</label>
+                    <input class="input-edition" type="number" name="discount" id="discount" required>
+                </div>
+                <div>
+                    <label for="stock">Stock</label>
+                    <input class="input-edition" type="number" name="stock" id="stock" required>
+                </div>
+                <div>
+                    <label for="image">Imagen</label>
+                    <input type="file" name="image" id="image" accet=".jpg, .png" required multiple>
+                </div>
+                <div class="login creation">
+                    <div>
+                        <button type="reset">borrar datos</button>
+                    </div>
+                    <div>
+                        <button type="submit">agregar</a></button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

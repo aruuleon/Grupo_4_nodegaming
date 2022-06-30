@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs', {name, title}) %>
+<body class="container-main">
+    <%- include('../partials/headerMain.ejs') %>
+    <main class="main">
+        <section class="form">
+            <form action="" method="" enctype="multipart/form-data">
+                <h3>Editar producto</h3>
+                <div>
+                    <label for="nombreProducto">Nombre</label>
+                    <input class="input-edition" type="text" name="nombreProducto" id="nombreProducto" required value= "<%= productos.nombre %>">
+                </div>
+                <div>
+                    <label for="categoriaProducto">Categoría</label>
+                    <input class="input-edition" type="text" name="nombreProducto" id="nombreProducto" required value= "<%= productos.categoria %>">
+                </div>
+                <div>
+                    <label for="caracteristicasGeneral">Características Generales</label>
+                    <input class="input-edition" type="text" name="caracteristicasGeneral" id="caracteristicasGeneral" required value= "<%= productos.caracteristicas %>">
+                </div>
+                <div>
+                    <label for="idProducto">Identificador</label>
+                    <input class="input-edition" type="number" name="idProducto" id="idProducto" required value= "<%= productos.id %>">
+                </div>
+                <div>
+                    <label for="precio">Precio</label>
+                    <input class="input-edition" type="number" name="precio" id="precio" required value= "<%= productos.precio %>">
+                </div>
+                <div>
+                    <label for="cantidadStock">Stock</label>
+                    <input class="input-edition" type="number" name="cantidadStock" id="cantidadStock" required value= "<%= productos.stock %>">
+                </div>
+                <div class="imagen-edition">
+                    <label for="imagenProducto">Imagen</label>
+                    <br>
+                    <img src="<%= productos.imagen %>" width="150">
+                </div>
+                <div class="login edition">
+                    <div>
+                        <button type="submit">subir cambios</a></button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>
