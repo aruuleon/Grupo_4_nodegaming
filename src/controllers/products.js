@@ -24,6 +24,9 @@ const controller = {
     products: function (req, res) {
         res.render('./users/products', { products, name: 'cart', title : 'Productos' });
     },
+	category: function (req, res) {
+        res.render('', {  });
+    },
     cart: function (req, res) {
         res.render('./users/productCar', { name: 'cart', title : 'Carrito' });
     },
@@ -67,10 +70,10 @@ const controller = {
 		productoEditado.price = req.body.price;
 		productoEditado.discount = req.body.discount;
 		productoEditado.stock = req.body.stock;
+		productoEditado.image = [];
 		if (unArchivo) {
 			productoEditado.image = [unArchivo.filename];
 		} else if (variosArchivos) {
-			productoEditado.image = [];
 			for (const archivo of variosArchivos) {
 				productoEditado.image.unshift(archivo.filename);
 			}
