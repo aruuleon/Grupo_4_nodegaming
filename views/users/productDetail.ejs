@@ -8,32 +8,20 @@
             <div class="contenido">
                 <section class="container-images">
                     <div class="imagenes-principales">
-                        <div id="imagen1">
-                            <img src="/img/products/<%= productoEncontrado.image.principal %>" alt="">
+                    <% for(let i = 0; i < productoEncontrado.image.length; i++) { %>
+                        <div id="imagen<%= i + 1%>">
+                            <img src="/img/products/<%= productoEncontrado.image[i] %>" alt="">
                         </div>
-                        <div id="imagen2">
-                            <img src="/img/products/<%= productoEncontrado.image.secundaria %>" alt="">
-                        </div>
-                        <div id="imagen3">
-                            <img src="/img/products/<%= productoEncontrado.image.terciaria %>" alt="">
-                        </div>
+                    <% } %>
                     </div>
                     <div class="imagenes-secundarias">
+                    <% for(let i = 0; i < productoEncontrado.image.length; i++) { %>
                         <div>
-                            <a href="#imagen1">
-                                <img src="/img/products/<%= productoEncontrado.image.principal %>" alt="">
+                            <a href="#imagen<%= i + 1%>">
+                                <img src="/img/products/<%= productoEncontrado.image[i] %>" alt="">
                             </a>
                         </div>
-                        <div>
-                            <a href="#imagen2">
-                                <img src="/img/products/<%= productoEncontrado.image.secundaria %>" alt="">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#imagen3">
-                                <img src="/img/products/<%= productoEncontrado.image.terciaria %>" alt="">
-                            </a>
-                        </div>
+                    <% } %>
                     </div>
                 </section>
                 <section class="container-info">

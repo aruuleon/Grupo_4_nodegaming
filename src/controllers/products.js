@@ -22,7 +22,7 @@ const controller = {
 		fs.writeFileSync(productsFilePath, productoJSON);
 	},
     products: function (req, res) {
-        res.render('./users/products', { name: 'products' });
+        res.render('./users/products', { products, name: 'cart', title : 'Productos' });
     },
     cart: function (req, res) {
         res.render('./users/productCar', { name: 'cart', title : 'Carrito' });
@@ -36,15 +36,21 @@ const controller = {
     },
     store: function (req, res) {
         let productoAgregado = req.body;
+		let unArchivo = req.file;
+		let variosArchivos = req.files;
 		productoAgregado.id = products.length + 1;
-		if (req.file) {
-			productoAgregado.image = req.file.filename;
-		} else {
-			productoAgregado.image = 'default-image.png';
+		if (unArchivo) {
+			productoAgregado.image = [unArchivo.filename];
+		} else if (variosArchivos) {
+			productoAgregado.image = [];
+			for (const archivo of variosArchivos) {
+				productoAgregado.image.unshift(archivo.filename);
+			}
 		}
 		products.push(productoAgregado);
 		controller.guardarEnArchivo();
 		res.redirect('/');
+		// res.status(404).send({error: variosArchivos});
     },
     edit: function (req, res) {
         productoEncontrado = controller.buscarProducto(req.params.id);
@@ -52,14 +58,25 @@ const controller = {
     },
     update: function (req, res) {
         let productoEditado = controller.buscarProducto(req.params.id);
+		let unArchivo = req.file;
+		let variosArchivos = req.files;
 		productoEditado.name = req.body.name;
-		productoEditado.price = req.body.price;
-		productoEditado.discount = req.body.discount;
+		productoEditado.brand = req.body.brand;
 		productoEditado.category = req.body.category;
 		productoEditado.description = req.body.description;
-		productoEditado.image = req.file.filename;
+		productoEditado.price = req.body.price;
+		productoEditado.discount = req.body.discount;
+		productoEditado.stock = req.body.stock;
+		if (unArchivo) {
+			productoEditado.image = [unArchivo.filename];
+		} else if (variosArchivos) {
+			productoEditado.image = [];
+			for (const archivo of variosArchivos) {
+				productoEditado.image.unshift(archivo.filename);
+			}
+		}
 		controller.guardarEnArchivo();
-		res.redirect('/products');
+		res.redirect('/');
     },
     delete: function (req, res) {
         let productoEncontrado = controller.buscarProducto(req.params.id);
@@ -67,7 +84,7 @@ const controller = {
 			return product.id != productoEncontrado.id;
 		})
 		controller.guardarEnArchivo();
-		res.redirect('/products');
+		res.redirect('/');
     },
 };
 

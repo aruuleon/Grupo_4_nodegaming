@@ -9,7 +9,10 @@ const storage = multer.diskStorage({
     },
 
     filename : (req, file, cb) => {
-        const newFileName = 'img-' + Date.now() + path.extname(file.originalname);
+        let date = Date.now();
+        let random = Math.round(Math.random() * 1E9);
+        let extname = path.extname(file.originalname);
+        const newFileName = `img-${date}${random}${extname}`;
         cb(null, newFileName);
     },
 });
@@ -32,10 +35,10 @@ router.get('/create', productsController.create);
 router.post('/create', upload.array('image'), productsController.store);
 
 /*** EDIT ONE PRODUCT ***/ 
-router.get('/edit', productsController.edit);
-router.put('/edit/:id', productsController.update);
+router.get('/edit/:id', productsController.edit);
+router.put('/edit/:id', upload.array('image'), productsController.update);
 
 /*** DELETE ONE PRODUCT ***/ 
-router.delete('/:id', productsController.delete); 
+router.delete('/delete/:id', productsController.delete);
 
 module.exports = router;

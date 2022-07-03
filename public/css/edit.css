@@ -1,5 +1,12 @@
 /* ESTILOS PRODUCT EDITION */
 
+.imagen-edition {
+    display: flex;
+    text-align: center;
+}
+.imagen-edition div img {
+    width: 40%;
+}
 .edition div button {
     width: 50%;
 }
