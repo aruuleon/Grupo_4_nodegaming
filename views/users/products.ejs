@@ -1,33 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('../partials/head.ejs', {name, title}) %>
-<body class="container-main">
-    <%- include('../partials/headerMain.ejs') %>
-    <main class="main">
-        <% for (product of products) { %>
-            <section class="container-products">
-                <article class="product">
-                    <div class="image">
-                        <img src="/img/products/<%= product.image[0] %>" alt="">
-                    </div>
-                    <div class="name">
-                        <p><%= product.name %></p>
-                    </div>
-                    <div class="subtotal">
-                        <br>
-                        <div class="precio">
-                            <p>$ <%= product.price %></p>
-                        </div>
-                        <section class="container-info">
-                            <div class="agregar">
-                                <button type="button">agregar</button>
-                            </div>
-                        </section>
-                    </div>
-                </article>
-            </section>
-        <% } %>
-    </main>
-    <%- include('../partials/footer.ejs') %>
-</body>
+
+    <body class="container-main">
+        <%- include('../partials/headerMain.ejs') %>
+        <%- include('../partials/productsMain.ejs') %>
+        <%- include('../partials/footer.ejs') %>
+    </body>
+
 </html>

@@ -1,0 +1,26 @@
+<main class="main">
+    <h3>productos</h3>
+    <section class="container-products">
+        <% for (product of products) { %>
+        <article class="articles">
+            <a href="/products/detail/<%= product.id %>">
+                <picture>
+                    <img src="/img/products/<%= product.image[0] %>" alt="">
+                </picture>
+                <div class="articles-general">
+                    <i class="fa-solid fa-truck-fast envio"></i>
+                    <p>$ <%= product.price %>
+                    </p>
+                    <% if(product.discount > 0) { %>
+                    <p class="descuento"> <%= product.discount %>% OFF
+                    </p>
+                    <% } %>
+                    <strong>
+                        <%= product.name %>
+                    </strong>
+                </div>
+            </a>
+        </article>
+        <% } %>
+    </section>
+</main>

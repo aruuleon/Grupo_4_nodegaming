@@ -49,6 +49,7 @@
 }
 .container-info p {
     margin: 10px 0;
+    text-transform: uppercase;
 }
 .container-info .precio {
     text-align: center;

@@ -24,6 +24,10 @@ const productsController = require('../controllers/products');
 /*** GET ALL PRODUCTS ***/ 
 router.get('/', productsController.products);
 
+router.get('/category', productsController.category);
+
+router.get('/category/:categoryName', productsController.productsXCategory);
+
 /*** PRODUCTS CART ***/ 
 router.get('/cart', productsController.cart);
 

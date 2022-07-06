@@ -8,9 +8,9 @@
         <i class="fa-solid fa-bars"></i>
     </div>
     <div class="search-bar">
-        <form action="">
+        <form action="/search" method="GET">
             <div>
-                <input type="search" placeholder="Buscar Productos..">
+                <input type="search" name="keyword" placeholder="Buscar Productos..">
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </form>
@@ -35,8 +35,8 @@
             <a href="/products">
                 <li>productos</li>
             </a>
-            <a href="#">
-                <li>pc armadas</li>
+            <a href="/products/category">
+                <li>categorias</li>
             </a>
             <a href="#">
                 <li>partners</li>

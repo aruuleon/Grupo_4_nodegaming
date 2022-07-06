@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs', {name, title}) %>
+
+    <body class="container-main">
+        <%- include('../partials/headerMain.ejs') %>
+            <main class="main">
+                <h3>categorias</h3>
+                <section class="container-products">
+                    <% for (category of categories) { %>
+                        <article class="articles">
+                            <a href="/products/category/<%= category.name %>">
+                                <picture>
+                                    <img src="/img/categories/<%= category.image %>" alt="">
+                                </picture>
+                                <div class="articles-general">
+                                    <strong>
+                                        <%= category.name %>
+                                    </strong>
+                                </div>
+                            </a>
+                        </article>
+                        <% } %>
+                </section>
+            </main>
+            <%- include('../partials/footer.ejs') %>
+    </body>
+
+</html>

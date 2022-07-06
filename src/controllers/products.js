@@ -4,8 +4,10 @@ const path = require('path');
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
+const categoriesFilePath = path.join(__dirname, '../data/categoriesDataBase.json');
+let categories = JSON.parse(fs.readFileSync(categoriesFilePath, 'utf-8'));
+
 const controller = {
-    // Buscador de productos
 	buscarProducto: (id) => {
 		let productoEncontrado;
 		for (const product of products) {
@@ -15,27 +17,34 @@ const controller = {
 		}
 		return productoEncontrado;
 	},
-
-	// Encargado de guardar archivos
 	guardarEnArchivo: () => {
 		let productoJSON = JSON.stringify(products);
 		fs.writeFileSync(productsFilePath, productoJSON);
 	},
     products: function (req, res) {
-        res.render('./users/products', { products, name: 'cart', title : 'Productos' });
+		products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        res.render('./users/products', { products, name: 'products', title: 'PRODUCTOS' });
     },
 	category: function (req, res) {
-        res.render('', {  });
+		products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        res.render('./users/categories', { categories, name: 'categories', title: 'CATEGORIAS' });
+    },
+	productsXCategory: function (req, res) {
+		let category = (req.params.categoryName).toUpperCase();
+		products = products.filter(function (product) {
+			return (product.category).toUpperCase() == category;
+		})
+        res.render('./users/products', { products, name: 'products', title: category });
     },
     cart: function (req, res) {
-        res.render('./users/productCar', { name: 'cart', title : 'Carrito' });
+        res.render('./users/productCar', { name: 'cart', title: 'CARRITO' });
     },
     detail: function (req, res) {
 		let productoEncontrado = controller.buscarProducto(req.params.id);
-        res.render('./users/productDetail', { productoEncontrado, name: 'detail', title : 'Detalle producto' });
+        res.render('./users/productDetail', { productoEncontrado, name: 'detail', title: 'DETALLE' });
     },
     create: function (req, res) {
-        res.render('./admin/productCreation', { name: 'create', title : 'Agregar producto' });
+        res.render('./admin/productCreation', { name: 'create', title: 'AGREGAR' });
     },
     store: function (req, res) {
         let productoAgregado = req.body;
@@ -53,11 +62,10 @@ const controller = {
 		products.push(productoAgregado);
 		controller.guardarEnArchivo();
 		res.redirect('/');
-		// res.status(404).send({error: variosArchivos});
     },
     edit: function (req, res) {
-        productoEncontrado = controller.buscarProducto(req.params.id);
-        res.render('./admin/productEdition', { productoEncontrado, name: 'edit', title : 'Editar producto' });
+        let productoEncontrado = controller.buscarProducto(req.params.id);
+        res.render('./admin/productEdition', { productoEncontrado, name: 'edit', title: 'EDITAR' });
     },
     update: function (req, res) {
         let productoEditado = controller.buscarProducto(req.params.id);
@@ -87,7 +95,7 @@ const controller = {
 			return product.id != productoEncontrado.id;
 		})
 		controller.guardarEnArchivo();
-		res.redirect('/');
+		res.redirect('/products');
     },
 };
 

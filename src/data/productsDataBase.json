@@ -1,1 +1,482 @@
-[]
+[
+    {
+        "name": "Motherboard AM4 - Gigabyte GA-X570S AORUS ELITE",
+        "brand": "Gigabyte",
+        "category": "motherboards",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "85.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 1,
+        "image": [
+            "img-1657045799180133103491.jpeg",
+            "img-1657045799182250593498.jpeg",
+            "img-1657045799187128405721.jpeg"
+        ]
+    },
+    {
+        "name": "Motherboard AM4 - Msi MAG X570S TOMAHAWK MAX WIFI",
+        "brand": "MSI",
+        "category": "motherboards",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "65.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 2,
+        "image": [
+            "img-1657046052494804574542.jpeg",
+            "img-1657046052498153167568.jpeg",
+            "img-1657046052502253652890.jpeg"
+        ]
+    },
+    {
+        "name": "Motherboard 1700 12°Gen - Asus Tuf GAMING Z690-PLUS WIFI DDR4",
+        "brand": "ASUS",
+        "category": "motherboards",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "80.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 3,
+        "image": [
+            "img-1657046189794968388391.jpeg",
+            "img-1657046189795297052146.jpeg",
+            "img-1657046189798964931047.jpeg"
+        ]
+    },
+    {
+        "name": "Motherboard 1700 12°Gen - Gigabyte GA-Z690 AORUS ELITE AX DDR4",
+        "brand": "Gigabyte",
+        "category": "motherboards",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "70.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 4,
+        "image": [
+            "img-1657046295457520391244.jpeg",
+            "img-1657046295459819415042.jpeg",
+            "img-1657046295462442336696.jpeg"
+        ]
+    },
+    {
+        "name": "Procesador Amd Ryzen 9 5900X 4.8 Ghz - AM4 Sin Cooler Sin Gpu",
+        "brand": "AMD",
+        "category": "procesadores",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "98.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 5,
+        "image": [
+            "img-165704641042281594863.jpeg",
+            "img-1657046410422293063109.jpeg",
+            "img-1657046410423613454790.jpeg"
+        ]
+    },
+    {
+        "name": "Procesador Amd Ryzen 7 5700X 4.6 Ghz - AM4 Sin Cooler",
+        "brand": "AMD",
+        "category": "procesadores",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "65.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 6,
+        "image": [
+            "img-1657046527280291631878.jpeg",
+            "img-1657046527281211004537.jpeg",
+            "img-1657046527284877705766.jpeg"
+        ]
+    },
+    {
+        "name": "Procesador Intel Core i9 12900K 5.2 Ghz Alder Lake 1700 Sin Cooler",
+        "brand": "Intel",
+        "category": "procesadores",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "142.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 7,
+        "image": [
+            "img-1657046644551628304250.jpeg",
+            "img-1657046644553549505239.jpeg",
+            "img-1657046644555613015972.jpeg"
+        ]
+    },
+    {
+        "name": " Procesador Intel Core i7 12700K 5.0 Ghz Alder Lake 1700 Sin Cooler",
+        "brand": "Intel",
+        "category": "procesadores",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "97.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 8,
+        "image": [
+            "img-165704670805452144533.jpeg",
+            "img-1657046708055215421908.jpeg",
+            "img-1657046708056969871969.jpeg"
+        ]
+    },
+    {
+        "name": "Memoria Patriot Viper DDR4 32GB (2x16GB) 3200Mhz Steel",
+        "brand": "Viper",
+        "category": "memorias",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "25.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 9,
+        "image": [
+            "img-1657046917022954248324.jpg",
+            "img-1657046917023274327138.jpg",
+            "img-1657046917023363886706.jpg"
+        ]
+    },
+    {
+        "name": "Memoria Adata DDR4 16GB (2x8GB) 3600Mhz XPG Spectrix D50 ROG",
+        "brand": "XPG",
+        "category": "memorias",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "15.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 10,
+        "image": [
+            "img-1657047124986488496380.jpg",
+            "img-1657047124986460095204.jpg",
+            "img-1657047124987921300040.jpg"
+        ]
+    },
+    {
+        "name": "Memoria Adata DDR5 16GB 5200Mhz XPG Lancer RGB",
+        "brand": "XPG",
+        "category": "memorias",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "21.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 11,
+        "image": [
+            "img-1657047014495512901115.jpeg",
+            "img-1657047014496650577341.jpeg",
+            "img-1657047014497292739324.jpeg"
+        ]
+    },
+    {
+        "name": "Memoria Kingston DDR5 16GB 4800Mhz Fury Beast Black",
+        "brand": "Kingston",
+        "category": "memorias",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "19.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 12,
+        "image": [
+            "img-1657047263864406602010.jpeg",
+            "img-1657047263866555745733.jpeg",
+            "img-1657047263866525101826.jpeg"
+        ]
+    },
+    {
+        "name": "Placa de Video Zotac GeForce RTX 3090 24GB GDDR6X Trinity OC",
+        "brand": "Zotac",
+        "category": "placas",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "525.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 13,
+        "image": [
+            "img-1657047423863988983586.jpg",
+            "img-1657047423863523458076.jpg",
+            "img-1657047423863398163452.jpg"
+        ]
+    },
+    {
+        "name": "Placa de Video ASUS GeForce RTX 3090 24GB GDDR6X ROG STRIX GAMING White",
+        "brand": "ASUS",
+        "category": "placas",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "375.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 14,
+        "image": [
+            "img-1657047485573718833053.jpg",
+            "img-1657047485574137289248.jpg",
+            "img-1657047485575800119322.jpg"
+        ]
+    },
+    {
+        "name": "Placa de Video Sapphire Radeon RX 6800 XT 16GB GDDR6 PULSE",
+        "brand": "Sapphire ",
+        "category": "placas",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "205.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 15,
+        "image": [
+            "img-1657047556937748293223.jpg",
+            "img-1657047556938920745124.jpg",
+            "img-1657047556939836639346.jpg"
+        ]
+    },
+    {
+        "name": "Placa de Video Asrock Radeon RX 6800 XT 16GB GDDR6 Phantom Gaming D OC",
+        "brand": "Asrock",
+        "category": "placas",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "162.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 16,
+        "image": [
+            "img-1657047617884639341024.jpg",
+            "img-1657047617885502738755.jpg",
+            "img-1657047617885765665281.jpg"
+        ]
+    },
+    {
+        "name": "Mouse ASUS ROG Strix Gladius III RGB Bluetooth Wireless 26.000DPI",
+        "brand": "ASUS",
+        "category": "perifericos",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "21.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 17,
+        "image": [
+            "img-165704773023868517549.jpg",
+            "img-1657047730239339391083.jpg",
+            "img-1657047730239413905165.jpg"
+        ]
+    },
+    {
+        "name": "Teclado Mecanico HP HyperX Alloy Origins 65 Switch Red",
+        "brand": "HyperX",
+        "category": "perifericos",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "13.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 18,
+        "image": [
+            "img-1657047871526937058179.jpg",
+            "img-165704787152856565920.jpg",
+            "img-1657047871528352579324.jpg"
+        ]
+    },
+    {
+        "name": "Bundle HP HyperX Streamer",
+        "brand": "HyperX",
+        "category": "perifericos",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "22.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 19,
+        "image": [
+            "img-1657047927220231254617.jpg",
+            "img-1657047927220766007630.jpg",
+            "img-1657047927221881082549.jpg"
+        ]
+    },
+    {
+        "name": "Combo Teclado y Mouse ASUS TUF Gaming Battle Box Aura Sync RGB",
+        "brand": "ASUS",
+        "category": "perifericos",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "9.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 20,
+        "image": [
+            "img-1657047979490121632106.jpg",
+            "img-1657047979491903475289.jpg",
+            "img-1657047979491320452889.jpg"
+        ]
+    },
+    {
+        "name": "Fuente ASUS ROG THOR 1200P 80 Plus Platinum 1200W Full modular",
+        "brand": "ASUS",
+        "category": "fuentes",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "70.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 21,
+        "image": [
+            "img-16570480918858106552.jpg",
+            "img-1657048091885672738942.jpg",
+            "img-1657048091885846204455.jpg"
+        ]
+    },
+    {
+        "name": "Fuente Gigabyte 850W 80 Plus Gold Full Modular P850GM",
+        "brand": "Gigabyte",
+        "category": "fuentes",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "23.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 22,
+        "image": [
+            "img-165704823499944541238.jpg",
+            "img-1657048235000887438341.jpg",
+            "img-1657048235000375792090.jpg"
+        ]
+    },
+    {
+        "name": "Fuente Aerocool Dorado 850W 80+ Gold ARGB",
+        "brand": "Aerocool",
+        "category": "fuentes",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "18.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 23,
+        "image": [
+            "img-1657048356892866128769.jpg",
+            "img-1657048356893367788701.jpg",
+            "img-1657048356894720470576.jpg"
+        ]
+    },
+    {
+        "name": "Fuente Gamemax 800w 80+ Bronze GM-800 Semi Modular",
+        "brand": "Gamemax",
+        "category": "fuentes",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "12.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 24,
+        "image": [
+            "img-1657048407141781406690.jpg",
+            "img-165704840714193511837.jpg",
+            "img-1657048407142688628606.jpg"
+        ]
+    },
+    {
+        "name": "5 fotos Gabinete Lian Li Odyssey X Black",
+        "brand": "Lian Li",
+        "category": "gabinetes",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "75.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 25,
+        "image": [
+            "img-1657048501263918150779.jpg",
+            "img-1657048501263518120212.jpg",
+            "img-1657048501264833607761.jpg"
+        ]
+    },
+    {
+        "name": "Gabinete ASUS TUF GT501 Vidrio Templado White 3x120mm ARGB",
+        "brand": "ASUS",
+        "category": "gabinetes",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "32.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 26,
+        "image": [
+            "img-1657048554035883410088.jpg",
+            "img-1657048554036754304744.jpg",
+            "img-1657048554036734888270.jpg"
+        ]
+    },
+    {
+        "name": "Gabinete Lian Li O11 Dynamic Razer Edition",
+        "brand": "Lian Li",
+        "category": "gabinetes",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "30.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 27,
+        "image": [
+            "img-1657048611293523810579.jpg",
+            "img-1657048611294370014981.jpg",
+            "img-1657048611294400008767.jpg"
+        ]
+    },
+    {
+        "name": "Gabinete Kolink Levante Black 4x120mm RGB Mesh Frontal Doble Vidrio Templado",
+        "brand": "Kolink",
+        "category": "gabinetes",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "13.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 28,
+        "image": [
+            "img-1657048685392462499521.jpg",
+            "img-1657048685392561746393.jpg",
+            "img-1657048685393761460809.jpg"
+        ]
+    },
+    {
+        "name": "Monitor Gamer Viewsonic 32\" XG320U 150Hz 1ms 4K IPS",
+        "brand": "Viewsonic",
+        "category": "monitores",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "320.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 29,
+        "image": [
+            "img-1657048771303373837714.jpg",
+            "img-1657048771304572961804.jpg",
+            "img-1657048771304272293274.jpg"
+        ]
+    },
+    {
+        "name": "Monitor Gamer Asus 34\" QHD VP349CGL Ultrawide IPS 1Ms 100Hz",
+        "brand": "ASUS",
+        "category": "monitores",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "175.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 30,
+        "image": [
+            "img-1657048821314157364760.jpg",
+            "img-16570488213157256048.jpg",
+            "img-1657048821315203902139.jpg"
+        ]
+    },
+    {
+        "name": "Monitor Gamer AORUS FI25F 24.5\" 240Hz 0.4ms RGB IPS",
+        "brand": "AORUS",
+        "category": "monitores",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "155.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 31,
+        "image": [
+            "img-1657048880717542807438.jpg",
+            "img-1657048880718592618469.jpg",
+            "img-1657048880718871584864.jpg"
+        ]
+    },
+    {
+        "name": "Monitor Gamer Samsung QHD 27\" G5 Odyssey Curvo 165Hz",
+        "brand": "Samsung",
+        "category": "monitores",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe minima debitis nulla, harum natus hic eius iste, temporibus quibusdam doloribus obcaecati enim explicabo vel omnis expedita placeat aspernatur ipsam!explicabo vel omnis placeat aspernatur ipsam!",
+        "price": "88.000",
+        "discount": "0",
+        "stock": "100",
+        "id": 32,
+        "image": [
+            "img-1657048941812445411302.jpg",
+            "img-1657048941813208067106.jpg",
+            "img-1657048941813968469940.jpg"
+        ]
+    }
+]

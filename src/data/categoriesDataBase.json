@@ -1,0 +1,34 @@
+[
+    {
+        "name": "motherboards",
+        "image": "motherboards.jpg"
+    },
+    {
+        "name": "procesadores",
+        "image": "procesadores.jpg"
+    },
+    {
+        "name": "memorias",
+        "image": "rams.jpg"
+    },
+    {
+        "name": "placas",
+        "image": "placas.jpeg"
+    },
+    {
+        "name": "perifericos",
+        "image": "perifericos.jpg"
+    },
+    {
+        "name": "fuentes",
+        "image": "fuentes.jpg"
+    },
+    {
+        "name": "gabinetes",
+        "image": "gabinetes.jpg"
+    },
+    {
+        "name": "monitores",
+        "image": "monitores.jpg"
+    }
+]

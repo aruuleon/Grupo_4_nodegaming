@@ -1,0 +1,67 @@
+/* ESTILOS CATEGORIES */
+
+.main {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+h3 {
+    font-weight: lighter;
+}
+.main .container-products {
+    margin-bottom: 20px;
+}
+.main section .articles a {
+    text-decoration: none;
+    color: #666;
+}
+.articles {
+    margin: 10px;
+    border: 1px solid #ebebeb;
+    color: #666;
+}
+.articles a .articles-general {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+.articles a picture {
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+}
+.articles a picture img {
+    width: 100%;
+}
+.articles a strong {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 769px) {
+    .main section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .articles {
+        width: 47%;
+    }
+}
+@media (min-width: 1200px) {
+    .main section {
+        justify-content: space-between;
+    }
+    .articles {
+        width: 23%;
+    }
+    .articles:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 20px rgb(195, 149, 15, 0.9);
+        transition-duration: 1s;
+    }
+}

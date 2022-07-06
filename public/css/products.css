@@ -1,0 +1,106 @@
+/* ESTILOS PRODUCTS */
+
+.main {
+    width: 90%;
+    margin: auto;
+}
+.container-search-true, .container-search-false {
+    margin: 10px;
+}
+.container-search-false {
+    min-height: 700px;
+}
+h3 {
+    font-weight: lighter;
+    font-size: 14px;
+}
+.container-search-true h3 span, .container-search-false h3 span {
+    color: rgb(195, 149, 15, 0.9);
+}
+.main section {
+    margin-bottom: 40px;
+    min-height: 700px;
+}
+.main section .articles a {
+    text-decoration: none;
+    color: #666;
+}
+.articles {
+    height: 250px;
+    margin: 10px;
+    border: 1px solid #ebebeb;
+    color: #666;
+}
+.articles a .articles-general {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+.articles a picture {
+    display: inline-block;
+    text-align: center;
+    min-height: 150px;
+    padding-top: 10px;
+}
+.articles a picture img {
+    width: 50%;
+}
+.articles a .articles-general p {
+    font-size: 16px;
+    width: 40%;
+}
+.articles a .articles-general .descuento {
+    font-size: 16px;
+    width: 50%;
+    color: #39b54a;
+}
+.articles a div strong {
+    width: 100%;
+    margin-top: 14px;
+    font-size: 10px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.envio {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 769px) {
+    .main section {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .articles {
+        width: 47%;
+    }
+    .articles a strong {
+        font-size: 14px;
+    }
+}
+@media (min-width: 1200px) {
+    .articles {
+        width: 23%;
+    }
+    .articles:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 20px rgb(100, 100, 100);
+        transition-duration: 1s;
+    }
+}

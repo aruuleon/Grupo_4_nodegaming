@@ -5,12 +5,12 @@
 ------------
 
 > QUE HICIMOS AYER
-    Junto con el grupo, coordinamos un encuentro como cada semana, en donde se terminó de hacer la lógica en algunos archivos que nos permitió modularizar un poco más nuestras líneas de código.
+    Junto con el grupo, coordinamos un encuentro como cada semana, en donde además de verificar la funcionalidad de cada método aplicado en el proyecto, sumamos un algunas funcionalidades extra que creemos que pueden sumar al proyecto y explotarlo al 100%.
 
 ------------
 
 > SE ENCONTRO ALGUN IMPEDIMIENTO
-    En un principio nos costó llegar a la solución con el caso del archivo 'head.ejs', donde si bien el head lo comparten todos los archivos, no encontrabamos la forma de hacer que dependiendo la vista que uno elija ingresar, la hoja de estilos como el título de la página varie dependiendo de esto. Pudimos encontrar dicha solución, aunque creemos que podemos mejorarla con el paso de los días, donde vamos a ir aprendiendo nuevas formas de implementación cuando se trata de modularizar código.
+    En este Sprint, nos encontramos con más de un impedimento. Hasta el momento fue de lo que más tiempo y trabajo nos tomó en lo que va de la cursada. El método que más errores presentó fue el de 'create' ya que en nuestra web incorporamos que cada producto pueda tener 3 imágenes y en un principio no podíamos acceder a completar con la solicitud debido a que de las 3 imágenes, siempre se repetía alguna. Despúes de pensar en más de una solución pudimos encontrar la indicada que llevaría a terminar el método correctamente.
 
 ------------
 
