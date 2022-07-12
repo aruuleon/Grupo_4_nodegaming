@@ -5,31 +5,31 @@
     <%- include('../partials/headerUser.ejs') %>
     <main class="main">
         <section class="form">
-            <form action="">
+            <form action="/users/register" method="POST" enctype="multipart/form-data">
                 <h3>crear cuenta</h3>
                 <div>
-                    <label for="nombre">Nombre</label>
-                    <input class="input-edition" type="text" name="nombre" id="nombre" required>
+                    <label for="firstname">Nombre</label>
+                    <input class="input-edition" type="text" name="firstname" id="firstname">
                 </div>
                 <div>
-                    <label for="apellido">Apellido</label>
-                    <input class="input-edition" type="text" name="apellido" id="apellido" required>
+                    <label for="lastname">Apellido</label>
+                    <input class="input-edition" type="text" name="lastname" id="lastname">
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input class="input-edition" type="email" name="email" id="email" required>
+                    <input class="input-edition" type="email" name="email" id="email">
                 </div>
                 <div>
-                    <label for="telefono">Telefono</label>
-                    <input class="input-edition" type="tel" name="telefono" id="telefono" required>
+                    <label for="phone">Telefono</label>
+                    <input class="input-edition" type="tel" name="phone" id="phone">
                 </div>
                 <div>
                     <label for="password">Contraseña</label>
-                    <input class="input-edition" type="password" name="password" id="password" required>
+                    <input class="input-edition" type="password" name="password" id="password">
                 </div>
                 <div>
-                    <label for="confirmacion">Confirmar Contraseña</label>
-                    <input class="input-edition" type="password" name="confirmacion" id="confirmacion" required>
+                    <label for="avatar">Imagen</label>
+                    <input type="file" name="avatar" id="avatar">
                 </div>
                 <div class="registrarte">
                     <button type="submit">registrarte</button>

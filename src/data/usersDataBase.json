@@ -3,10 +3,18 @@
         "firstname": "Homero",
         "lastname": "Simpson",
         "email": "homero.simpson@gmail.com",
-        "tel": "1234567890",
+        "phone": "1234567890",
         "password": "callefalsa123",
-        "category": "user",
         "id": 1,
         "avatar": "user_1.jpg"
+    },
+    {
+        "firstname": "carlosss",
+        "lastname": "amayasss",
+        "email": "tuviejas@gmail.com",
+        "phone": "11111",
+        "password": "$2a$10$yzwCGxBrxPgOneNrfsuRjeiADsN55CuLAdNOArckSuZlLgkJRXXvi",
+        "id": 2,
+        "image": "img-1657659276415580545882.png"
     }
 ]
