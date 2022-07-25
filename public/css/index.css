@@ -7,6 +7,7 @@
 }
 .container-carrusel .container-list-carrusel {
     width: 400%;
+    padding: 0;
     list-style: none;
     display: flex;
 }

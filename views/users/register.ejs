@@ -5,31 +5,79 @@
     <%- include('../partials/headerUser.ejs') %>
     <main class="main">
         <section class="form">
-            <form action="/users/register" method="POST" enctype="multipart/form-data">
+            <form action="/users/register" method="POST" enctype="multipart/form-data"> 
                 <h3>crear cuenta</h3>
                 <div>
                     <label for="firstname">Nombre</label>
-                    <input class="input-edition" type="text" name="firstname" id="firstname">
+                    <input
+                        type="text"
+                        name="firstname"
+                        id="firstname"
+                        value="<%= locals.old ? old.firstname : null %>"
+                        class="input-padding form-control <%= (locals.errors && errors.firstname) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                    >
+                    <% if (locals.errors && errors.firstname) { %>
+                        <p class="feedback" style="color: red;"><%= errors.firstname.msg %></p>
+                    <% } %>
                 </div>
                 <div>
                     <label for="lastname">Apellido</label>
-                    <input class="input-edition" type="text" name="lastname" id="lastname">
+                    <input 
+                        type="text" 
+                        name="lastname" 
+                        id="lastname" 
+                        value="<%= locals.old ? old.lastname : null %>"
+                        class="input-padding form-control <%= (locals.errors && errors.lastname) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                    >
+                    <% if (locals.errors && errors.lastname) { %>
+                        <p class="feedback" style="color: red;"><%= errors.lastname.msg %></p>
+                    <% } %>
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input class="input-edition" type="email" name="email" id="email">
+                    <input 
+                        type="text" 
+                        name="email" 
+                        id="email" 
+                        value="<%= locals.old ? old.email : null %>"
+                        class="input-padding form-control <%= (locals.errors && errors.email) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                    >
+                    <% if (locals.errors && errors.email) { %>
+                        <p class="feedback" style="color: red;"><%= errors.email.msg %></p>
+                    <% } %>
                 </div>
                 <div>
                     <label for="phone">Telefono</label>
-                    <input class="input-edition" type="tel" name="phone" id="phone">
+                    <input 
+                        type="tel" 
+                        name="phone" 
+                        id="phone" 
+                        value="<%= locals.old ? old.phone : null %>"
+                        class="input-padding form-control <%= (locals.errors && errors.phone) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                    >
+                    <% if (locals.errors && errors.phone) { %>
+                        <p class="feedback" style="color: red;"><%= errors.phone.msg %></p>
+                    <% } %>
                 </div>
                 <div>
                     <label for="password">Contraseña</label>
-                    <input class="input-edition" type="password" name="password" id="password">
+                    <input 
+                        type="password" 
+                        name="password" 
+                        id="password"
+                        value="<%= locals.old ? old.password: null %>"
+                        class="input-padding form-control <%= (locals.errors && errors.password) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                    >
+                    <% if (locals.errors && errors.password) { %>
+                        <p class="feedback" style="color: red;"><%= errors.password.msg %></p>
+                    <% } %>
                 </div>
                 <div>
                     <label for="avatar">Imagen</label>
                     <input type="file" name="avatar" id="avatar">
+                    <% if (locals.errors && errors.avatar) { %>
+                        <p class="feedback" style="color: red;"><%= errors.avatar.msg %></p>
+                    <% } %>
                 </div>
                 <div class="registrarte">
                     <button type="submit">registrarte</button>
@@ -46,5 +94,6 @@
         </section>
     </main>
     <%- include('../partials/footer.ejs') %>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

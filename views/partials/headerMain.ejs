@@ -16,11 +16,23 @@
         </form>
     </div>
     <section class="container-access">
+        <% if (locals.isLogged) { %>
         <div class="user">
-            <a href="/users/login">
-                <i class="fa-solid fa-user"></i>
-            </a>
+                <img src="/img/users/<%= locals.userLogged.avatar %>" width="20" height="20" style="border-radius: 100%;">
+                <ul>
+                    <li><a href="/users/profile">mi perfil</a></li>
+                    <li><a href="/users/logout">cerrar sesion</a></li>
+                </ul>
         </div>
+        <% } else { %>
+        <div class="user">
+                <i class="fa-solid fa-user"></i>
+            <ul>
+                <li><a href="/users/login">iniciar sesion</a></li>
+                <li><a href="/users/register">registrarse</a></li>
+            </ul>
+        </div>
+        <% } %>
         <div class="search">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>

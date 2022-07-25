@@ -3,6 +3,17 @@
 .form form {
     margin-bottom: 124px;
 }
+.remember {
+    display: flex;
+}
+.remember .remember-user {
+    width: 5%;
+    height: 0;
+    margin-right: 10px;
+}
+.remember .remember-user input {
+    height: 20px;
+}
 .recuperar {
     text-align: center;
 }

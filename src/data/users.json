@@ -1,0 +1,74 @@
+[
+ {
+  "id": 1,
+  "firstname": "Homero",
+  "lastname": "Simpson",
+  "email": "homerosimpson@gmail.com",
+  "phone": "1234567890",
+  "password": "$2a$10$HD0fkc21oXGBnxwgKyqdFuQKt5FmVWUZPPeNCAka.ViYLkfxtpEvO",
+  "avatar": "img-1658753881761901113696.jpg"
+ },
+ {
+  "id": 2,
+  "firstname": "Peter",
+  "lastname": "Parker",
+  "email": "spiderman@gmail.com",
+  "phone": "1234567890",
+  "password": "$2a$10$eAVH0RUxRImYzZPQwWyEhevDe0U6DDsljys02b2/zShQRgV9L6.Ja",
+  "avatar": "img-1658754419171153387696.jpg"
+ },
+ {
+  "id": 3,
+  "firstname": "Tony",
+  "lastname": "Stark",
+  "email": "ironman@gmail.com",
+  "phone": "1234567890",
+  "password": "$2a$10$Cwx27MQLT0Qzgoo847F24u.X/jynTDTz2QLBDESioV/rn/1P0.Vjm",
+  "avatar": "img-1658754523262267921133.jpg"
+ },
+ {
+  "id": 4,
+  "firstname": "Steven",
+  "lastname": "Rogers",
+  "email": "capitanamerica@gmail.com",
+  "phone": "1234567890",
+  "password": "$2a$10$NUVs82SxvJXYhAONDVCZcewcwGkMGAxHCiBiibyRTYw98vxAj5R/O",
+  "avatar": "img-1658754651349596747400.jpg"
+ },
+ {
+  "id": 5,
+  "firstname": "Natasha",
+  "lastname": "Romanoff",
+  "email": "blackwidow@gmail.com",
+  "phone": "1234567890",
+  "password": "$2a$10$M9t6dS03kAZkz5CH8vg84.FdWA/c34aUtu6tAlFf1F.jCNJ0qNRr.",
+  "avatar": "img-1658754873360755208605.jpg"
+ },
+ {
+  "id": 6,
+  "firstname": "Sam",
+  "lastname": "Wilson",
+  "email": "falcon@gmail.com",
+  "phone": "1234567890",
+  "password": "$2a$10$R1TnSw7DhthfTOg3e4ztKeD9FnysYrqyVpNy9j4P62hYgUZGcz5Ki",
+  "avatar": "img-1658755060920388212491.jpg"
+ },
+ {
+  "id": 7,
+  "firstname": "Carol",
+  "lastname": "Danvers",
+  "email": "capitanamarvel@gmail.com",
+  "phone": "1234567890",
+  "password": "$2a$10$QdhLxr518aYWWDWpOmf6/.U7ubdEgRaWkIRaGC6X1niMRai3jxKeu",
+  "avatar": "img-1658755207133502158213.jpg"
+ },
+ {
+  "id": 8,
+  "firstname": "Stephen",
+  "lastname": "Strange",
+  "email": "doctorstrange@gmail.com",
+  "phone": "1234567890",
+  "password": "$2a$10$2qQG2/x0TqMzZHgpA4J3N.2V1ySHs2c9zn2addQT3U/02Lx7bfljS",
+  "avatar": "img-1658755392482434154374.jpg"
+ }
+]

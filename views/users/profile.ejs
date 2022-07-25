@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs', {name, title}) %>
+<body class="container-main">
+    <%- include('../partials/headerMain.ejs') %>
+    <main class="main">
+        <div class="container-profile">
+            <picture>
+                <img src="/img/users/<%= user.avatar %> ">
+            </picture>
+            <div class="container-info-user">
+                <h2>informacion personal</h2>
+                <div class="user-info">
+                    <div class="container-line1">
+                        <p>Nombre</p>
+                    </div>
+                    <div class="container-line2">
+                        <p><%= user.firstname %></p>
+                    </div>
+                </div>
+                <div class="user-info">
+                    <div class="container-line1">
+                        <p>Apellido</p>
+                    </div>
+                    <div class="container-line2">
+                        <p><%= user.lastname %></p>
+                    </div>
+                </div>
+                <div class="user-info">
+                    <div class="container-line1">
+                        <p>Email</p>
+                    </div>
+                    <div class="container-line2">
+                        <p><%= user.email %></p>
+                    </div>
+                </div>
+                <div class="user-info">
+                    <div class="container-line1">
+                        <p>Teléfono</p>
+                    </div>
+                    <div class="container-line2">
+                        <p><%= user.phone %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

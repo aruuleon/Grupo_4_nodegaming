@@ -5,12 +5,12 @@
 ------------
 
 > QUE HICIMOS AYER
-    Junto con el grupo, coordinamos un encuentro como cada semana, en donde además de verificar la funcionalidad de cada método aplicado en el proyecto, sumamos un algunas funcionalidades extra que creemos que pueden sumar al proyecto y explotarlo al 100%.
+    Junto con el grupo, coordinamos un encuentro como cada semana, en donde además de verificar la funcionalidad de cada método aplicado en el proyecto.
 
 ------------
 
 > SE ENCONTRO ALGUN IMPEDIMIENTO
-    En este Sprint, nos encontramos con más de un impedimento. Hasta el momento fue de lo que más tiempo y trabajo nos tomó en lo que va de la cursada. El método que más errores presentó fue el de 'create' ya que en nuestra web incorporamos que cada producto pueda tener 3 imágenes y en un principio no podíamos acceder a completar con la solicitud debido a que de las 3 imágenes, siempre se repetía alguna. Despúes de pensar en más de una solución pudimos encontrar la indicada que llevaría a terminar el método correctamente.
+    En este Sprint, la parte que presentó mayores dificultades fue la del login, ya que esta requería de 'session' y 'cookies'. En un principio nos costó relacionarlos, pero a medida que avanzaba el Sprint pudimos conectar todo y hacer que cumplan con su funcionalidad.
 
 ------------
 

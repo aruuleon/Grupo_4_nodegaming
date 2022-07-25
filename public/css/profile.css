@@ -1,0 +1,49 @@
+/* ESTILOS PROFILE */
+
+.container-profile {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+.container-profile picture {
+    width: 100%;
+}
+.container-profile picture img {
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+.container-info-user {
+    width: 95%;
+    margin: 0 auto;
+}
+.container-info-user h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.container-info-user .user-info {
+    margin: 10px 0;
+    border-top: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+}
+.container-info-user .user-info div {
+    width: 50%;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 12px;
+}
+.container-info-user .user-info div p {
+    line-height: 50px;
+    margin: 0;
+}
+.container-line1 p {
+    color: rgb(195, 149, 15, 0.9);
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 769px) {
+    .container-info-user .user-info {
+        display: flex;
+        padding: 10px 0;
+    }
+}

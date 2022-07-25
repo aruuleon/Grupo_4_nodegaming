@@ -1,25 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const multer = require('multer');
-const path = require('path');
 
-const storage = multer.diskStorage({
-    destination : (req, file, cb) => {
-        cb(null, path.join(__dirname, '../../public/img/products'));
-    },
-
-    filename : (req, file, cb) => {
-        let date = Date.now();
-        let random = Math.round(Math.random() * 1E9);
-        let extname = path.extname(file.originalname);
-        const newFileName = `img-${date}${random}${extname}`;
-        cb(null, newFileName);
-    },
-});
-
-const upload = multer({ storage });
-
+// Requerir los controladores.
 const productsController = require('../controllers/products');
+
+const upload = require('../middlewares/products/multerMiddleware');
 
 /*** GET ALL PRODUCTS ***/ 
 router.get('/', productsController.products);

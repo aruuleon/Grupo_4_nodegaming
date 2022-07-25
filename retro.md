@@ -14,7 +14,6 @@
     Comunicar más.
     Mantener el orden en el código.
     Usar el tablero.
-    Debatir sobre el proyecto en grupo y no en privado.
     Hacer uso de la herramienta LiveShare en momentos donde pueda ser efectivo trabajar al mismo tiempo en conjunto.
 
 ------------
