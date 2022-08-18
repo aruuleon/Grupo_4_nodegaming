@@ -25,7 +25,7 @@ router.get('/logout', usersController.logout);
 router.get('/users', usersController.index);
 
 /*** USER PROFILE ***/
-router.get('/profile', usersController.profile);
+router.get('/profile', guestMiddleware, usersController.profile);
 
 /*** EDIT ONE USER ***/ 
 router.get('/edit/:id', usersController.edit);
