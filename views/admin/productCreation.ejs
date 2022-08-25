@@ -12,21 +12,21 @@
                     <input class="input-edition" type="text" name="name" id="name" required>
                 </div>
                 <div>
-                    <label for="brand">Marca</label>
-                    <input class="input-edition" type="text" name="brand" id="brand" required>
+                    <label for="brand_id">Marca</label>
+                    <select name="brand_id" id="brand_id">
+                        <option value=""></option>
+                        <% brands.forEach(brand => { %>
+                            <option value="<%= brand.id %>"><%= brand.name %></option>
+                        <% }) %>
+                    </select>
                 </div>
                 <div>
-                    <label for="category">Categoría</label>
-                    <select name="category" id="category">
-						<option value=""></option>
-                        <option value="motherboards">Motherboards</option>
-                        <option value="procesadores">Procesadores</option>
-                        <option value="memorias">Memorias Ram</option>
-                        <option value="placas">Placas de video</option>
-                        <option value="perifericos">Perifericos</option>
-                        <option value="fuentes">Fuentes de Poder</option>
-                        <option value="gabinetes">Gabinetes</option>
-                        <option value="monitores">Monitores</option>
+                    <label for="category_id">Categoría</label>
+                    <select name="category_id" id="category_id">
+                        <option value=""></option>
+						<% categories.forEach(category => { %>
+                            <option value="<%= category.id %>"><%= category.type %></option>
+                        <% }) %>
                     </select>
                 </div>
                 <div>
@@ -46,8 +46,16 @@
                     <input class="input-edition" type="number" name="stock" id="stock" required>
                 </div>
                 <div>
-                    <label for="image">Imagen</label>
-                    <input type="file" name="image" id="image" accept=".jpg, .png, .jpeg" required multiple>
+                    <label for="image_primary">Imagen Principal</label>
+                    <input type="file" name="image_primary" id="image_primary" accept=".jpg, .png, .jpeg">
+                </div>
+                <div>
+                    <label for="image_secondary">Imagen Secundaria</label>
+                    <input type="file" name="image_secondary" id="image_secondary" accept=".jpg, .png, .jpeg">
+                </div>
+                <div>
+                    <label for="image_tertiary">Imagen Terciaria</label>
+                    <input type="file" name="image_tertiary" id="image_tertiary" accept=".jpg, .png, .jpeg">
                 </div>
                 <div class="login creation">
                     <div>

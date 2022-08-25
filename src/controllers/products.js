@@ -1,5 +1,9 @@
 const fs = require('fs');
 const path = require('path');
+const db = require('../database/models');
+const Products = db.product;
+const Categories = db.category;
+const Brands = db.brand;
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -8,22 +12,26 @@ const categoriesFilePath = path.join(__dirname, '../data/categories.json');
 let categories = JSON.parse(fs.readFileSync(categoriesFilePath, 'utf-8'));
 
 const controller = {
-	buscarProducto: (id) => {
-		let productoEncontrado;
-		for (const product of products) {
-			if (id == product.id) {
-				productoEncontrado = product;
-			}
-		}
-		return productoEncontrado;
-	},
-	guardarEnArchivo: () => {
-		let productoJSON = JSON.stringify(products);
-		fs.writeFileSync(productsFilePath, productoJSON);
-	},
+	
+	// buscarProducto: (id) => {
+	// 	let productoEncontrado;
+	// 	for (const product of products) {
+	// 		if (id == product.id) {
+	// 			productoEncontrado = product;
+	// 		}
+	// 	}
+	// 	return productoEncontrado;
+	// },
+	// guardarEnArchivo: () => {
+	// 	let productoJSON = JSON.stringify(products);
+	// 	fs.writeFileSync(productsFilePath, productoJSON);
+	// },
+
     products: function (req, res) {
-		products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        res.render('./users/products', { products, name: 'products', title: 'PRODUCTOS' });
+		Products.findAll()
+		.then(function(products){
+			res.render('./users/products', { products, name: 'products', title: 'PRODUCTOS' });
+		})
     },
 	category: function (req, res) {
 		products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -40,63 +48,78 @@ const controller = {
         res.render('./users/productCar', { name: 'cart', title: 'CARRITO' });
     },
     detail: function (req, res) {
-		let productoEncontrado = controller.buscarProducto(req.params.id);
-        res.render('./users/productDetail', { productoEncontrado, name: 'detail', title: 'DETALLE' });
+		Products.findByPk(req.params.id)
+		.then((product)=>{
+			res.render('./users/productDetail', { product, name: 'detail', title: 'DETALLE' });
+		})
     },
     create: function (req, res) {
-        res.render('./admin/productCreation', { name: 'create', title: 'AGREGAR' });
+		let categories = Categories.findAll();
+		let brands = Brands.findAll();
+
+		Promise.all([categories, brands])
+		.then(function ([categories, brands]) {
+			res.render('./admin/productCreation', { categories, brands, name: 'create', title: 'AGREGAR' });
+		})
     },
     store: function (req, res) {
-        let productoAgregado = req.body;
-		let unArchivo = req.file;
-		let variosArchivos = req.files;
-		productoAgregado.id = products.length + 1;
-		if (unArchivo) {
-			productoAgregado.image = [unArchivo.filename];
-		} else if (variosArchivos) {
-			productoAgregado.image = [];
-			for (const archivo of variosArchivos) {
-				productoAgregado.image.unshift(archivo.filename);
-			}
+        let productToCreate = {
+			...req.body,
+			image_primary: req.files.image_primary[0].filename,
+			image_secondary: req.files.image_secondary[0].filename,
+			image_tertiary: req.files.image_tertiary[0].filename,
 		}
-		products.push(productoAgregado);
-		controller.guardarEnArchivo();
-		res.redirect('/');
+		Products.create(productToCreate)
+		.then(function () {
+			res.redirect('/');
+		})
     },
     edit: function (req, res) {
-        let productoEncontrado = controller.buscarProducto(req.params.id);
-        res.render('./admin/productEdition', { productoEncontrado, name: 'edit', title: 'EDITAR' });
+        let product = Products.findByPk(req.params.id);
+		let categories = Categories.findAll();
+		let brands = Brands.findAll();
+
+		Promise.all([product, categories, brands])
+		.then(function ([product, categories, brands]) {
+			res.render('./admin/productEdition', { product, categories, brands, name: 'edit', title: 'EDITAR' });
+		});
     },
     update: function (req, res) {
-        let productoEditado = controller.buscarProducto(req.params.id);
-		let unArchivo = req.file;
-		let variosArchivos = req.files;
-		productoEditado.name = req.body.name;
-		productoEditado.brand = req.body.brand;
-		productoEditado.category = req.body.category;
-		productoEditado.description = req.body.description;
-		productoEditado.price = req.body.price;
-		productoEditado.discount = req.body.discount;
-		productoEditado.stock = req.body.stock;
-		productoEditado.image = [];
-		if (unArchivo) {
-			productoEditado.image = [unArchivo.filename];
-		} else if (variosArchivos) {
-			for (const archivo of variosArchivos) {
-				productoEditado.image.unshift(archivo.filename);
+		Products.update(req.body, {
+			where: {
+				id: req.params.id
 			}
-		}
-		controller.guardarEnArchivo();
-		res.redirect('/');
+		})
+		.then(function () {
+			res.redirect('/products/detail/' + req.params.id);
+		})
     },
     delete: function (req, res) {
-        let productoEncontrado = controller.buscarProducto(req.params.id);
-		products = products.filter(function (product) {
-			return product.id != productoEncontrado.id;
+		Products.destroy({
+			where: {
+				id: req.params.id
+			}
 		})
-		controller.guardarEnArchivo();
-		res.redirect('/products');
-    },
+		.then(()=>{
+			res.redirect('/');
+		})
+		
+	},
 };
 
 module.exports = controller;
+
+// 		   let unArchivo = req.file;
+		// let variosArchivos = req.files;
+		// productoAgregado.id = products.length + 1;
+		// if (unArchivo) {
+		// 	productoAgregado.image = [unArchivo.filename];
+		// } else if (variosArchivos) {
+		// 	productoAgregado.image = [];
+		// 	for (const archivo of variosArchivos) {
+		// 		productoAgregado.image.unshift(archivo.filename);
+		// 	}
+		// }
+		// products.push(productoAgregado);
+		// controller.guardarEnArchivo();
+		// res.redirect('/');

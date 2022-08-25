@@ -5,51 +5,45 @@
     <%- include('../partials/headerMain.ejs') %>
     <main class="main">
         <section class="form">
-            <form action="/products/edit/<%= productoEncontrado.id %>?_method=PUT" method="post" enctype="multipart/form-data">
+            <form action="/products/edit/<%= product.id %>?_method=PUT" method="post" enctype="multipart/form-data">
                 <h3>editar producto</h3>
                 <div>
                     <label for="name">Nombre</label>
-                    <input class="input-edition" type="text" name="name" id="name" required value= "<%= productoEncontrado.name %>">
+                    <input class="input-edition" type="text" name="name" id="name" required value= "<%= product.name %>">
                 </div>
                 <div>
-                    <label for="brand">Marca</label>
-                    <input class="input-edition" type="text" name="brand" id="brand" required value= "<%= productoEncontrado.brand %>">
+                    <label for="brand_id">Marca</label>
+                    <select name="brand_id" id="brand_id">
+                        <option value=""></option>
+                        <% brands.forEach(brand => { %>
+                            <option value="<%= brand.id %>"><%= brand.name %></option>
+                        <% }) %>
+                    </select>
                 </div>
                 <div>
-                    <label for="category">Categoría</label>
-                    <select name="category" id="category">
-                        <option value="procesador"><%= productoEncontrado.category %></option>
+                    <label for="category_id">Categoría</label>
+                    <select name="category_id" id="category_id">
+                        <option value=""></option>
+						<% categories.forEach(category => { %>
+                            <option value="<%= category.id %>"><%= category.type %></option>
+                        <% }) %>
                     </select>
                 </div>
                 <div>
                     <label for="description">Características Generales</label>
-                    <input class="input-edition" type="text" name="description" id="description" required value= "<%= productoEncontrado.description %>">
+                    <input class="input-edition" type="text" name="description" id="description" required value= "<%= product.description %>">
                 </div>
                 <div>
                     <label for="price">Precio</label>
-                    <input class="input-edition" type="number" name="price" id="price" required value= "<%= productoEncontrado.price %>">
+                    <input class="input-edition" type="number" name="price" id="price" required value= "<%= product.price %>">
                 </div>
                 <div>
                     <label for="discount">Descuento</label>
-                    <input class="input-edition" type="number" name="discount" id="discount" required value="<%= productoEncontrado.discount %>">
+                    <input class="input-edition" type="number" name="discount" id="discount" required value="<%= product.discount %>">
                 </div>
                 <div>
                     <label for="stock">Stock</label>
-                    <input class="input-edition" type="number" name="stock" id="stock" required value= "<%= productoEncontrado.stock %>">
-                </div>
-                <div>
-                    <label for="image">Imagen</label>
-                    <div class="imagen-edition">
-                        <% for(let i = 0; i < productoEncontrado.image.length; i++) { %>
-                        <div>
-                            <img src="/img/products/<%= productoEncontrado.image[i] %>" alt="">
-                        </div>
-                        <% } %>
-                    </div>
-                </div>
-                <div>
-                    <label for="image">Cambiar imagen</label>
-                    <input type="file" name="image" id="image" accet=".jpg, .png" required multiple>
+                    <input class="input-edition" type="number" name="stock" id="stock" required value= "<%= product.stock %>">
                 </div>
                 <div class="login edition">
                     <div>
@@ -61,7 +55,7 @@
                 </div>
             </form>
         </section>
-        <form action="/products/delete/<%= productoEncontrado.id %>?_method=DELETE" method="POST" id="delete"></form>
+        <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST" id="delete"></form>
     </main>
     <%- include('../partials/footer.ejs') %>
 </body>

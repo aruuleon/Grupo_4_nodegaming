@@ -8,28 +8,40 @@
             <div class="contenido">
                 <section class="container-images">
                     <div class="imagenes-principales">
-                    <% for(let i = 0; i < productoEncontrado.image.length; i++) { %>
-                        <div id="imagen<%= i + 1%>">
-                            <img src="/img/products/<%= productoEncontrado.image[i] %>" alt="">
+                        <div id="imagen1">
+                            <img src="/img/products/<%= product.image_primary %>" alt="">
                         </div>
-                    <% } %>
+                        <div id="imagen2">
+                            <img src="/img/products/<%= product.image_secondary %>" alt="">
+                        </div>
+                        <div id="imagen3">
+                            <img src="/img/products/<%= product.image_tertiary %>" alt="">
+                        </div>
                     </div>
                     <div class="imagenes-secundarias">
-                    <% for(let i = 0; i < productoEncontrado.image.length; i++) { %>
                         <div>
-                            <a href="#imagen<%= i + 1%>">
-                                <img src="/img/products/<%= productoEncontrado.image[i] %>" alt="">
+                            <a href="#imagen1">
+                                <img src="/img/products/<%= product.image_primary %>" alt="">
                             </a>
                         </div>
-                    <% } %>
+                        <div>
+                            <a href="#imagen2">
+                                <img src="/img/products/<%= product.image_secondary %>" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#imagen3">
+                                <img src="/img/products/<%= product.image_tertiary %>" alt="">
+                            </a>
+                        </div>
                     </div>
                 </section>
                 <section class="container-info">
                     <div class="stock">
                         <p>en stock</p>
                     </div>
-                    <p class="name"><%= productoEncontrado.name %></p>
-                    <p class="precio">$ <%= productoEncontrado.price %></p>
+                    <p class="name"><%= product.name %></p>
+                    <p class="precio">$ <%= product.price %></p>
                     <div class="agregar">
                         <button type="button">agregar</button>
                     </div>
@@ -38,66 +50,8 @@
             <section class="container-caracteristicas">
                 <h3>caracteristicas generales</h3>
                 <div>
-                    <p><%= productoEncontrado.description %></p>
+                    <p><%= product.description %></p>
                 </div>
-                <!-- <div class="container-separador">
-                    <div class="separador">
-                        <div class="sector1">
-                            <p>Tipo</p>
-                            <p>Chipset Gpu</p>
-                            <p>Entrada Video</p>
-                            <p>Doble Puente</p>
-                            <p>Características Especiales</p>
-                            <p>Ancho</p>
-                            <p>Largo</p>
-                            <p>Espesor</p>
-                            <p>Cantidad Pcie de 6 Pines</p>
-                            <p>Cantidad Pcie de 8 Pines</p>
-                            <p>Consumo</p>
-                        </div>
-                        <div class="sector2">
-                            <p>pcie</p>
-                            <p>RTX 2060</p>
-                            <p>No</p>
-                            <p>No</p>
-                            <p>Ray Tracing + DLSS</p>
-                            <p>128mm</p>
-                            <p>226mm</p>
-                            <p>2.0 slots</p>
-                            <p>0</p>
-                            <p>1</p>
-                            <p>160 w</p>
-                        </div>
-                    </div>
-                    <div class="separador">
-                        <div class="sector1">
-                            <p>Watts Total Recomendados</p>
-                            <p>Backplate</p>
-                            <p>Block Vga Water Cooling</p>
-                            <p>Cantidad Coolers Fan</p>
-                            <p>Velocidad Memoria</p>
-                            <p>Tipo Memoria</p>
-                            <p>Capacidad Memoria</p>
-                            <p>Interface Memoria</p>
-                            <p>Velocidad Core Turbo</p>
-                            <p>Tipos Procesos</p>
-                            <p>Cantidad Procesos</p>
-                        </div>
-                        <div class="sector2">
-                            <p>500 w</p>
-                            <p>Si</p>
-                            <p>No</p>
-                            <p>2</p>
-                            <p>14000 mhz</p>
-                            <p>GDDR6</p>
-                            <p>6144 mb</p>
-                            <p>192 bits</p>
-                            <p>1710 mhz</p>
-                            <p>CUDA</p>
-                            <p>1920</p>
-                        </div>
-                    </div>
-                </div> -->
             </section>
         </div>
     </main>

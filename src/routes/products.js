@@ -21,7 +21,7 @@ router.get('/detail/:id', productsController.detail);
 
 /*** CREATE ONE PRODUCT ***/ 
 router.get('/create', productsController.create);
-router.post('/create', upload.array('image'), productsController.store);
+router.post('/create', upload.fields([{name:'image_primary'}, {name: 'image_secondary'}, {name:'image_tertiary'}]), productsController.store);
 
 /*** EDIT ONE PRODUCT ***/ 
 router.get('/edit/:id', productsController.edit);
