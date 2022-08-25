@@ -21,17 +21,14 @@ router.get('/profile', authMiddleware, usersController.profile);
 
 router.get('/logout', usersController.logout);
 
-/*** GET ALL USERS ***/ 
-router.get('/users', usersController.index);
-
 /*** USER PROFILE ***/
 router.get('/profile', guestMiddleware, usersController.profile);
 
 /*** EDIT ONE USER ***/ 
-router.get('/edit/:id', usersController.edit);
-router.put('/edit/:id', validationsRegister, usersController.update);
+router.get('/edit', usersController.edit);
+router.put('/edit/:id', upload.single('avatar'), validationsRegister, usersController.update);
 
 /*** DELETE ONE USER ***/ 
-router.delete('/:id', usersController.delete); 
+router.delete('/delete/:id', usersController.delete);
 
 module.exports = router;

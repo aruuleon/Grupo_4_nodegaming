@@ -85,15 +85,39 @@ const controller = {
 		});
     },
     update: function (req, res) {
-		Products.update(req.body, {
-			where: {
-				id: req.params.id
+        Products.findByPk(req.params.id)
+		.then(function (product) {
+			let productPrimaryImage;
+			let productSecondaryImage;
+			let productTertiaryImage;
+
+			if (req.files) {
+				productPrimaryImage = req.files.image_primary[0].filename,
+				productSecondaryImage = req.files.image_secondary[0].filename,
+				productTertiaryImage = req.files.image_tertiary[0].filename
+			} else {
+				productPrimaryImage = product.image_primary,
+				productSecondaryImage = product.image_secondary,
+				productTertiaryImage = product.image_tertiary
 			}
+			
+			let productToEdit = {
+				...req.body,
+				image_primary: productPrimaryImage,
+				image_secondary: productSecondaryImage,
+				image_tertiary: productTertiaryImage
+			}
+	
+			Products.update(productToEdit, {
+				where: {
+					id: product.id
+				}
+			})
+			.then(function () {
+				res.redirect('/products/detail/' + req.params.id);
+			})
 		})
-		.then(function () {
-			res.redirect('/products/detail/' + req.params.id);
-		})
-    },
+	},
     delete: function (req, res) {
 		Products.destroy({
 			where: {

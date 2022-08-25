@@ -75,41 +75,42 @@ const controller = {
     profile: function (req, res) {
         res.render('./users/profile', { user: req.session.userLogged, name: 'profile', title: 'PERFIL' });
     },
-    index: function (req, res) {
-        // res.render('./users', { name: '', title: '' });
-    },
-    detail: function (req, res) {
-        res.render('./users/login', { name: '', title: '' });
-    },
     edit: function (req, res) {
-        res.render('./users/login', { name: '', title: '' });
+        res.render('./users/edit', { user: req.session.userLogged, name: 'register', title: 'EDITAR USUARIO' });
     },
     update: function (req, res) {
-        // res.render('./users/register', { name: '', title : '' });
-        Users.update(
-            {
-                firstname: req.body.firstname,
-                lastname: req.body.lastname,
-                email: req.body.email,
-                phone: req.body.phone,
-                password: req.body.password,
-                avatar: req.body.avatar,
-                role_id: req.body.role_id,
-            },
-            {
-                where: {
-                    id: req.params.id
-                }
-            })
-            .then(function () {
-                res.status(200).json({
-                    status: 200,
-                    process: 'successful'
-                })
-            })
+        let userImage;
+        if (req.file) {
+            userImage = req.file.filename;
+        } else {
+            userImage = (req.session.userLogged).avatar;
+        }
+
+        let userToEdit = {
+            ...req.body,
+            avatar: userImage
+        }
+
+        Users.update(userToEdit, {
+            where: {
+                id: (req.session.userLogged).id
+            }
+        })
+        .then(function () {
+            res.redirect('/');
+        })
     },
     delete: function (req, res) {
-        // res.render('./users/login', { name: '', title: '' });
+		Users.destroy({
+			where: {
+				id: (req.session.userLogged).id
+			}
+		})
+		.then(()=>{
+            res.clearCookie('userEmail');
+            req.session.destroy();
+			res.redirect('/');
+		})
     },
 };
 

@@ -45,6 +45,32 @@
                     <label for="stock">Stock</label>
                     <input class="input-edition" type="number" name="stock" id="stock" required value= "<%= product.stock %>">
                 </div>
+                <div>
+                    <label for="image">Imagen</label>
+                    <div class="imagen-edition">
+                        <div>
+                            <img src="/img/products/<%= product.image_primary %> " alt="">
+                        </div>
+                        <div>
+                            <img src="/img/products/<%= product.image_secondary %> " alt="">
+                        </div>
+                        <div>
+                            <img src="/img/products/<%= product.image_tertiary %> " alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="image_primary">Imagen Principal</label>
+                    <input type="file" name="image_primary" id="image_primary" accept=".jpg, .png, .jpeg">
+                </div>
+                <div>
+                    <label for="image_secondary">Imagen Secundaria</label>
+                    <input type="file" name="image_secondary" id="image_secondary" accept=".jpg, .png, .jpeg">
+                </div>
+                <div>
+                    <label for="image_tertiary">Imagen Terciaria</label>
+                    <input type="file" name="image_tertiary" id="image_tertiary" accept=".jpg, .png, .jpeg">
+                </div>
                 <div class="login edition">
                     <div>
                         <button type="submit">subir cambios</a></button>
