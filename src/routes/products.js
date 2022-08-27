@@ -5,6 +5,7 @@ const router = express.Router();
 const productsController = require('../controllers/products');
 
 const upload = require('../middlewares/products/multerMiddleware');
+const validationStore = require('../middlewares/products/validateStoreMiddleware')
 
 /*** GET ALL PRODUCTS ***/ 
 router.get('/', productsController.products);
@@ -21,7 +22,7 @@ router.get('/detail/:id', productsController.detail);
 
 /*** CREATE ONE PRODUCT ***/ 
 router.get('/create', productsController.create);
-router.post('/create', upload.fields([{name:'image_primary'}, {name: 'image_secondary'}, {name:'image_tertiary'}]), productsController.store);
+router.post('/create', upload.fields([{name:'image_primary'}, {name: 'image_secondary'}, {name:'image_tertiary'}]), validationStore, productsController.store);
 
 /*** EDIT ONE PRODUCT ***/ 
 router.get('/edit/:id', productsController.edit);

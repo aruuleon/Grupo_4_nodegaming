@@ -60,9 +60,7 @@ h3 {
 }
 .articles a div strong {
     width: 100%;
-    margin-top: 14px;
     font-size: 10px;
-    font-weight: lighter;
     text-transform: uppercase;
 }
 .envio {

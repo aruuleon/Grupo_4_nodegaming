@@ -4,6 +4,7 @@ const db = require('../database/models');
 const Products = db.product;
 const Categories = db.category;
 const Brands = db.brand;
+const { validationResult } = require('express-validator');
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -12,21 +13,6 @@ const categoriesFilePath = path.join(__dirname, '../data/categories.json');
 let categories = JSON.parse(fs.readFileSync(categoriesFilePath, 'utf-8'));
 
 const controller = {
-	
-	// buscarProducto: (id) => {
-	// 	let productoEncontrado;
-	// 	for (const product of products) {
-	// 		if (id == product.id) {
-	// 			productoEncontrado = product;
-	// 		}
-	// 	}
-	// 	return productoEncontrado;
-	// },
-	// guardarEnArchivo: () => {
-	// 	let productoJSON = JSON.stringify(products);
-	// 	fs.writeFileSync(productsFilePath, productoJSON);
-	// },
-
     products: function (req, res) {
 		Products.findAll()
 		.then(function(products){
@@ -63,16 +49,37 @@ const controller = {
 		})
     },
     store: function (req, res) {
-        let productToCreate = {
-			...req.body,
-			image_primary: req.files.image_primary[0].filename,
-			image_secondary: req.files.image_secondary[0].filename,
-			image_tertiary: req.files.image_tertiary[0].filename,
+		const errors = validationResult(req);
+
+		if (errors.isEmpty()) {
+			Products.findOne({
+				where:{name:req.body.name}
+			})
+			.then(function (productInDB) {
+				if (productInDB) {
+                    res.render('./admin/productCreation', { errors: { name: { msg: 'Un producto con este nombre ya se encuentra registrado' } }, old: req.body, name: 'create', title: 'AGREGAR' });
+				} else {
+					let productToCreate = {
+						...req.body,
+						image_primary: req.files.image_primary[0].filename,
+						image_secondary: req.files.image_secondary[0].filename,
+						image_tertiary: req.files.image_tertiary[0].filename,
+					}
+					Products.create(productToCreate)
+					.then(function () {
+						res.redirect('/');
+					})
+				}
+			})
+		} else {
+			let categories = Categories.findAll();
+			let brands = Brands.findAll();
+
+			Promise.all([categories, brands])
+			.then(function ([categories, brands]) {
+				res.render('./admin/productCreation', { categories, brands, errors: errors.mapped(), old: req.body, name: 'create', title: 'AGREGAR' });
+			})
 		}
-		Products.create(productToCreate)
-		.then(function () {
-			res.redirect('/');
-		})
     },
     edit: function (req, res) {
         let product = Products.findByPk(req.params.id);

@@ -1,7 +1,7 @@
 module.exports = {
   "development": {
     "username": "root",
-    "password": "Gomitas9",
+    "password": null,
     "database": "nodegaming",
     "host": "127.0.0.1",
     "dialect": "mysql"
