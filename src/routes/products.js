@@ -12,7 +12,7 @@ router.get('/', productsController.products);
 
 router.get('/category', productsController.category);
 
-router.get('/category/:categoryName', productsController.productsXCategory);
+router.get('/category/:id', productsController.productsXCategory);
 
 /*** PRODUCTS CART ***/ 
 router.get('/cart', productsController.cart);

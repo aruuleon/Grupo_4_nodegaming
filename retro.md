@@ -5,7 +5,6 @@
 ------------
 
 > COMENZAR A HACER
-    Crear un models de productos con los metodos como hicimos en usuarios.
     Dividir las tareas 
 
 

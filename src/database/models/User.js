@@ -1,31 +1,31 @@
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize, dataTypes) => {
     let alias = 'user';
-    cols = {
+    let cols = {
         id: {
-            type: DataTypes.INTEGER,
+            type: dataTypes.INTEGER,
             primaryKey: true,
         },
         firstname: {
-            type: DataTypes.STRING
+            type: dataTypes.STRING,
         },
         lastname: {
-            type: DataTypes.STRING
+            type: dataTypes.STRING,
         },
         email: {
-            type: DataTypes.STRING
+            type: dataTypes.STRING,
         },
         phone: {
-            type: DataTypes.STRING
+            type: dataTypes.STRING,
         },
         password: {
-            type: DataTypes.STRING
+            type: dataTypes.STRING,
         },
         avatar: {
-            type: DataTypes.STRING
+            type: dataTypes.STRING,
         },
         role_id: {
-            type: DataTypes.INTEGER
-        }
+            type: dataTypes.INTEGER,
+        },
     };
     let config = {
         timestamps: false
@@ -36,11 +36,11 @@ module.exports = (sequelize, DataTypes) => {
     User.associate = function (models) {
         User.belongsTo(models.role, {
             as: 'role',
-            foreignKey: 'role_id'
+            foreignKey: 'role_id',
         }),
         User.hasMany(models.order, {
             as: 'orders',
-            foreignKey: 'user_id'
+            foreignKey: 'user_id',
         })
     }
 

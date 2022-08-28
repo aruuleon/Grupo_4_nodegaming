@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-    <%- include('../partials/head.ejs', {name, title}) %>
+    <html lang="en">
+        <%- include('../partials/head.ejs', {name, title}) %>
 
-    <body class="container-main">
-        <%- include('../partials/headerMain.ejs') %>
-        <% if(products.length > 0) { %>
-        <div class="container-search-true">
-            <h3>RESULTADOS DE LA BUSQUEDA : <span><%= palabraClave %></span></h3>
-        </div>
-        <%- include('../partials/productsMain.ejs') %>
-        <% } else { %>
-        <div class="container-search-false">
-            <h3>NO SE ENCONTRARON RESULTADOS QUE COINCIDAN CON LA BUSQUEDA : <span><%= palabraClave %></span></h3>
-        </div>
-        <% } %>
-        <%- include('../partials/footer.ejs') %>
-    </body>
+        <body class="container-main">
+            <%- include('../partials/headerMain.ejs') %>
+            <% if(products.length > 0) { %>
+            <div class="container-search-true">
+                <h3>RESULTADOS DE LA BUSQUEDA : <span><%= palabraClave %></span></h3>
+            </div>
+            <%- include('../partials/productsMain.ejs') %>
+            <% } else { %>
+            <div class="container-search-false">
+                <h3>NO SE ENCONTRARON RESULTADOS QUE COINCIDAN CON LA BUSQUEDA : <span><%= palabraClave %></span></h3>
+            </div>
+            <% } %>
+            <%- include('../partials/footer.ejs') %>
+        </body>
 
-</html>
+    </html>

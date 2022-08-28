@@ -1,14 +1,13 @@
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize, dataTypes) => {
     let alias = 'brand';
     let cols = {
         id: {
-            type: DataTypes.INTEGER,
+            type: dataTypes.INTEGER,
             primaryKey: true,
         },
         name: {
-            type: DataTypes.STRING
+            type: dataTypes.STRING,
         },
-        
     };
     let config = {
         timestamps: false
@@ -18,8 +17,8 @@ module.exports = (sequelize, DataTypes) => {
 
     Brand.associate = function (models) {
         Brand.hasMany(models.product, {
-            as: 'product',
-            foreignKey: 'brand_id'
+            as: 'products',
+            foreignKey: 'brand_id',
         })
     }
 

@@ -39,11 +39,36 @@
 .container-line1 p {
     color: rgb(195, 149, 15, 0.9);
 }
+div button {
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: #000000;
+    border-radius: 10px;
+}
+div button a {
+    display: block;
+    color: rgb(195, 149, 15, 0.9);
+    text-decoration: none;
+}
+div button:hover {
+    cursor: pointer;
+    background-color: rgb(195, 149, 15, 0.9);
+    color: #000000;
+    box-shadow: 0px 0px 10px #000000;
+}
+div button:hover a {
+    color: #000000;
+}
 
 /* MEDIA QUERIES */
 @media (min-width: 769px) {
     .container-info-user .user-info {
         display: flex;
         padding: 10px 0;
+    }
+}
+@media (min-width: 1200px) {
+    div button {
+        width: 25%;
     }
 }

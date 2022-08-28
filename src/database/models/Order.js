@@ -1,16 +1,16 @@
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize, dataTypes) => {
     let alias = 'order';
-    cols = {
+    let cols = {
         id: {
-            type: DataTypes.INTEGER,
+            type: dataTypes.INTEGER,
             primaryKey: true,
         },
         total: {
-            type: DataTypes.DECIMAL
+            type: dataTypes.DECIMAL,
         },
         user_id: {
-            type: DataTypes.INTEGER
-        }
+            type: dataTypes.INTEGER,
+        },
     };
     let config = {
         timestamps: false
@@ -19,16 +19,16 @@ module.exports = (sequelize, DataTypes) => {
     const Order = sequelize.define(alias, cols, config);
 
     Order.associate = function (models) {
+        Order.belongsTo(models.user, {
+            as: 'user',
+            foreignkey: 'user_id',
+        }),
         Order.belongsToMany(models.product, {
             as: 'products',
             through: 'orders_products',
-            foreignKey: 'order_id',
+            foreignkey: 'order_id',
             otherKey: 'product_id',
-            timestamps: false
-        }),
-        Order.belongsTo(models.user, {
-            as: 'user',
-            foreignKey: 'user_id'
+            timestamps: false,
         })
     }
 

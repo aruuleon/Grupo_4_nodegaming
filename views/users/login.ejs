@@ -14,7 +14,7 @@
                         name="email" 
                         id="email" 
                         value="<%= locals.old ? old.email : null %>"
-                        class="input-padding form-control input-border-initial"
+                        class="input-padding form-control <%= (locals.errors && errors.email) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
                     >
                     <% if (locals.errors && errors.email) { %>
                         <p style="color: red;"><%= errors.email.msg %></p>
@@ -26,7 +26,7 @@
                         type="password" 
                         name="password" 
                         id="password"
-                        class="input-padding form-control input-border-initial"
+                        class="input-padding form-control <%= (locals.errors && errors.password) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
                     >
                     <% if (locals.errors && errors.password) { %>
                         <p style="color: red;"><%= errors.password.msg %></p>

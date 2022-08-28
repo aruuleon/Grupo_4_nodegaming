@@ -7,20 +7,20 @@
             <main class="main">
                 <h3>categorias</h3>
                 <section class="container-products">
-                    <% for (category of categories) { %>
+                    <% categories.forEach(category => { %>
                         <article class="articles">
-                            <a href="/products/category/<%= category.name %>">
+                            <a href="/products/category/<%= category.id %>">
                                 <picture>
                                     <img src="/img/categories/<%= category.image %>" alt="">
                                 </picture>
                                 <div class="articles-general">
                                     <strong>
-                                        <%= category.name %>
+                                        <%= category.type %>
                                     </strong>
                                 </div>
                             </a>
                         </article>
-                        <% } %>
+                    <% }) %>
                 </section>
             </main>
             <%- include('../partials/footer.ejs') %>

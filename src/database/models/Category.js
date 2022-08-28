@@ -1,13 +1,16 @@
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize, dataTypes) => {
     let alias = 'category';
-    cols = {
+    let cols = {
         id: {
-            type: DataTypes.INTEGER,
+            type: dataTypes.INTEGER,
             primaryKey: true,
         },
         type: {
-            type: DataTypes.STRING
-        }
+            type: dataTypes.STRING,
+        },
+        image: {
+            type: dataTypes.STRING,
+        },
     };
     let config = {
         timestamps: false
@@ -17,8 +20,8 @@ module.exports = (sequelize, DataTypes) => {
 
     Category.associate = function (models) {
         Category.hasMany(models.product, {
-            as: 'product',
-            foreignKey: 'category_id'
+            as: 'products',
+            foreignKey: 'category_id',
         })
     }
 

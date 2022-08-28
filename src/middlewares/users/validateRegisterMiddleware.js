@@ -9,18 +9,18 @@ module.exports = [
     body('phone').notEmpty().withMessage('Tenes que escribir un número telefónico'),
     body('password').notEmpty().withMessage('Tenes que escribir una contraseña'),
     
-    body('avatar').custom((value, { req }) => {
-        let file = req.file;
-        let acceptedExtensions = ['.jpg', '.png', '.jpeg'];
+    // body('avatar').custom((value, { req }) => {
+    //     let file = req.file;
+    //     let acceptedExtensions = ['.jpg', '.png', '.jpeg'];
 
-        if (!file) {
-            throw new Error('Tenes que subir una imagen');
-        } else {
-            let extname =  path.extname(file.originalname);
-            if (!acceptedExtensions.includes(extname)) {
-                throw new Error('Las extenciones de archivo permitidas son ' + acceptedExtensions.join(', '));
-            }
-        }
-        return true;
-    }),
+    //     if (!file) {
+    //         throw new Error('Tenes que subir una imagen');
+    //     } else {
+    //         let extname =  path.extname(file.originalname);
+    //         if (!acceptedExtensions.includes(extname)) {
+    //             throw new Error('Las extenciones de archivo permitidas son ' + acceptedExtensions.join(', '));
+    //         }
+    //     }
+    //     return true;
+    // }),
 ];

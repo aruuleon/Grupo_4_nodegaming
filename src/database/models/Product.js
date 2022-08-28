@@ -1,40 +1,40 @@
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize, dataTypes) => {
     let alias = 'product';
-    cols = {
+    let cols = {
         id: {
-            type: DataTypes.INTEGER,
+            type: dataTypes.INTEGER,
             primaryKey: true,
         },
         name: {
-            type: DataTypes.STRING
+            type: dataTypes.STRING,
         },
         description: {
-            type: DataTypes.TEXT
+            type: dataTypes.TEXT,
         },
         price: {
-            type: DataTypes.DECIMAL
+            type: dataTypes.DECIMAL,
         },
         discount: {
-            type: DataTypes.INTEGER
+            type: dataTypes.INTEGER,
         },
         stock: {
-            type: DataTypes.INTEGER
+            type: dataTypes.INTEGER,
         },
         image_primary: {
-            type: DataTypes.STRING
+            type: dataTypes.STRING,
         },
         image_secondary: {
-            type: DataTypes.STRING
+            type: dataTypes.STRING,
         },
         image_tertiary: {
-            type: DataTypes.STRING
+            type: dataTypes.STRING,
         },
         category_id: {
-            type: DataTypes.INTEGER
+            type: dataTypes.INTEGER,
         },
         brand_id: {
-            type: DataTypes.INTEGER
-        }
+            type: dataTypes.INTEGER,
+        },
     };
     let config = {
         timestamps: false
@@ -43,20 +43,20 @@ module.exports = (sequelize, DataTypes) => {
     const Product = sequelize.define(alias, cols, config);
 
     Product.associate = function (models) {
-        Product.belongsTo(models.brand, {
-            as: 'brand',
-            foreignKey: 'brand_id'
-        }),
         Product.belongsTo(models.category, {
             as: 'category',
-            foreignKey: 'category_id'
+            foreignKey: 'category_id',
+        }),
+        Product.belongsTo(models.brand, {
+            as: 'brand',
+            foreignKey: 'brand_id',
         }),
         Product.belongsToMany(models.order, {
             as: 'orders',
             through: 'orders_products',
             foreignKey: 'product_id',
             otherKey: 'order_id',
-            timestamps: false
+            timestamps: false,
         })
     }
 

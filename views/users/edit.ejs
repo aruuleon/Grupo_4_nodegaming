@@ -2,19 +2,19 @@
 <html lang="en">
 <%- include('../partials/head.ejs', {name, title}) %>
 <body class="container-main">
-    <%- include('../partials/headerUser.ejs') %>
+    <%- include('../partials/headerMain.ejs') %>
     <main class="main">
         <section class="form">
-            <form action="/users/edit/<%= user.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <form action="/users/edit/<%= user.id %>?_method=PUT" method="post" enctype="multipart/form-data">
                 <h3>editar usuario</h3>
                 <div>
                     <label for="firstname">Nombre</label>
-                    <input
-                        type="text"
-                        name="firstname"
+                    <input 
+                        class="input-padding form-control <%= (locals.errors && errors.firstname) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>" 
+                        type="text" 
+                        name="firstname" 
                         id="firstname"
                         value="<%= user.firstname %>"
-                        class="input-padding form-control <%= (locals.errors && errors.firstname) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
                     >
                     <% if (locals.errors && errors.firstname) { %>
                         <p class="feedback" style="color: red;"><%= errors.firstname.msg %></p>
@@ -23,49 +23,52 @@
                 <div>
                     <label for="lastname">Apellido</label>
                     <input 
+                        class="input-padding form-control <%= (locals.errors && errors.lastname)? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>" 
                         type="text" 
                         name="lastname" 
-                        id="lastname" 
+                        id="lastname"
                         value="<%= user.lastname %>"
-                        class="input-padding form-control <%= (locals.errors && errors.lastname) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
                     >
                     <% if (locals.errors && errors.lastname) { %>
                         <p class="feedback" style="color: red;"><%= errors.lastname.msg %></p>
                     <% } %>
                 </div>
                 <div>
-                    <label for="phone">Telefono</label>
+                    <label for="phone">Teléfono</label>
                     <input 
-                        type="tel" 
-                        name="phone" 
-                        id="phone" 
-                        value="<%= user.phone %>"
                         class="input-padding form-control <%= (locals.errors && errors.phone) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                        type="text" 
+                        name="phone" 
+                        id="phone"
+                        value="<%= user.phone %>"
                     >
                     <% if (locals.errors && errors.phone) { %>
                         <p class="feedback" style="color: red;"><%= errors.phone.msg %></p>
                     <% } %>
                 </div>
                 <div>
-                    <picture>
-                        <img src="/img/users/<%= user.avatar %> " width="100px">
-                    </picture>
-                </div>
-                <div>
                     <label for="avatar">Imagen</label>
-                    <input type="file" name="avatar" id="avatar">
+                    <input 
+                        type="file" 
+                        name="avatar" 
+                        id="avatar"
+                        value="<%= user.avatar %>"
+                    >
                     <% if (locals.errors && errors.avatar) { %>
                         <p class="feedback" style="color: red;"><%= errors.avatar.msg %></p>
                     <% } %>
                 </div>
-                <div class="registrarte">
-                    <button type="submit">subir cambios</button>
-                </div>
-                <div class="registrarte">
-                    <button type="submit" form="delete">eliminar</button>
+                <div class="login edition">
+                    <div>
+                        <button type="submit">subir cambios</button>
+                    </div>
+                    <div class="delete">
+						<button type="submit" form="delete">eliminar cuenta</button>
+                    </div>
                 </div>
             </form>
         </section>
+        <form action="/users/delete/<%= user.id %>?_method=DELETE" method="POST" id="delete"></form>
     </main>
     <%- include('../partials/footer.ejs') %>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

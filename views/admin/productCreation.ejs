@@ -9,82 +9,129 @@
                 <h3>crear producto</h3>
                 <div>
                     <label for="name">Nombre</label>
-                    <input class="input-edition" type="text" name="name" id="name" value="<%= locals.old ? old.name : null %>">
+                    <input 
+                        class="input-padding form-control <%= (locals.errors && errors.name) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                        type="text" 
+                        name="name" 
+                        id="name"
+                        value="<%= locals.old ? old.name : null %>"
+                    >
                     <% if (locals.errors && errors.name) { %>
-                        <p style="color: red;"><%= errors.name.msg %> </p>
+                        <p class="feedback" style="color: red;"><%= errors.name.msg %></p>
                     <% } %>
                 </div>
                 <div>
                     <label for="brand_id">Marca</label>
                     <select name="brand_id" id="brand_id">
-                        <option value=""></option>
+						<option></option>
+                        <option>-</option>
                         <% brands.forEach(brand => { %>
-                            <option value="<%= brand.id %>"><%= brand.name %></option>
+                            <option value="<%= brand.id %>"> <%= brand.name %> </option>
                         <% }) %>
                     </select>
                     <% if (locals.errors && errors.brand_id) { %>
-                        <p style="color: red;"><%= errors.brand_id.msg %> </p>
+                        <p class="feedback" style="color: red;"><%= errors.brand_id.msg %></p>
                     <% } %>
                 </div>
                 <div>
                     <label for="category_id">Categoría</label>
                     <select name="category_id" id="category_id">
-                        <option value=""></option>
-						<% categories.forEach(category => { %>
-                            <option value="<%= category.id %>"><%= category.type %></option>
+						<option></option>
+                        <option>-</option>
+                        <% categories.forEach(category => { %>
+                            <option value="<%= category.id %> "> <%= category.type %> </option>
                         <% }) %>
                     </select>
                     <% if (locals.errors && errors.category_id) { %>
-                        <p style="color: red;"><%= errors.category_id.msg %> </p>
+                        <p class="feedback" style="color: red;"><%= errors.category_id.msg %></p>
                     <% } %>
                 </div>
                 <div>
-                    <label for="description">Descripción</label>
-                    <input class="input-edition" type="text" name="description" id="description" value="<%= locals.old ? old.description : null %>">
+                    <label for="description">Características Generales</label>
+                    <input 
+                        class="input-padding form-control <%= (locals.errors && errors.description) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                        type="text" 
+                        name="description" 
+                        id="description"
+                        value="<%= locals.old ? old.description : null %>"
+                    >
                     <% if (locals.errors && errors.description) { %>
-                        <p style="color: red;"><%= errors.description.msg %> </p>
+                        <p class="feedback" style="color: red;"><%= errors.description.msg %></p>
                     <% } %>
                 </div>
                 <div>
                     <label for="price">Precio</label>
-                    <input class="input-edition" type="number" name="price" id="price" value="<%= locals.old ? old.price : null %>">
+                    <input 
+                        class="input-padding form-control <%= (locals.errors && errors.price) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                        type="number" 
+                        name="price" 
+                        id="price"
+                        value="<%= locals.old ? old.price : null %>"
+                    >
                     <% if (locals.errors && errors.price) { %>
-                        <p style="color: red;"><%= errors.price.msg %> </p>
+                        <p class="feedback" style="color: red;"><%= errors.price.msg %></p>
                     <% } %>
                 </div>
                 <div>
                     <label for="discount">Descuento</label>
-                    <input class="input-edition" type="number" name="discount" id="discount" value="<%= locals.old ? old.discount : null %>">
+                    <input 
+                        class="input-padding form-control <%= (locals.errors && errors.discount) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                        type="number" 
+                        name="discount" 
+                        id="discount"
+                        value="<%= locals.old ? old.discount : null %>"
+                    >
                     <% if (locals.errors && errors.discount) { %>
-                        <p style="color: red;"><%= errors.discount.msg %> </p>
+                        <p class="feedback" style="color: red;"><%= errors.discount.msg %></p>
                     <% } %>
                 </div>
                 <div>
                     <label for="stock">Stock</label>
-                    <input class="input-edition" type="number" name="stock" id="stock" value="<%= locals.old ? old.stock : null %>">
+                    <input 
+                        class="input-padding form-control <%= (locals.errors && errors.stock) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                        type="number" 
+                        name="stock" 
+                        id="stock"
+                        value="<%= locals.old ? old.stock : null %>"
+                    >
                     <% if (locals.errors && errors.stock) { %>
-                        <p style="color: red;"><%= errors.stock.msg %> </p>
+                        <p class="feedback" style="color: red;"><%= errors.stock.msg %></p>
                     <% } %>
                 </div>
                 <div>
                     <label for="image_primary">Imagen Principal</label>
-                    <input type="file" name="image_primary" id="image_primary" value="<%= locals.old ? old.image_primary : null %>">
+                    <input 
+                        type="file" 
+                        name="image_primary" 
+                        id="image_primary"
+                        value="<%= locals.old ? old.image_primary : null %>"
+                    >
                     <% if (locals.errors && errors.image_primary) { %>
-                        <p style="color: red;"><%= errors.image_primary.msg %> </p>
+                        <p class="feedback" style="color: red;"><%= errors.image_primary.msg %></p>
                     <% } %>
                 </div>
                 <div>
                     <label for="image_secondary">Imagen Secundaria</label>
-                    <input type="file" name="image_secondary" id="image_secondary" value="<%= locals.old ? old.image_secondary : null %>">
+                    <input 
+                        type="file" 
+                        name="image_secondary" 
+                        id="image_secondary"
+                        value="<%= locals.old ? old.image_secondary : null %>"
+                    >
                     <% if (locals.errors && errors.image_secondary) { %>
-                        <p style="color: red;"><%= errors.image_secondary.msg %> </p>
+                        <p class="feedback" style="color: red;"><%= errors.image_secondary.msg %></p>
                     <% } %>
                 </div>
                 <div>
                     <label for="image_tertiary">Imagen Terciaria</label>
-                    <input type="file" name="image_tertiary" id="image_tertiary" value="<%= locals.old ? old.image_tertiary : null %>">
+                    <input 
+                        type="file" 
+                        name="image_tertiary" 
+                        id="image_tertiary"
+                        value="<%= locals.old ? old.image_tertiary : null %>"
+                    >
                     <% if (locals.errors && errors.image_tertiary) { %>
-                        <p style="color: red;"><%= errors.image_tertiary.msg %> </p>
+                        <p class="feedback" style="color: red;"><%= errors.image_tertiary.msg %></p>
                     <% } %>
                 </div>
                 <div class="login creation">

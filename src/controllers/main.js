@@ -1,10 +1,5 @@
-const fs = require('fs');
-const path = require('path');
 const db = require('../database/models');
 const Products = db.product;
-
-const productsFilePath = path.join(__dirname, '../data/products.json');
-let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const controller = {
     index: function (req, res) {
@@ -22,7 +17,6 @@ const controller = {
 			}
 			res.render('./users/search', { palabraClave, products: productsFound, name: 'products', title: 'RESULTADOS' });
 		})
-        
     },
 };
 
