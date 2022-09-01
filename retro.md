@@ -6,14 +6,13 @@
 
 > COMENZAR A HACER
     Dividir las tareas 
-
+    
 
 ------------
 
 > HACER MAS
-
-
-
+    Reuniones más largas
+    
 
 
 ------------
