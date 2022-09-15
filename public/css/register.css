@@ -1,2 +1,9 @@
 /* COMPARTE ESTILOS CON 'login.css' */
 /* ESTILOS EN COMUN UBICADOS EN 'generalStyles.css' */
+
+.none {
+    display: none;
+}
+.block {
+    display: block;
+}
