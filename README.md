@@ -15,6 +15,7 @@
 > - **Julian Maranta:** Tengo 23 años, soy de la ciudad de La Plata, Buenos Aires. Inicialmente decidi estudiar Economia, luego también probé de estudiar Abogacía y tras esos años académicos junto con experiencias laborales en locales comerciales de mi ciudad me decidi por estudiar Programación por recomendación de una amiga y anotarme en la facultad de Informática de mi ciudad para incurrir en este mundo de la tecnología que me han dicho que da grandes resultados.
 > - **Tomas Amaya:** Tengo 21 años, soy de Buenos Aires, Argentina. Desde pequeño que tengo pasión por los videojuegos que de más grande me fueron llevando al mundo del PC donde pude comenzar a adentrarme primero en hardware con el armado de computadoras, aprendiendo sobre componentes y armando mi primera pc. Y luego en el software queriendo ver que hay detrás de este mundo en el cual me manejo diariamente.
 > - **Ariel León:** Tengo 26 años , soy de Buenos Aires, Argentina. Me considero una persona que le gusta mucho todo lo relacionado a la tecnología, como es el caso de las computadoras, juegos, etc. Con muchas ganas de realizar este proyecto en equipo, para adquirir una gran experiencia en este ambiente de la programación.
+> - **German Hwang:** Tengo 19, soy de Buenos Aires, Argentina. Estuve probando varias carreras, entre ellas Licenciatura en finanzas y Despacho aduanero pero ninguna me convenció. Mi padrino me recomendo que probara algún curso de Digital House y opte por hacer el de programación full stack.
 
 ------------
 
