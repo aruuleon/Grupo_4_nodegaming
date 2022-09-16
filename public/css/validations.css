@@ -1,0 +1,24 @@
+.formulario__input-error {
+	font-size: 14px;
+	margin-bottom: 0;
+	display: none;
+    color: red;
+    margin-left: 5px;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+
+
+.formulario__grupo-correcto {
+	color: #1ed12d;
+    
+}
+
+
+
+.formulario__grupo-incorrecto .formulario__input{
+	border: 3px solid #bb2929;
+}

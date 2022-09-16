@@ -11,18 +11,18 @@ module.exports = [
     body('discount').notEmpty().withMessage('Tenes que indicar un descuento'),
     body('stock').notEmpty().withMessage('Tenes que indicar un stock'),
 
-    body(['image_primary', 'image_secondary', 'image_tertiary']).custom((value, { req }) => {
-        let file = req.file;
-        let acceptedExtensions = ['.jpg', '.png', '.jpeg', '.gif'];
+    // body(['image_primary', 'image_secondary', 'image_tertiary']).custom((value, { req }) => {
+    //     let file = req.file;
+    //     let acceptedExtensions = ['.jpg', '.png', '.jpeg', '.gif'];
 
-        if (!file) {
-            throw new Error('Tenes que subir una imagen');
-        } else {
-            let extname =  path.extname(file.originalname);
-            if (!acceptedExtensions.includes(extname)) {
-                throw new Error('Las extenciones de archivo permitidas son ' + acceptedExtensions.join(', '));
-            }
-        }
-        return true;
-    }),
+    //     if (!file) {
+    //         throw new Error('Tenes que subir una imagen');
+    //     } else {
+    //         let extname =  path.extname(file.originalname);
+    //         if (!acceptedExtensions.includes(extname)) {
+    //             throw new Error('Las extenciones de archivo permitidas son ' + acceptedExtensions.join(', '));
+    //         }
+    //     }
+    //     return true;
+    // }),
 ];
