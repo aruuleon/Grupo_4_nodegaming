@@ -5,14 +5,14 @@
 ------------
 
 > COMENZAR A HACER
-    Dividir las tareas 
+    
     
 
 ------------
 
 > HACER MAS
     Reuniones más largas
-    
+    Dividir las tareas 
 
 
 ------------
@@ -23,11 +23,10 @@
     Martes y jueves 16hs a 18hs.
     Hacer uso de la herramienta LiveShare en momentos donde pueda ser efectivo trabajar al mismo tiempo en conjunto.
     Mantener el orden en el código.
-    Comunicar más.
 ------------
 
 > HACER MENOS
-    Sacar siempre propias conclusiones.
+    
 
 ------------
 
