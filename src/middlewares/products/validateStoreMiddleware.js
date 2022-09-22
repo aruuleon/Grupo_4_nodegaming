@@ -11,18 +11,49 @@ module.exports = [
     body('discount').notEmpty().withMessage('Tenes que indicar un descuento'),
     body('stock').notEmpty().withMessage('Tenes que indicar un stock'),
 
-    body(['image_primary', 'image_secondary', 'image_tertiary']).custom((value, { req }) => {
-        let file = req.file;
+    body('image_primary').custom((value, { req }) => {
+        let file = req.files;
         let acceptedExtensions = ['.jpg', '.png', '.jpeg', '.gif'];
-        console.log(file);
-        if (!file) {
+        let archivo = file['image_primary'][0];
+        
+        if (!archivo) {
             throw new Error('Tenes que subir una imagen');
         } else {
-            let extname = path.extname(file.originalname);
+            let extname = path.extname(archivo.originalname);
             if (!acceptedExtensions.includes(extname)) {
                 throw new Error('Las extenciones de archivo permitidas son ' + acceptedExtensions.join(', '));
             }
         }
         return true;
     }),
+    body('image_secondary').custom((value, { req }) => {
+        let file = req.files;
+        let acceptedExtensions = ['.jpg', '.png', '.jpeg', '.gif'];
+        let archivo = file['image_secondary'][0];
+
+        if (!archivo) {
+            throw new Error('Tenes que subir una imagen');
+        } else {
+            let extname = path.extname(archivo.originalname);
+            if (!acceptedExtensions.includes(extname)) {
+                throw new Error('Las extenciones de archivo permitidas son ' + acceptedExtensions.join(', '));
+            }
+        }
+        return true;
+    }),
+    body('image_tertiary').custom((value, { req }) => {
+        let file = req.files;
+        let acceptedExtensions = ['.jpg', '.png', '.jpeg', '.gif'];
+        let archivo = file['image_tertiary'][0];
+        
+        if (!archivo) {
+            throw new Error('Tenes que subir una imagen');
+        } else {
+            let extname = path.extname(archivo.originalname);
+            if (!acceptedExtensions.includes(extname)) {
+                throw new Error('Las extenciones de archivo permitidas son ' + acceptedExtensions.join(', '));
+            }
+        }
+        return true;
+    })
 ];

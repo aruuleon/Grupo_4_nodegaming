@@ -43,7 +43,6 @@ const controller = {
     },
     store: function (req, res) {
 		const errors = validationResult(req);
-
 		if (errors.isEmpty()) {
 			Products.findOne({where: {name: req.body.name}})
 			.then(function (productInDB) {
