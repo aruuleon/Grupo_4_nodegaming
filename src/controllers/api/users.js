@@ -12,7 +12,7 @@ const controller = {
                         id: u.id,
                         name: `${u.firstname} ${u.lastname}`,
                         email: u.email,
-                        detail: `localhost:3000/api/users/detail/${u.id}`
+                        detail: `http://localhost:3000/api/users/detail/${u.id}`
                     }
                 ))
 

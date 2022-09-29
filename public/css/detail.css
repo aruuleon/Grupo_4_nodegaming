@@ -97,6 +97,13 @@
 .separador .sector2 {
     text-align: right;
 }
+.productEdit a {
+    text-decoration: none;
+    color: rgb(195, 149, 15, 0.7);
+}
+.productEdit:hover a {
+    color: #000000;
+}
 
 /* MEDIA QUERIES */
 @media (min-width: 769px) {

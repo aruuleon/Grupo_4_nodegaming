@@ -1,5 +1,3 @@
-
-
 window.addEventListener('load', function(){
     let form = document.querySelector('#form');
     let email = document.querySelector('#email');
@@ -32,14 +30,11 @@ window.addEventListener('load', function(){
         }
     })
     form.addEventListener('submit', function(e){
-        
-        e.preventDefault();
+        // e.preventDefault();
         if (emailCorrecto == true && passwordCorrecto == true) {
-            console.log('salio bien');
             form.submit()
-        }else {
-            console.log('no esta bien')
+        } else {
+            document.getElementById('mensaje___error').classList.add('formulario__input-error-activo')
         }
-
     });
 });

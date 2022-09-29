@@ -3,7 +3,7 @@ const inputs = document.querySelectorAll('#form input')
 const selects = document.querySelectorAll('#form select')
 
 form.addEventListener('submit', (e)=>{
-    e.preventDefault();
+    // e.preventDefault();
     if(campos.name && campos.price && campos.discount && campos.stock && campos.image_primary && campos.image_secondary && campos.image_tertiary && campos.category_id && campos.brand_id){
         form.submit()
     } else {
