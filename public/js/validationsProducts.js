@@ -2,14 +2,14 @@ const form = document.querySelector('#form')
 const inputs = document.querySelectorAll('#form input')
 const selects = document.querySelectorAll('#form select')
 
-form.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    if(campos.name && campos.price && campos.discount && campos.stock && campos.image_primary && campos.image_secondary && campos.image_tertiary && campos.category_id && campos.brand_id){
-        form.submit()
-    } else {
-        document.getElementById('mensaje___error').classList.add('formulario__input-error-activo')
-    }
-})
+// form.addEventListener('submit', (e)=>{
+//     e.preventDefault();
+//     if(campos.name && campos.price && campos.discount && campos.stock && campos.image_primary && campos.image_secondary && campos.image_tertiary && campos.category_id && campos.brand_id){
+//         form.submit()
+//     } else {
+//         document.getElementById('mensaje___error').classList.add('formulario__input-error-activo')
+//     }
+// })
 
 const expresiones = {
     name: /.{5,}/,
