@@ -37,14 +37,22 @@
                     </div>
                 </section>
                 <section class="container-info">
+                    <% if(product.stock > 0) { %>
                     <div class="stock">
                         <p>en stock</p>
                     </div>
+                    <% } else {%>
+                        <div class="sin_stock">
+                            <p>sin stock</p>
+                        </div>
+                    <% } %>
                     <p class="name"><%= product.name %></p>
                     <div>
                         <% if(product.discount > 0) { %>
-                            <p class="precio">$ <%= product.price %> </p>
-                            <span><%= product.discount %>% OFF</span>
+                        <div class="precio_descuento">
+                            <p class="precio_real">$ <%= product.price %> </p>
+                            <p class="discount"><%= product.discount %>% OFF</p>
+                        </div>
                         <% } %>
                     </div>
                     <p class="precio">$ <%= product.price - ((product.discount * product.price) / 100) %> </p>
