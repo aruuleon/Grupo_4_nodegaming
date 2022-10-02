@@ -125,7 +125,7 @@
                         type="file" 
                         name="image_primary" 
                         id="image_primary"
-                        value="<%= locals.old ? old.image_primary : null %>"
+                        value="<%= product.image_primary %>"
                     >
                     <p class="formulario__input-error">Solo se pueden subir archivos JPG, JPEG, PNG y GIF.</p>
                     <% if (locals.errors && errors.image_primary) { %>
@@ -138,7 +138,7 @@
                         type="file" 
                         name="image_secondary" 
                         id="image_secondary"
-                        value="<%= locals.old ? old.image_secondary : null %>"
+                        value="<%= product.image_secondary%>"
                     >
                     <p class="formulario__input-error">Solo se pueden subir archivos JPG, JPEG, PNG y GIF.</p>
                     <% if (locals.errors && errors.image_secondary) { %>
@@ -151,7 +151,7 @@
                         type="file" 
                         name="image_tertiary" 
                         id="image_tertiary"
-                        value="<%= locals.old ? old.image_tertiary : null %>"
+                        value="<%= product.image_tertiary %>"
                     >
                     <p class="formulario__input-error">Solo se pueden subir archivos JPG, JPEG, PNG y GIF.</p>
                     <% if (locals.errors && errors.image_tertiary) { %>
@@ -161,10 +161,10 @@
                 <p id='mensaje___error'class="formulario__input-error"> Debes completar el formulario correctamente</p>
                 <div class="login edition">
                     <div>
-                        <button type="submit">subir cambios</button>
+						<button type="submit" form="delete">eliminar</button>
                     </div>
                     <div>
-						<button type="submit" form="delete">eliminar</button>
+                        <button type="submit">guardar</button>
                     </div>
                 </div>
             </form>

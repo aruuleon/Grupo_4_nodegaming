@@ -21,7 +21,7 @@ const controller = {
                         name: p.name,
                         description: p.description,
                         relations: [p.category.type, p.brand.name],
-                        detail: `localhost:3000/api/products/detail/${p.id}`
+                        detail: `http://localhost:3000/api/products/detail/${p.id}`
                     }
                 ))
                 return res.status(200).json(

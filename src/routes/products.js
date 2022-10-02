@@ -26,7 +26,7 @@ router.post('/create', upload.fields([{name:'image_primary'}, {name: 'image_seco
 
 /*** EDIT ONE PRODUCT ***/ 
 router.get('/edit/:id', productsController.edit);
-router.put('/edit/:id', upload.fields([{name:'image_primary'}, {name: 'image_secondary'}, {name:'image_tertiary'}]), productsController.update);
+router.put('/edit/:id', upload.fields([{name:'image_primary'}, {name: 'image_secondary'}, {name:'image_tertiary'}]), validationStore, productsController.update);
 
 /*** DELETE ONE PRODUCT ***/ 
 router.delete('/delete/:id', productsController.delete);

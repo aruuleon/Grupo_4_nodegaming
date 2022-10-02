@@ -41,9 +41,21 @@
                         <p>en stock</p>
                     </div>
                     <p class="name"><%= product.name %></p>
-                    <p class="precio">$ <%= product.price %></p>
+                    <div>
+                        <% if(product.discount > 0) { %>
+                            <p class="precio">$ <%= product.price %> </p>
+                            <span><%= product.discount %>% OFF</span>
+                        <% } %>
+                    </div>
+                    <p class="precio">$ <%= product.price - ((product.discount * product.price) / 100) %> </p>
                     <div class="agregar">
                         <button type="button">agregar</button>
+                    </div>
+                    <br>
+                    <div class="agregar">
+                        <button type="button" class="productEdit">
+                            <a href="/products/edit/<%= product.id %>">editar</a>
+                        </button>
                     </div>
                 </section>
             </div>

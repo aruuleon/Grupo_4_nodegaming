@@ -14,7 +14,7 @@ module.exports = [
     body('image_primary').custom((value, { req }) => {
         let file = req.files;
         let acceptedExtensions = ['.jpg', '.png', '.jpeg', '.gif'];
-        let archivo = file['image_primary'][0];
+        let archivo = file['image_primary'] && file['image_primary'][0];
         
         if (!archivo) {
             throw new Error('Tenes que subir una imagen');
@@ -29,7 +29,7 @@ module.exports = [
     body('image_secondary').custom((value, { req }) => {
         let file = req.files;
         let acceptedExtensions = ['.jpg', '.png', '.jpeg', '.gif'];
-        let archivo = file['image_secondary'][0];
+        let archivo = file['image_secondary'] && file['image_secondary'][0];
 
         if (!archivo) {
             throw new Error('Tenes que subir una imagen');
@@ -44,7 +44,7 @@ module.exports = [
     body('image_tertiary').custom((value, { req }) => {
         let file = req.files;
         let acceptedExtensions = ['.jpg', '.png', '.jpeg', '.gif'];
-        let archivo = file['image_tertiary'][0];
+        let archivo = file['image_tertiary'] && file['image_tertiary'][0];
         
         if (!archivo) {
             throw new Error('Tenes que subir una imagen');

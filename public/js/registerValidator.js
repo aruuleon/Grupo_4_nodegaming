@@ -66,10 +66,10 @@ window.addEventListener('load', function () {
     });
 
     form.addEventListener('submit', function (e) {
-        e.preventDefault();
+        // e.preventDefault();
 
         if (campos.firstname && campos.lastname && campos.email && campos.phone && campos.password) {
             form.submit();
-        } 
+        }
     })
 })

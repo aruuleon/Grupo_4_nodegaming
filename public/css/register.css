@@ -3,6 +3,7 @@
 
 .none {
     display: none;
+    color: red;
 }
 .block {
     display: block;
