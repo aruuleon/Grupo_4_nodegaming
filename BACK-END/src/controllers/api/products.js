@@ -11,6 +11,7 @@ const controller = {
 
         Promise.all([categories, products])
             .then(function ([categories, products]) {
+                const url = 'http://localhost:3000/api/products/detail/';
                 let countByCategory = {}
                 categories.forEach(c => { countByCategory[c.type] = c.products.length })
                 let productsDetail = products.map(p => (
@@ -19,7 +20,8 @@ const controller = {
                         name: p.name,
                         description: p.description,
                         relations: [p.category.type, p.brand.name],
-                        detail: `http://localhost:3000/api/products/detail/${p.id}`
+                        image: `http://localhost:3000/img/products/${p.image_primary}`,
+                        detail: `${url}${p.id}`
                     }
                 ))
                 return res.status(200).json(
@@ -36,7 +38,7 @@ const controller = {
     detail: (req, res) => {
         Products.findByPk(req.params.id, { include: [{ association: 'category' }, { association: 'brand' }] })
             .then(product => {
-                const url = '/img/products/';
+                const url = 'http://localhost:3000/img/products/';
                 return res.status(200).json(
                     {
                     product,

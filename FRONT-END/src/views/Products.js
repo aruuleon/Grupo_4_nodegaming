@@ -26,6 +26,7 @@ function Products() {
                 <th className='table-dark'>NOMBRE</th>
                 <th className='table-dark'>CATEGORIA</th>
                 <th className='table-dark'>MARCA</th>
+                <th className='table-dark'>IMAGEN</th>
               </tr>
               {
                 products.map((product, i) => {
@@ -35,6 +36,7 @@ function Products() {
                       <td className='table-danger'> {product.name} </td>
                       <td className='table-warning'> {product.relations[0]} </td>
                       <td className='table-success'> {product.relations[1]} </td>
+                      <td className='table-light img-product'> <img src={product.image}></img> </td>
                     </tr>
                   )
                 })

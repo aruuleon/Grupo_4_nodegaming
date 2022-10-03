@@ -18,7 +18,7 @@
                     >
                     <p class="formulario__input-error">El nombre del producto es obligatorio y debe contener al menos 5 caracteres.</p>
                     <% if (locals.errors && errors.name) { %>
-                        <p class="feedback" style="color: red;"><%= errors.name.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.name.msg %></p>
                     <% } %>
                 </div>
                 <div id="brand_id_group">
@@ -32,7 +32,7 @@
                     </select>
                     <p class="formulario__input-error">Debes seleccionar una marca.</p>
                     <% if (locals.errors && errors.brand_id) { %>
-                        <p class="feedback" style="color: red;"><%= errors.brand_id.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.brand_id.msg %></p>
                     <% } %>
                 </div>
                 <div id="category_id_group">
@@ -46,7 +46,7 @@
                     </select>
                     <p class="formulario__input-error">Debes seleccionar una categoría.</p>
                     <% if (locals.errors && errors.category_id) { %>
-                        <p class="feedback" style="color: red;"><%= errors.category_id.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.category_id.msg %></p>
                     <% } %>
                 </div>
                 <div id="description_group">
@@ -60,7 +60,7 @@
                     >
                     <p class="formulario__input-error">La descripción del producto debe tener al menos 20 caracteres.</p>
                     <% if (locals.errors && errors.description) { %>
-                        <p class="feedback" style="color: red;"><%= errors.description.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.description.msg %></p>
                     <% } %>
                 </div>
                 <div id="price_group">
@@ -74,7 +74,7 @@
                     >
                     <p class="formulario__input-error">Este campo es obligatorio y solo puede llevar números.</p>
                     <% if (locals.errors && errors.price) { %>
-                        <p class="feedback" style="color: red;"><%= errors.price.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.price.msg %></p>
                     <% } %>
                 </div>
                 <div id="discount_group">
@@ -88,7 +88,7 @@
                     >
                     <p class="formulario__input-error">Este campo es obligatorio y solo puede llevar números desde el 0 hasta el 100.</p>
                     <% if (locals.errors && errors.discount) { %>
-                        <p class="feedback" style="color: red;"><%= errors.discount.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.discount.msg %></p>
                     <% } %>
                 </div>
                 <div id="stock_group">
@@ -102,7 +102,7 @@
                     >
                     <p class="formulario__input-error">Este campo es obligatorio y solo puede llevar números.</p>
                     <% if (locals.errors && errors.stock) { %>
-                        <p class="feedback" style="color: red;"><%= errors.stock.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.stock.msg %></p>
                     <% } %>
                 </div>
                 <div id="image_primary_group">
@@ -115,7 +115,7 @@
                     >
                     <p class="formulario__input-error">Solo se pueden subir archivos JPG, JPEG, PNG y GIF.</p>
                     <% if (locals.errors && errors.image_primary) { %>
-                        <p class="feedback" style="color: red;"><%= errors.image_primary.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.image_primary.msg %></p>
                     <% } %>
                 </div>
                 <div id="image_secondary_group">
@@ -128,7 +128,7 @@
                     >
                     <p class="formulario__input-error">Solo se pueden subir archivos JPG, JPEG, PNG y GIF.</p>
                     <% if (locals.errors && errors.image_secondary) { %>
-                        <p class="feedback" style="color: red;"><%= errors.image_secondary.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.image_secondary.msg %></p>
                     <% } %>
                 </div>
                 <div id="image_tertiary_group">
@@ -141,7 +141,7 @@
                     >
                     <p class="formulario__input-error">Solo se pueden subir archivos JPG, JPEG, PNG y GIF.</p>
                     <% if (locals.errors && errors.image_tertiary) { %>
-                        <p class="feedback" style="color: red;"><%= errors.image_tertiary.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.image_tertiary.msg %></p>
                     <% } %>
                 </div>
                 <p id='mensaje___error'class="formulario__input-error"> Debes completar el formulario correctamente</p>

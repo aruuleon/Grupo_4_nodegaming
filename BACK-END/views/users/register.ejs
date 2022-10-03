@@ -17,7 +17,7 @@
                         class="input-padding form-control <%= (locals.errors && errors.firstname) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
                     >
                     <% if (locals.errors && errors.firstname) { %>
-                        <p class="feedback" style="color: red;"><%= errors.firstname.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.firstname.msg %></p>
                     <% } %>
                     <p class="none msg-error">El nombre debe tener de 2 a 16 caracteres y no puede contener caracteres especiales</p>
                 </div>
@@ -31,7 +31,7 @@
                         class="input-padding form-control <%= (locals.errors && errors.lastname) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
                     >
                     <% if (locals.errors && errors.lastname) { %>
-                        <p class="feedback" style="color: red;"><%= errors.lastname.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.lastname.msg %></p>
                     <% } %>
                     <p class="none msg-error">El nombre debe tener de 2 a 16 caracteres y no puede contener caracteres especiales</p>
                 </div>
@@ -45,7 +45,7 @@
                         class="input-padding form-control <%= (locals.errors && errors.email) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
                     >
                     <% if (locals.errors && errors.email) { %>
-                        <p class="feedback" style="color: red;"><%= errors.email.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.email.msg %></p>
                     <% } %>
                     <p class="none msg-error">El email puede contener letras, numeros, puntos, guiones y no puede contener caracteres especiales</p>
                 </div>
@@ -59,7 +59,7 @@
                         class="input-padding form-control <%= (locals.errors && errors.phone) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
                     >
                     <% if (locals.errors && errors.phone) { %>
-                        <p class="feedback" style="color: red;"><%= errors.phone.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.phone.msg %></p>
                     <% } %>
                     <p class="none msg-error">El teléfono debe contener números con un máximo de 10 dígitos</p>
                 </div>
@@ -73,7 +73,7 @@
                         class="input-padding form-control <%= (locals.errors && errors.password) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
                     >
                     <% if (locals.errors && errors.password) { %>
-                        <p class="feedback" style="color: red;"><%= errors.password.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.password.msg %></p>
                     <% } %>
                     <p class="none msg-error">La contraseña debe tener de 8 a 12 dígitos</p>
                 </div>
@@ -81,7 +81,7 @@
                     <label for="avatar">Imagen</label>
                     <input type="file" name="avatar" id="avatar">
                     <% if (locals.errors && errors.avatar) { %>
-                        <p class="feedback" style="color: red;"><%= errors.avatar.msg %></p>
+                        <p class="feedback" style="color: red; font-size: 12px;"><%= errors.avatar.msg %></p>
                     <% } %>
                 </div>
                 <div class="registrarte">
