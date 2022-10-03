@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs', {name, title}) %>
+<body class="container-main">
+    <%- include('../partials/headerUser.ejs') %>
+    <main class="main">
+        <section class="form">
+            <form action="/users/register" method="POST" enctype="multipart/form-data" id="register">
+                <h3>crear cuenta</h3>
+                <div id="container-firstname">
+                    <label for="firstname">Nombre</label>
+                    <input
+                        type="text"
+                        name="firstname"
+                        id="firstname"
+                        value="<%= locals.old ? old.firstname : null %>"
+                        class="input-padding form-control <%= (locals.errors && errors.firstname) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                    >
+                    <% if (locals.errors && errors.firstname) { %>
+                        <p class="feedback" style="color: red;"><%= errors.firstname.msg %></p>
+                    <% } %>
+                    <p class="none msg-error">El nombre debe tener de 2 a 16 caracteres y no puede contener caracteres especiales</p>
+                </div>
+                <div id="container-lastname">
+                    <label for="lastname">Apellido</label>
+                    <input 
+                        type="text" 
+                        name="lastname" 
+                        id="lastname" 
+                        value="<%= locals.old ? old.lastname : null %>"
+                        class="input-padding form-control <%= (locals.errors && errors.lastname) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                    >
+                    <% if (locals.errors && errors.lastname) { %>
+                        <p class="feedback" style="color: red;"><%= errors.lastname.msg %></p>
+                    <% } %>
+                    <p class="none msg-error">El nombre debe tener de 2 a 16 caracteres y no puede contener caracteres especiales</p>
+                </div>
+                <div id="container-email">
+                    <label for="email">Email</label>
+                    <input 
+                        type="text" 
+                        name="email" 
+                        id="email" 
+                        value="<%= locals.old ? old.email : null %>"
+                        class="input-padding form-control <%= (locals.errors && errors.email) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                    >
+                    <% if (locals.errors && errors.email) { %>
+                        <p class="feedback" style="color: red;"><%= errors.email.msg %></p>
+                    <% } %>
+                    <p class="none msg-error">El email puede contener letras, numeros, puntos, guiones y no puede contener caracteres especiales</p>
+                </div>
+                <div id="container-phone">
+                    <label for="phone">Telefono</label>
+                    <input 
+                        type="text" 
+                        name="phone" 
+                        id="phone" 
+                        value="<%= locals.old ? old.phone : null %>"
+                        class="input-padding form-control <%= (locals.errors && errors.phone) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                    >
+                    <% if (locals.errors && errors.phone) { %>
+                        <p class="feedback" style="color: red;"><%= errors.phone.msg %></p>
+                    <% } %>
+                    <p class="none msg-error">El teléfono debe contener números con un máximo de 10 dígitos</p>
+                </div>
+                <div id="container-password">
+                    <label for="password">Contraseña</label>
+                    <input 
+                        type="password" 
+                        name="password" 
+                        id="password"
+                        value="<%= locals.old ? old.password: null %>"
+                        class="input-padding form-control <%= (locals.errors && errors.password) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                    >
+                    <% if (locals.errors && errors.password) { %>
+                        <p class="feedback" style="color: red;"><%= errors.password.msg %></p>
+                    <% } %>
+                    <p class="none msg-error">La contraseña debe tener de 8 a 12 dígitos</p>
+                </div>
+                <div>
+                    <label for="avatar">Imagen</label>
+                    <input type="file" name="avatar" id="avatar">
+                    <% if (locals.errors && errors.avatar) { %>
+                        <p class="feedback" style="color: red;"><%= errors.avatar.msg %></p>
+                    <% } %>
+                </div>
+                <div class="registrarte">
+                    <button type="submit">registrarte</button>
+                </div>
+                <div class="login">
+                    <div>
+                        <p>¿Ya tenés cuenta?</p>
+                    </div>
+                    <div>
+                        <button type="button"><a href="/users/login">ingresar</a></button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="/js/registerValidator.js"></script>
+</body>
+</html>

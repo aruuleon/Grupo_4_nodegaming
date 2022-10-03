@@ -1,0 +1,395 @@
+/* ESTILOS EN COMUN */
+
+/* GENERALES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container-main {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #000000;
+}
+.user ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+}
+.user:hover ul {
+    display: block;
+    text-transform: uppercase;
+    background-color: #000000;
+    text-align: center;
+    width: 40%;
+    font-size: 10px;
+    margin-left: -20px;
+    margin-top: 6px;
+}
+.user:hover li{
+    cursor: pointer;
+}
+.user ul a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #ffff;
+}
+.user ul {
+    width: 100%;
+    text-align: left;
+    font-size: 10px;
+}
+.user ul li {
+    margin-left: -40px;
+    margin-top: 10px;
+}
+.burguer-menu {
+    background-color: #000000;
+}
+.container-menu div {
+    position: relative;
+    background-color: #000000;
+    margin-top: 10px;
+}
+.container-menu div ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: 25%;
+    margin-left: 70px;
+}
+.container-menu div ul li {
+    width: 100%;
+    background-color: #000000;
+    padding-left: 50px;
+    padding-bottom: 5px;
+}
+.container-menu:hover div {
+    margin-right: 50px;
+    position: absolute;
+    width: 100%;
+}
+.container-menu:hover ul {
+    display: block;
+    text-transform: uppercase;
+    background-color: #000000;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+    margin-top: 30px;
+}
+.container-menu:hover li{
+    cursor: pointer;
+}
+.container-menu ul a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #ffff;
+}
+.container-menu ul {
+    width: 100%;
+    text-align: left;
+    font-size: 10px;
+}
+.container-menu ul li {
+    margin-left: -40px;
+    margin-top: 10px;
+}
+.main {
+    width: 100%;
+}
+.main h3 {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #000000;
+    color: rgb(195, 149, 15, 0.7);
+}
+.container-about {
+    text-transform: uppercase;
+}
+.container-about h3 {
+    font-size: 16px;
+    list-style: none;
+}
+.container-about a {
+    text-decoration: none;
+}
+.container-about p {
+    margin: 10px;
+    font-size: 12px;
+    color: #ffff;
+}
+.container-social-media {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0;
+}
+.container-social-media div a i {
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(195, 149, 15, 0.7);
+    border: 1px solid rgb(195, 149, 15, 0.7);
+    border-radius: 50%;
+}
+
+/* HOME - PRODUCTO - CARRITO */
+.container-logo1 {
+    width: 50%;
+}
+.container-logo1 a img {
+    width: 75%;
+    padding: 10px;
+}
+.container-menu {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+.container-menu i {
+    font-size: 1.5em;
+    color: #ffff;
+}
+.nav-bar {
+    width: 100%;
+    display: none;
+}
+.search-bar {
+    display: none;
+}
+.container-access {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.container-access div i {
+    color: #ffff;
+}
+
+/* LOGIN - REGISTER */
+.container-logo2 {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+.container-logo2 a img {
+    width: 50%;
+}
+.form {
+    width: 90%;
+    margin: auto;
+}
+.form form h3 {
+    text-transform: uppercase;
+}
+.form form div {
+    margin: 10px 0;
+    width: 100%;
+}
+.form form div .input-padding {
+    padding-left: 10px;
+}
+.form form div .input-border-initial {
+    border: 1px solid #ced4da;
+}
+.form form div input, button {
+    width: 100%;
+    height: 30px;
+    border-radius: 2px;
+}
+.form form div button {
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: rgb(195, 149, 15, 1);
+    border-radius: 10px;
+}
+.form form div button a {
+    text-decoration: none;
+    color: rgb(195, 149, 15, 1);
+}
+.ingresar, .registrarte {
+    width: 100%;
+}
+.ingresar button, .registrarte button {
+    width: 50%;
+}
+.crear, .login {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.crear div button a, .login div button a {
+    display: inline-block;
+    width: 100%;
+}
+.form form div .input-border-initial:focus {
+    border-color: #ced4da;
+    box-shadow: 0 0 0 0.25rem rgba(192, 182, 182, 0.25);
+}
+.form form div button:hover {
+    cursor: pointer;
+    background-color: rgb(195, 149, 15, 0.7);
+    color: #000000;
+    box-shadow: 0px 0px 10px #000000;
+}
+.form form div button:hover a {
+    color: #000000;
+}
+.msg-error {
+    font-size: 12px;
+}
+.delete button {
+    color: #dc3545 !important;
+}
+.delete button:hover {
+    color: #000000 !important;
+    background-color: #dc3545 !important;
+}
+.none {
+    display: none;
+    color: red;
+}
+.block {
+    display: block;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 769px) {
+    /* GENERALES */
+    .user:hover ul {
+        text-align: left;
+        width: 40%;
+        margin-top: 0;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer section {
+        width: 33%;
+        align-self: center;
+    }
+    .redes {
+        order: 1;
+    }
+    .container-social-media div:hover i {
+        color: #000000;
+        background-color: rgb(195, 149, 15, 0.7);
+        transition-duration: 0.5s;
+    }
+
+    /* HOME - PRODUCTO - CARRITO */
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .container-logo1 {
+        width: 22%;
+    }
+    .container-menu {
+        display: none;
+    }
+    .nav-bar {
+        display: flex;
+    }
+    .container-access {
+        width: 20%;
+        justify-content: flex-end;
+    }
+    .container-access .user {
+        margin: 0 50px;
+    }
+    .container-access .search i {
+        display: none;
+    }
+    .container-list {
+        width: 100%;
+        display: flex;
+        list-style: none;
+        text-align: center;
+    }
+    .container-list a{
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(195, 149, 15, 0.9);
+        text-transform: uppercase;
+        margin: 10px 0;
+        width: 25%;
+    }
+    .container-list a:hover {
+        background-color: rgb(195, 149, 15, 0.9);
+        color: #000000;
+        transition-duration: 0.5s;
+    }
+    .search-bar {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    .search-bar form {
+        width: 90%;
+    }
+    .search-bar form div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .search-bar form div input {
+        width: 95%;
+        margin-right: 1px;
+        padding: 0 5px;
+    }
+    .search-bar form div button {
+        width: 2%;
+        padding: 0 5px;
+        color: #ffff;
+        background-color: #000000;
+        border: 1px solid #000000;
+    }
+    .search-bar form div button:hover {
+        cursor: pointer;
+    }
+
+    /* LOGIN - REGISTER */
+    .container-logo2 a img {
+        width: 15%;
+    }
+    .form {
+        display: flex;
+        justify-content: center;
+    }
+    .form form {
+        width: 50%;
+    }
+    .form form div {
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    /* LOGIN - REGISTER */
+    .container-logo1 {
+        width: 21%;
+    }
+}

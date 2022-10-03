@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs', {name, title}) %>
+<body class="container-main">
+    <%- include('../partials/headerMain.ejs') %>
+    <main class="main">
+        <section class="form">
+            <form action="/products/edit/<%= product.id %>?_method=PUT" method="post" enctype="multipart/form-data" id="form">
+                <h3>editar producto</h3>
+                <div id="name_group">
+                    <label for="name">Nombre</label>
+                    <input 
+                        class="input-padding form-control <%= (locals.errors && errors.name) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                        type="text" 
+                        name="name" 
+                        id="name"
+                        value="<%= product.name %>"
+                    >
+                    <p class="formulario__input-error">El nombre del producto es obligatorio y debe contener al menos 5 caracteres.</p>
+                    <% if (locals.errors && errors.name) { %>
+                        <p class="feedback" style="color: red;"><%= errors.name.msg %></p>
+                    <% } %>
+                </div>
+                <div id="brand_id_group">
+                    <label for="brand_id">Marca</label>
+                    <select name="brand_id" id="brand_id">
+						<option></option>
+                        <option>-</option>
+                        <% brands.forEach(brand => { %>
+                            <option value="<%= brand.id %>" <% if (product.brand_id == brand.id) { %><%= 'selected' %><% }%>> <%= brand.name %> </option>
+                        <% }) %>
+                    </select>
+                    <p class="formulario__input-error">Debes seleccionar una marca.</p>
+                    <% if (locals.errors && errors.brand_id) { %>
+                        <p class="feedback" style="color: red;"><%= errors.brand_id.msg %></p>
+                    <% } %>
+                </div>
+                <div id="category_id_group">
+                    <label for="category_id">Categoría</label>
+                    <select name="category_id" id="category_id">
+						<option></option>
+                        <option>-</option>
+                        <% categories.forEach(category => { %>
+                            <option value="<%= category.id %> " <% if (product.category_id == category.id) { %><%= 'selected' %><% }%>> <%= category.type %> </option>
+                        <% }) %>
+                    </select>
+                    <p class="formulario__input-error">Debes seleccionar una categoría.</p>
+                    <% if (locals.errors && errors.category_id) { %>
+                        <p class="feedback" style="color: red;"><%= errors.category_id.msg %></p>
+                    <% } %>
+                </div>
+                <div id="description_group">
+                    <label for="description">Características Generales</label>
+                    <input 
+                        class="input-padding form-control <%= (locals.errors && errors.name) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                        type="text" 
+                        name="description" 
+                        id="description"
+                        value="<%= product.description %>"
+                    >
+                    <p class="formulario__input-error">La descripción del producto debe tener al menos 20 caracteres.</p>
+                    <% if (locals.errors && errors.description) { %>
+                        <p class="feedback" style="color: red;"><%= errors.description.msg %></p>
+                    <% } %>
+                </div>
+                <div id="price_group">
+                    <label for="price">Precio</label>
+                    <input 
+                        class="input-padding form-control <%= (locals.errors && errors.name) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                        type="number" 
+                        name="price" 
+                        id="price"
+                        value="<%= product.price %>"
+                    >
+                    <p class="formulario__input-error">Este campo es obligatorio y solo puede llevar números.</p>
+                    <% if (locals.errors && errors.price) { %>
+                        <p class="feedback" style="color: red;"><%= errors.price.msg %></p>
+                    <% } %>
+                </div>
+                <div id="discount_group">
+                    <label for="discount">Descuento</label>
+                    <input 
+                        class="input-padding form-control <%= (locals.errors && errors.name) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                        type="number" 
+                        name="discount" 
+                        id="discount"
+                        value="<%= product.discount %>"
+                    >
+                    <p class="formulario__input-error">Este campo es obligatorio y solo puede llevar números desde el 0 hasta el 100.</p>
+                    <% if (locals.errors && errors.discount) { %>
+                        <p class="feedback" style="color: red;"><%= errors.discount.msg %></p>
+                    <% } %>
+                </div>
+                <div id="stock_group">
+                    <label for="stock">Stock</label>
+                    <input 
+                        class="input-padding form-control <%= (locals.errors && errors.name) ? 'is-invalid' : (locals.old ? 'is-valid' : 'input-border-initial') %>"
+                        type="number" 
+                        name="stock" 
+                        id="stock"
+                        value="<%= product.stock %>"
+                    >
+                    <p class="formulario__input-error">Este campo es obligatorio y solo puede llevar números.</p>
+                    <% if (locals.errors && errors.stock) { %>
+                        <p class="feedback" style="color: red;"><%= errors.stock.msg %></p>
+                    <% } %>
+                </div>
+                <div>
+                    <label for="image">Imágenes</label>
+                    <div class="imagen-edition">
+                        <div>
+                            <img src="/img/products/<%= product.image_primary %>" alt="">
+                        </div>
+                        <div>
+                            <img src="/img/products/<%= product.image_secondary %>" alt="">
+                        </div>
+                        <div>
+                            <img src="/img/products/<%= product.image_tertiary %>" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="image_primary_group">
+                    <label for="image_primary">Imagen Principal</label>
+                    <input 
+                        type="file" 
+                        name="image_primary" 
+                        id="image_primary"
+                        value="<%= product.image_primary %>"
+                    >
+                    <p class="formulario__input-error">Solo se pueden subir archivos JPG, JPEG, PNG y GIF.</p>
+                    <% if (locals.errors && errors.image_primary) { %>
+                        <p class="feedback" style="color: red;"><%= errors.image_primary.msg %></p>
+                    <% } %>
+                </div>
+                <div id="image_secondary_group">
+                    <label for="image_secondary">Imagen Secundaria</label>
+                    <input 
+                        type="file" 
+                        name="image_secondary" 
+                        id="image_secondary"
+                        value="<%= product.image_secondary%>"
+                    >
+                    <p class="formulario__input-error">Solo se pueden subir archivos JPG, JPEG, PNG y GIF.</p>
+                    <% if (locals.errors && errors.image_secondary) { %>
+                        <p class="feedback" style="color: red;"><%= errors.image_secondary.msg %></p>
+                    <% } %>
+                </div>
+                <div id="image_tertiary_group">
+                    <label for="image_tertiary">Imagen Terciaria</label>
+                    <input 
+                        type="file" 
+                        name="image_tertiary" 
+                        id="image_tertiary"
+                        value="<%= product.image_tertiary %>"
+                    >
+                    <p class="formulario__input-error">Solo se pueden subir archivos JPG, JPEG, PNG y GIF.</p>
+                    <% if (locals.errors && errors.image_tertiary) { %>
+                        <p class="feedback" style="color: red;"><%= errors.image_tertiary.msg %></p>
+                    <% } %>
+                </div>
+                <p id='mensaje___error'class="formulario__input-error"> Debes completar el formulario correctamente</p>
+                <div class="login edition">
+                    <div class="delete">
+						<button type="submit" form="delete">eliminar</button>
+                    </div>
+                    <div>
+                        <button type="submit">guardar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST" id="delete"></form>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+    <script src="/js/validationsProducts.js"></script>
+</body>
+</html>
