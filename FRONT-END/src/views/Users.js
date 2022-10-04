@@ -27,7 +27,6 @@ function User() {
                 <th className='table-dark'>APELLIDO</th>
                 <th className='table-dark'>EMAIL</th>
                 <th className='table-dark'>TELEFONO</th>
-                <th className='table-dark'>CONTRASEÑA</th>
                 <th className='table-dark'>IMAGEN</th>
               </tr>
               {
@@ -39,8 +38,7 @@ function User() {
                       <td className='table-warning'> {user.lastname} </td>
                       <td className='table-success'> {user.email} </td>
                       <td className='table-info'> {user.phone} </td>
-                      <td className='table-info'> {user.password} </td>
-                    <td className='table-light img-user'> <img src={user.avatar}></img> </td>
+                      <td className='table-light img-user'> <img src={user.avatar}></img> </td>
                     </tr>
                   )
                 })

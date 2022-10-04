@@ -35,6 +35,9 @@ window.addEventListener('load', function () {
             case 'password':
                 validarCampo(expresiones.password, e.target, e.target.name);
                 break;
+            case "avatar":
+                validarImagen(e.target, "avatar")
+                break;
         }
     }
 
@@ -46,6 +49,25 @@ window.addEventListener('load', function () {
             document.querySelector(`#container-${campo} .none`).classList.add('block');
             campos[campo] = false;
         }
+    }
+
+    const validarImagen = (input, campo) => {
+        let acceptedExtensions = ['.jpg', '.png', '.jpeg', '.gif'];
+        let extension = input.value.substring(input.value.lastIndexOf(".")).toLowerCase();
+        let permiso = false;
+            for (let i = 0; i < acceptedExtensions.length; i++)
+                if (acceptedExtensions[i] == extension) {
+                    permiso = true;
+                    document.querySelector(`#${campo}_group .formulario__input-error`).classList.remove('formulario__input-error-activo');
+                    campos[campo] = true;
+                }
+        if (!permiso) {
+            document.querySelector(`#${campo}_group .formulario__input-error`).classList.add('formulario__input-error-activo');
+        } else {
+            document.querySelector(`#${campo}_group .formulario__input-error`).classList.remove('formulario__input-error-activo');
+            campos[campo] = true;
+        }
+    
     }
 
     inputs.forEach(input => {

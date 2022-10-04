@@ -77,12 +77,13 @@
                     <% } %>
                     <p class="none msg-error">La contraseña debe tener de 8 a 12 dígitos</p>
                 </div>
-                <div>
+                <div id="avatar_group">
                     <label for="avatar">Imagen</label>
                     <input type="file" name="avatar" id="avatar">
                     <% if (locals.errors && errors.avatar) { %>
                         <p class="feedback" style="color: red; font-size: 12px;"><%= errors.avatar.msg %></p>
                     <% } %>
+                    <p class="formulario__input-error">Solo se pueden subir archivos JPG, JPEG, PNG y GIF.</p>
                 </div>
                 <div class="registrarte">
                     <button type="submit">registrarte</button>

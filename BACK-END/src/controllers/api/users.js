@@ -13,7 +13,6 @@ const controller = {
                         lastname: u.lastname,
                         email: u.email,
                         phone: u.phone,
-                        password: u.password,
                         avatar: `http://localhost:3000/img/users/${u.avatar}`,
                         detail: `http://localhost:3000/api/users/detail/${u.id}`
                     }
